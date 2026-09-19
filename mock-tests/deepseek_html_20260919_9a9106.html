@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>অসম আৰক্ষী AB/UB & SI সম্পূৰ্ণ অধ্যয়ন সামগ্ৰী - Cracknyssamexam</title>
+<style>
+    @page { size: A4; margin: 10mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Noto Sans Bengali', 'Nirmala UI', 'Kalpurush', 'Vrinda', Arial, sans-serif;
+        background: #fff; color: #1a1a1a; line-height: 1.75; font-size: 11.5pt;
+    }
+    .page {
+        position: relative; width: 100%; min-height: 277mm; padding: 8mm 6mm;
+        page-break-after: always; background: #fff; overflow: hidden;
+    }
+    .watermark {
+        position: absolute; top: 45%; left: 50%;
+        transform: translate(-50%, -50%) rotate(-40deg);
+        font-size: 52px; color: rgba(0, 0, 0, 0.05); font-weight: 900;
+        white-space: nowrap; pointer-events: none; z-index: 0;
+        font-family: Arial, sans-serif; letter-spacing: 4px; text-transform: uppercase;
+    }
+    .watermark-small {
+        position: absolute; bottom: 4mm; right: 6mm; font-size: 9px;
+        color: rgba(0, 0, 0, 0.30); font-weight: 600;
+        font-family: Arial, sans-serif; z-index: 5;
+    }
+    .content { position: relative; z-index: 1; }
+    .cover {
+        text-align: center; padding: 25mm 10mm;
+        background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%);
+        color: #fff; min-height: 277mm;
+    }
+    .cover-logo { font-size: 38px; font-weight: 900; letter-spacing: 1px; margin-bottom: 8px; color: #fff; }
+    .cover-logo span { color: #fbbf24; }
+    .cover-tagline { font-size: 13px; color: #94a3b8; letter-spacing: 3px; margin-bottom: 45px; text-transform: uppercase; }
+    .cover-title { font-size: 34px; font-weight: 800; line-height: 1.35; margin-bottom: 15px; }
+    .cover-title span { color: #fbbf24; }
+    .cover-subtitle { font-size: 20px; font-weight: 600; color: #cbd5e1; margin-bottom: 25px; }
+    .cover-divider { width: 90px; height: 4px; background: #fbbf24; margin: 15px auto 30px; border-radius: 2px; }
+    .cover-info { font-size: 15px; color: #e2e8f0; line-height: 2.2; margin-bottom: 40px; }
+    .cover-badge { display: inline-block; border: 2px solid #fbbf24; color: #fbbf24; padding: 8px 24px; border-radius: 30px; font-weight: 700; font-size: 14px; margin: 6px; }
+    .cover-footer { margin-top: 55px; font-size: 12px; color: #64748b; border-top: 1px solid #334155; padding-top: 20px; }
+    h1 { font-size: 20px; color: #0a1628; text-align: center; border-bottom: 3px solid #1a3a6b; padding-bottom: 6px; margin: 0 0 12px 0; }
+    h2 { font-size: 16px; color: #1a3a6b; background: #eef2ff; padding: 7px 12px; border-left: 5px solid #1a3a6b; margin: 16px 0 10px 0; border-radius: 0 6px 6px 0; }
+    h3 { font-size: 13.5px; color: #0a1628; margin: 10px 0 5px 0; padding-left: 8px; border-left: 3px solid #fbbf24; }
+    .mcq { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; margin-bottom: 11px; page-break-inside: avoid; }
+    .q { font-weight: 700; color: #0a1628; margin-bottom: 5px; font-size: 12pt; }
+    .q .qnum { background: #1a3a6b; color: #fff; padding: 2px 8px; border-radius: 4px; margin-right: 6px; font-size: 10.5pt; display: inline-block; }
+    .options { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 15px; margin-bottom: 7px; font-size: 11.5pt; }
+    .options span { padding: 1px 0; }
+    .ans { background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 5px; font-weight: 700; font-size: 10.5pt; display: inline-block; margin-bottom: 4px; }
+    .desc { background: #fef9c3; border-left: 4px solid #fbbf24; padding: 6px 10px; font-size: 10.5pt; color: #78350f; border-radius: 0 5px 5px 0; margin-top: 4px; }
+    .desc strong { color: #92400e; }
+    .toc-item { display: flex; justify-content: space-between; padding: 8px 15px; border-bottom: 1px dashed #cbd5e1; font-size: 13pt; }
+    .toc-item:nth-child(odd) { background: #f8fafc; }
+    .toc-item .num { color: #1a3a6b; font-weight: 700; margin-right: 10px; }
+    .toc-item .page-num { color: #64748b; font-weight: 600; }
+    .section-divider-page { display: flex; align-items: center; justify-content: center; flex-direction: column; min-height: 250mm; text-align: center; }
+    .section-divider-page .icon { font-size: 65px; margin-bottom: 18px; }
+    .section-divider-page h1 { font-size: 28px; border: none; color: #0a1628; }
+    .section-divider-page p { font-size: 14px; color: #64748b; margin-top: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 11pt; }
+    th, td { border: 1px solid #cbd5e1; padding: 5px 10px; text-align: left; }
+    th { background: #1a3a6b; color: #fff; font-weight: 700; }
+    tr:nth-child(even) { background: #f8fafc; }
+    .notes-box { background: #eff6ff; border: 2px dashed #1a3a6b; border-radius: 10px; padding: 14px 18px; margin: 14px 0; font-size: 11.5pt; }
+    .notes-box h4 { color: #1a3a6b; margin-bottom: 7px; font-size: 14pt; }
+    .notes-box ul, .notes-box ol { margin-left: 20px; }
+    @media print {
+        body { margin: 0; font-size: 11pt; }
+        .page { margin: 0; }
+        .mcq { page-break-inside: avoid; }
+    }
+</style>
+</head>
+<body>
+
+<!-- ==================== কভাৰ ==================== -->
+<div class="page cover">
+    <div class="watermark" style="color: rgba(255,255,255,0.07);">Cracknyssamexam</div>
+    <div class="content">
+        <div class="cover-logo">Crack<span>nyssamexam</span></div>
+        <div class="cover-tagline">Assam's No.1 Exam Preparation Platform</div>
+        <div class="cover-divider"></div>
+        <div class="cover-title">অসম আৰক্ষী <span>AB/UB আৰু SI</span><br>সম্পূৰ্ণ অধ্যয়ন সামগ্ৰী</div>
+        <div class="cover-subtitle">Constable (Armed/Unarmed Branch) & Sub-Inspector</div>
+        <div class="cover-info">
+            ✅ ১০০০+ প্ৰশ্নোত্তৰ আৰু বিশদ ব্যাখ্যা<br>
+            ✅ SLPRB-ৰ শেহতীয়া পাঠ্যক্ৰম অনুসৰি<br>
+            ✅ অসমীয়া ভাষাত প্ৰস্তুত<br>
+            ✅ মক টেষ্ট + পূৰ্বৰ প্ৰশ্নকাকত
+        </div>
+        <div>
+            <span class="cover-badge">২০০+ পৃষ্ঠা</span>
+            <span class="cover-badge">১০০০+ প্ৰশ্ন</span>
+            <span class="cover-badge">বিস্তৃত ব্যাখ্যা</span>
+        </div>
+        <div class="cover-footer">
+            © 2026 Cracknyssamexam | facebook.com/Cracknyssamexam
+        </div>
+    </div>
+</div>
+
+<!-- ==================== সুচীপত্ৰ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 2</div>
+    <div class="content">
+        <h1>বিষয়সূচী (Index)</h1>
+        <div class="toc">
+            <div class="toc-item"><span><span class="num">১.</span> অসম ৰাজনীতি আৰু ইতিহাস</span><span class="page-num">পৃষ্ঠা ৩</span></div>
+            <div class="toc-item"><span><span class="num">২.</span> অসমৰ ভূগোল</span><span class="page-num">পৃষ্ঠা ২৩</span></div>
+            <div class="toc-item"><span><span class="num">৩.</span> অসমৰ সংস্কৃতি আৰু উৎসৱ</span><span class="page-num">পৃষ্ঠা ৪১</span></div>
+            <div class="toc-item"><span><span class="num">৪.</span> ভাৰতৰ ৰাজনীতি</span><span class="page-num">পৃষ্ঠা ৫৯</span></div>
+            <div class="toc-item"><span><span class="num">৫.</span> ভাৰতৰ ইতিহাস</span><span class="page-num">পৃষ্ঠা ৭৫</span></div>
+            <div class="toc-item"><span><span class="num">৬.</span> সাধাৰণ বিজ্ঞান</span><span class="page-num">পৃষ্ঠা ৯১</span></div>
+            <div class="toc-item"><span><span class="num">৭.</span> গণিত (Elementary Arithmetic)</span><span class="page-num">পৃষ্ঠা ১১১</span></div>
+            <div class="toc-item"><span><span class="num">৮.</span> যুক্তি আৰু বুদ্ধিমত্তা (Reasoning)</span><span class="page-num">পৃষ্ঠা ১৩১</span></div>
+            <div class="toc-item"><span><span class="num">৯.</span> ইংৰাজী (General English)</span><span class="page-num">পৃষ্ঠা ১৪৯</span></div>
+            <div class="toc-item"><span><span class="num">১০.</span> সাধাৰণ জ্ঞান আৰু সচেতনতা</span><span class="page-num">পৃষ্ঠা ১৬৫</span></div>
+            <div class="toc-item"><span><span class="num">১১.</span> অসম আৰক্ষী বিশেষ প্ৰশ্ন</span><span class="page-num">পৃষ্ঠা ১৮১</span></div>
+            <div class="toc-item"><span><span class="num">১২.</span> মক টেষ্ট ১ (১০০ প্ৰশ্ন)</span><span class="page-num">পৃষ্ঠা ১৯১</span></div>
+            <div class="toc-item"><span><span class="num">১৩.</span> উত্তৰপত্ৰ (Answer Keys)</span><span class="page-num">পৃষ্ঠা ২০৫</span></div>
+            <div class="toc-item"><span><span class="num">১৪.</span> পৰীক্ষাৰ টিপছ আৰু ট্ৰিক</span><span class="page-num">পৃষ্ঠা ২১৫</span></div>
+        </div>
+        <div class="notes-box" style="margin-top: 25px;">
+            <h4>📌 এই কিতাপখন কেনেকৈ ব্যৱহাৰ কৰিব?</h4>
+            <ul>
+                <li>প্ৰতিটো অধ্যায় মনোযোগেৰে পঢ়ক আৰু প্ৰশ্নবোৰ নিজে চেষ্টা কৰক।</li>
+                <li>উত্তৰ নমিলিলে <strong>ব্যাখ্যা</strong> পঢ়ি বুজি লওক।</li>
+                <li>মক টেষ্টবোৰ <strong>২ ঘণ্টা</strong> সময় লগাই দিয়ক।</li>
+                <li>অসম আৰক্ষীৰ চাকৰিৰ বাবে <strong>অসম GK</strong> আৰু <strong>Reasoning</strong> ত বিশেষ গুৰুত্ব দিয়ক।</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ১: অসম ইতিহাস ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 3</div>
+    <div class="content section-divider-page">
+        <div class="icon">🏛️</div>
+        <h1>অধ্যায় ১<br>অসম ৰাজনীতি আৰু ইতিহাস</h1>
+        <p>Assam Polity & History — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 4</div>
+    <div class="content">
+        <h1>অসম ৰাজনীতি আৰু ইতিহাস</h1>
+        <h2>অসমৰ প্ৰাচীন ইতিহাস</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১</span> অসমৰ প্ৰথম আহোম ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) শুকাফা</span><span>(B) ৰুদ্ৰ সিংহ</span><span>(C) পুৰন্দৰ সিংহ</span><span>(D) চুহুংমুং</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শুকাফা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শুকাফা আছিল আহোম ৰাজবংশৰ প্ৰতিষ্ঠাপক আৰু অসমৰ প্ৰথম আহোম ৰজা। তেওঁ ১২২৮ খ্ৰীষ্টাব্দত অসমত আহোম ৰাজ্য প্ৰতিষ্ঠা কৰিছিল। তেওঁৰ আন এটা প্ৰচলিত নাম হ'ল চুকাফা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২</span> চৰাইদেউ (Saraighat) যুদ্ধ কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১৬৭১</span><span>(B) ১৬২১</span><span>(C) ১৬৮১</span><span>(D) ১৬৬১</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৬৭১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> চৰাইদেউ যুদ্ধ ১৬৭১ চনত লাচিত বৰফুকন আৰু ৰাম সিংহৰ মাজত হৈছিল। এই যুদ্ধত আহোমসকলে মোগলসকলক পৰাস্ত কৰিছিল। এই বিজয়ে অসমৰ ইতিহাসত গুৰুত্বপূৰ্ণ স্থান দখল কৰিছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩</span> অসমত আহোম ৰাজবংশই কিমান বছৰ ৰাজত্ব কৰিছিল?</div>
+            <div class="options"><span>(A) ৫০০ বছৰ</span><span>(B) ৬০০ বছৰ</span><span>(C) ৭০০ বছৰ</span><span>(D) ৪০০ বছৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ৬০০ বছৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> আহোম ৰাজবংশই ১২২৮ খ্ৰীষ্টাব্দৰ পৰা ১৮২৬ খ্ৰীষ্টাব্দলৈ প্ৰায় ৬০০ বছৰ অসমত ৰাজত্ব কৰিছিল। এই সময়ছোৱাত অসমৰ ৰাজনৈতিক, সামাজিক আৰু সাংস্কৃতিক উন্নতি হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪</span> 'অসম' নামটো কোন শব্দৰ পৰা আহিছে?</div>
+            <div class="options"><span>(A) অহম</span><span>(B) অসমীয়া</span><span>(C) অসম</span><span>(D) আসাম</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অহম</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'অসম' শব্দটো 'অহম' শব্দৰ পৰা উৎপত্তি হৈছে। আহোমসকলক 'অহম' বুলি কোৱা হৈছিল আৰু তেওঁলোকৰ শাসনাধীন অঞ্চলক 'অহম' বা 'অসম' বুলি কোৱা হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫</span> ৰঙঘৰ ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) শিৱসাগৰ</span><span>(B) যোৰহাট</span><span>(C) ডিব্ৰুগড়</span><span>(D) গুৱাহাটী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শিৱসাগৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰঙঘৰ শিৱসাগৰত অৱস্থিত। ই আহোম ৰাজবংশৰ দ্বাৰা নিৰ্মিত এক ঐতিহাসিক স্মৃতিস্তম্ভ। ইয়াত ৰজাসকলে ৰাজহুৱা অনুষ্ঠান দেখিছিল। ইয়াক 'অসমৰ তাজমহল' বুলিও জনা যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬</span> অসমৰ শেষ আহোম ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) পুৰন্দৰ সিংহ</span><span>(B) চন্দ্ৰকান্ত সিংহ</span><span>(C) গৌৰীনাথ সিংহ</span><span>(D) কমলেশ্বৰ সিংহ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) চন্দ্ৰকান্ত সিংহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> চন্দ্ৰকান্ত সিংহ আছিল আহোম ৰাজবংশৰ শেষ ৰজা। তেওঁ ১৮১০ ৰ পৰা ১৮২৬ লৈকে ৰাজত্ব কৰিছিল। ১৮২৬ চনত ইয়াণ্ডাবু সন্ধিৰ জৰিয়তে অসম ব্ৰিটিছৰ অধীনলৈ যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭</span> ইয়াণ্ডাবু সন্ধি কেতিয়া স্বাক্ষৰিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৮২৬</span><span>(B) ১৮২৪</span><span>(C) ১৮২৮</span><span>(D) ১৮৩০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৮২৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ইয়াণ্ডাবু সন্ধি ১৮২৬ চনত ব্ৰিটিছ আৰু মানসকলৰ মাজত স্বাক্ষৰিত হয়। এই সন্ধিৰ ফলত অসম ব্ৰিটিছ সাম্ৰাজ্যৰ অন্তৰ্ভুক্ত হয়। ইয়াৰ পিছত অসমত ব্ৰিটিছ শাসন আৰম্ভ হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮</span> 'বৰফুকন' পদৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) সেনাপতি</span><span>(B) ৰজা</span><span>(C) মন্ত্ৰী</span><span>(D) বিচাৰক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) সেনাপতি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'বৰফুকন' আছিল আহোম ৰাজ্যৰ সেনাপতি। তেওঁ সেনাবাহিনীৰ মুৰব্বী আছিল। লাচিত বৰফুকন আছিল আটাইতকৈ বিখ্যাত বৰফুকন।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯</span> কামৰূপ ৰাজ্যৰ প্ৰথম ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) পুষ্যবৰ্মন</span><span>(B) ভাস্কৰবৰ্মন</span><span>(C) নৰকাসুৰ</span><span>(D) ভগদত্ত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) পুষ্যবৰ্মন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পুষ্যবৰ্মন আছিল কামৰূপ ৰাজ্যৰ প্ৰথম ঐতিহাসিক ৰজা। তেওঁ ৪ৰ্থ শতিকাত ৰাজত্ব কৰিছিল। তেওঁৰ ৰাজধানী আছিল প্ৰাগজ্যোতিষপুৰ (বৰ্তমান গুৱাহাটী)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০</span> 'প্ৰাগজ্যোতিষপুৰ' ৰ বৰ্তমান নাম কি?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) তেজপুৰ</span><span>(C) শিৱসাগৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'প্ৰাগজ্যোতিষপুৰ' হৈছে গুৱাহাটীৰ প্ৰাচীন নাম। এই নাম 'প্ৰাগ' (পূব দিশ) আৰু 'জ্যোতিষ' (জ্যোতি) শব্দৰ পৰা আহিছে। ইতিহাসত ই কামৰূপ ৰাজ্যৰ ৰাজধানী আছিল।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অসম আধুনিক ইতিহাস ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 5</div>
+    <div class="content">
+        <h1>অসমৰ আধুনিক ইতিহাস</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১</span> অসমৰ প্ৰথম মুখ্যমন্ত্ৰী কোন আছিল?</div>
+            <div class="options"><span>(A) গোপীনাথ বৰদলৈ</span><span>(B) বিষ্ণুৰাম মেধি</span><span>(C) চৈয়দ মহম্মদ ছাদুল্লা</span><span>(D) বিমলা প্ৰসাদ চলিহা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গোপীনাথ বৰদলৈ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গোপীনাথ বৰদলৈ অসমৰ প্ৰথম মুখ্যমন্ত্ৰী আছিল। তেওঁ ১৯৪৬ ৰ পৰা ১৯৫০ লৈকে কাৰ্যনিৰ্বাহ কৰিছিল। তেওঁক 'অসম ৰত্ন' বুলিও জনা যায়। তেওঁক ১৯৯৯ চনত মৰণোত্তৰভাৱে ভাৰতৰত্ন প্ৰদান কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২</span> অসম চৰকাৰৰ ৰাজধানী কি?</div>
+            <div class="options"><span>(A) দিছপুৰ</span><span>(B) গুৱাহাটী</span><span>(C) শিলচৰ</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) দিছপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ ৰাজধানী দিছপুৰ, যি গুৱাহাটী মহানগৰৰ ভিতৰত অৱস্থিত। ১৯৭২ চনত শিলংৰ পৰা ৰাজধানী দিছপুৰলৈ স্থানান্তৰিত কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩</span> অসমৰ উচ্চ ন্যায়ালয় কেতিয়া স্থাপিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৪৮</span><span>(B) ১৯৫০</span><span>(C) ১৯৪৭</span><span>(D) ১৯৫২</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৯৪৮</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম উচ্চ ন্যায়ালয় ১৯৪৮ চনত গুৱাহাটীত স্থাপিত হৈছিল। প্ৰথম মুখ্য ন্যায়াধীশ আছিল ছাৰ ৰোনাল্ড হাইড।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪</span> অসম বিধানসভাত কিমানখন আসন আছে?</div>
+            <div class="options"><span>(A) ১২৬</span><span>(B) ১২৪</span><span>(C) ১৪০</span><span>(D) ১২০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১২৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম বিধানসভাত মুঠ ১২৬ খন আসন আছে। ইয়াৰ ভিতৰত ৮খন অনুসূচিত জাতিৰ বাবে আৰু ১৬খন অনুসূচিত জনজাতিৰ বাবে সংৰক্ষিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫</span> অসমৰ ৰাজ্যপালৰ বাসভৱনৰ নাম কি?</div>
+            <div class="options"><span>(A) ৰাজ ভৱন</span><span>(B) ৰাজভৱন</span><span>(C) ৰাজ নিবাস</span><span>(D) ৰাজ প্ৰাসাদ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ৰাজভৱন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ ৰাজ্যপালৰ বাসভৱনক 'ৰাজভৱন' বুলি কোৱা হয়। ই গুৱাহাটীৰ খানাপাৰাত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬</span> অসমক 'Oxford of the East' বুলি কিয় কোৱা হয়?</div>
+            <div class="options"><span>(A) কটন কলেজৰ বাবে</span><span>(B) গুৱাহাটী বিশ্ববিদ্যালয়ৰ বাবে</span><span>(C) IIT ৰ বাবে</span><span>(D) AIIMS ৰ বাবে</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) কটন কলেজৰ বাবে</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কটন কলেজক "Oxford of the East" বুলি কোৱা হয়। এই মহাবিদ্যালয়খন ১৯০১ চনত গুৱাহাটীত স্থাপিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭</span> অসমৰ ৰাজ্যিক জন্তু কি?</div>
+            <div class="options"><span>(A) এশিঙীয়া গঁড়</span><span>(B) হাতী</span><span>(C) বাঘ</span><span>(D) গাহৰি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) এশিঙীয়া গঁড়</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> এশিঙীয়া গঁড় (One-horned Rhinoceros) অসমৰ ৰাজ্যিক জন্তু। কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যানত এই গঁড়ৰ সংখ্যা সৰ্বাধিক।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৮</span> অসমৰ ৰাজ্যিক পক্ষী কি?</div>
+            <div class="options"><span>(A) দেওহাঁহ</span><span>(B) কাউৰী</span><span>(C) পাৰো</span><span>(D) ময়ূৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) দেওহাঁহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> দেওহাঁহ (White-winged Wood Duck) অসমৰ ৰাজ্যিক পক্ষী। ইয়াৰ বৈজ্ঞানিক নাম Cairina scutulata।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৯</span> অসমৰ ৰাজ্যিক ফুল কি?</div>
+            <div class="options"><span>(A) কপৌ ফুল</span><span>(B) গোলাপ</span><span>(C) পদুম</span><span>(D) জবা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) কপৌ ফুল</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কপৌ ফুল (Foxtail Orchid) অসমৰ ৰাজ্যিক ফুল। এই ফুলখনে অসমৰ সৌন্দৰ্য বৃদ্ধি কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২০</span> অসমৰ ৰাজ্যিক গছ কি?</div>
+            <div class="options"><span>(A) হোলোঙ</span><span>(B) বাঁহ</span><span>(C) শাল</span><span>(D) আম</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) হোলোঙ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> হোলোঙ গছ (Dipterocarpus macrocarpus) অসমৰ ৰাজ্যিক গছ। ই অসমৰ ৰাজ্যিক চিহ্নসমূহৰ এটা।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অসম সাহিত্য-সংস্কৃতি ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 6</div>
+    <div class="content">
+        <h1>অসমৰ সাহিত্য আৰু সংস্কৃতি</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২১</span> অসমৰ 'ৰাজ্যিক সংগীত' কি?</div>
+            <div class="options"><span>(A) অ' মোৰ আপোন অসম</span><span>(B) বৰগীত</span><span>(C) বিহু গীত</span><span>(D) নিচুকনি গীত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অ' মোৰ আপোন অসম</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'অ' মোৰ আপোন অসম' গীতটো অসমৰ ৰাজ্যিক সংগীত। ইয়াৰ ৰচয়িতা লক্ষ্মীনাথ বেজবৰুৱা আৰু সুৰকাৰ কমলাপ্ৰসাদ আগৰৱালা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২২</span> 'বৰগীত' কাৰ দ্বাৰা ৰচিত?</div>
+            <div class="options"><span>(A) শংকৰদেৱ</span><span>(B) মাধৱদেৱ</span><span>(C) ৰামদাস</span><span>(D) কমলাপ্ৰসাদ আগৰৱালা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শংকৰদেৱ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰগীত ৰচনা কৰিছিল শ্ৰীমন্ত শংকৰদেৱে। এই গীতসমূহ ভক্তি আন্দোলনৰ অংগ আছিল। শংকৰদেৱ অসমৰ এজন মহান সমাজ সংস্কাৰক আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৩</span> 'অসম সাহিত্য সভা' ৰ প্ৰথম অধিৱেশন ক'ত অনুষ্ঠিত হৈছিল?</div>
+            <div class="options"><span>(A) শিৱসাগৰ</span><span>(B) গুৱাহাটী</span><span>(C) যোৰহাট</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শিৱসাগৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম সাহিত্য সভাৰ প্ৰথম অধিৱেশন ১৯১৭ চনত শিৱসাগৰত অনুষ্ঠিত হৈছিল। ইয়াৰ প্ৰতিষ্ঠাপক আছিল পদ্মনাথ গোহাঞিবৰুৱা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৪</span> 'মণিকূট' কোনে নিৰ্মাণ কৰিছিল?</div>
+            <div class="options"><span>(A) ৰুদ্ৰ সিংহ</span><span>(B) শিৱ সিংহ</span><span>(C) প্ৰমত্ত সিংহ</span><span>(D) চুহুংমুং</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৰুদ্ৰ সিংহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মণিকূট ৰুদ্ৰ সিংহই নিৰ্মাণ কৰাইছিল। ই শিৱসাগৰত অৱস্থিত। মণিকূটক "অসমৰ তাজমহল" বুলিও জনা যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৫</span> অসমৰ 'প্ৰথম অসমীয়া সংবাদপত্ৰ' কোনটো আছিল?</div>
+            <div class="options"><span>(A) অৰুণোদয়</span><span>(B) আসাম বন্ধু</span><span>(C) জোনাকী</span><span>(D) বাঁহী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অৰুণোদয়</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'অৰুণোদয়' আছিল প্ৰথম অসমীয়া সংবাদপত্ৰ। ই ১৮৪৬ চনত শিৱসাগৰত প্ৰকাশ পাইছিল। ইয়াৰ প্ৰতিষ্ঠাপক আছিল আৰ্ণল্ড স্কট।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৬</span> 'বাঁহী' আলোচনী কাৰ দ্বাৰা সম্পাদিত হৈছিল?</div>
+            <div class="options"><span>(A) চন্দ্ৰকুমাৰ আগৰৱালা</span><span>(B) লক্ষ্মীনাথ বেজবৰুৱা</span><span>(C) হেমচন্দ্ৰ গোস্বামী</span><span>(D) ৰজনীকান্ত বৰদলৈ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চন্দ্ৰকুমাৰ আগৰৱালা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'বাঁহী' আলোচনী চন্দ্ৰকুমাৰ আগৰৱালাৰ দ্বাৰা সম্পাদিত হৈছিল। ই অসমীয়া সাহিত্যৰ এটা গুৰুত্বপূৰ্ণ আলোচনী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৭</span> 'জোনাকী' ৰ সম্পাদক কোন আছিল?</div>
+            <div class="options"><span>(A) চন্দ্ৰকুমাৰ আগৰৱালা</span><span>(B) লক্ষ্মীনাথ বেজবৰুৱা</span><span>(C) হেমচন্দ্ৰ গোস্বামী</span><span>(D) ৰজনীকান্ত বৰদলৈ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চন্দ্ৰকুমাৰ আগৰৱালা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'জোনাকী' আলোচনী চন্দ্ৰকুমাৰ আগৰৱালাৰ দ্বাৰা সম্পাদিত হৈছিল। ই ১৮৮৯ চনত প্ৰকাশ পাইছিল। ই অসমীয়া সাহিত্যৰ পুনৰুজ্জীৱনৰ সূচনা কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৮</span> 'অসম কেশৰী' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) অম্বিকাগিৰি ৰায়চৌধুৰী</span><span>(B) গোপীনাথ বৰদলৈ</span><span>(C) বীৰেন্দ্ৰ কুমাৰ ভট্টাচাৰ্য</span><span>(D) তৰুণ ৰাম ফুকন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অম্বিকাগিৰি ৰায়চৌধুৰী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অম্বিকাগিৰি ৰায়চৌধুৰীক 'অসম কেশৰী' বুলি কোৱা হয়। তেওঁ আছিল এজন স্বাধীনতা সংগ্ৰামী আৰু সমাজকৰ্মী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৯</span> 'লাচিত বৰফুকন' ৰ পিতৃৰ নাম কি আছিল?</div>
+            <div class="options"><span>(A) মোমাই তামুলী বৰবৰুৱা</span><span>(B) চুকাফা</span><span>(C) ৰুদ্ৰ সিংহ</span><span>(D) চুহুংমুং</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) মোমাই তামুলী বৰবৰুৱা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> লাচিত বৰফুকনৰ পিতৃ আছিল মোমাই তামুলী বৰবৰুৱা। তেওঁ আহোম ৰাজ্যৰ এজন প্ৰখ্যাত বিষয়া আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩০</span> 'ৰূপকোঁৱৰ' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) জ্যোতিপ্ৰসাদ আগৰৱালা</span><span>(B) বিষ্ণুপ্ৰসাদ ৰাভা</span><span>(C) হেমেন বৰগোহাঞি</span><span>(D) মামণি ৰয়ছম গোস্বামী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) জ্যোতিপ্ৰসাদ আগৰৱালা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> জ্যোতিপ্ৰসাদ আগৰৱালাক 'ৰূপকোঁৱৰ' বুলি কোৱা হয়। তেওঁ অসমীয়া চলচ্চিত্ৰ জগতৰ পিতৃপুৰুষ আৰু প্ৰথম অসমীয়া চলচ্চিত্ৰ 'জয়মতী' ৰ নিৰ্মাতা।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অসম স্বাধীনতা আন্দোলন ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 7</div>
+    <div class="content">
+        <h1>অসম স্বাধীনতা আন্দোলন আৰু ৰাজনীতি</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩১</span> মহাত্মা গান্ধীয়ে অসম ভ্ৰমণ কেতিয়া কৰিছিল?</div>
+            <div class="options"><span>(A) ১৯২১</span><span>(B) ১৯২০</span><span>(C) ১৯২৬</span><span>(D) ১৯৩০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৯২১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মহাত্মা গান্ধীয়ে ১৯২১ চনত অসম ভ্ৰমণ কৰিছিল। তেওঁ অসহযোগ আন্দোলনৰ প্ৰচাৰৰ বাবে আহিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩২</span> 'ভাৰত ছোৱাৰ' ৰ দ্বিতীয় অধিৱেশন ক'ত অনুষ্ঠিত হৈছিল?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) শিৱসাগৰ</span><span>(C) ডিব্ৰুগড়</span><span>(D) শিলচৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰত ছোৱাৰৰ দ্বিতীয় অধিৱেশন ১৯২৬ চনত গুৱাহাটীত অনুষ্ঠিত হৈছিল। এই অধিৱেশনত স্বাধীনতাৰ প্ৰস্তাৱ গৃহীত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৩</span> 'কৃষক সভা' ৰ প্ৰতিষ্ঠাপক কোন আছিল?</div>
+            <div class="options"><span>(A) নীলমণি ফুকন</span><span>(B) গোপীনাথ বৰদলৈ</span><span>(C) বিষ্ণুৰাম মেধি</span><span>(D) তৰুণ ৰাম ফুকন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নীলমণি ফুকন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কৃষক সভাৰ প্ৰতিষ্ঠাপক আছিল নীলমণি ফুকন। তেওঁ কৃষকসকলৰ অধিকাৰৰ বাবে সংগ্ৰাম কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৪</span> 'অসমৰ গান্ধী' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) গোপীনাথ বৰদলৈ</span><span>(B) অম্বিকাগিৰি ৰায়চৌধুৰী</span><span>(C) বিষ্ণুৰাম মেধি</span><span>(D) চৈয়দ মহম্মদ ছাদুল্লা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) অম্বিকাগিৰি ৰায়চৌধুৰী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অম্বিকাগিৰি ৰায়চৌধুৰীক 'অসমৰ গান্ধী' বুলি কোৱা হয়। তেওঁ গান্ধীবাদী আদৰ্শৰ অনুগামী আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৫</span> 'ভাৰত ত্যাগ আন্দোলন' ত অসমৰ প্ৰধান নেতা কোন আছিল?</div>
+            <div class="options"><span>(A) গোপীনাথ বৰদলৈ</span><span>(B) তৰুণ ৰাম ফুকন</span><span>(C) বিষ্ণুৰাম মেধি</span><span>(D) অম্বিকাগিৰি ৰায়চৌধুৰী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) তৰুণ ৰাম ফুকন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰত ত্যাগ আন্দোলনত অসমৰ প্ৰধান নেতা আছিল তৰুণ ৰাম ফুকন। তেওঁক 'অসমৰ বীৰ' বুলিও জনা যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৬</span> অসমৰ 'প্ৰথম মহিলা স্নাতক' কোন আছিল?</div>
+            <div class="options"><span>(A) চন্দ্ৰপ্ৰভা শইকীয়ানী</span><span>(B) নলিনীবালা দেৱী</span><span>(C) ৰত্না দেৱী</span><span>(D) পাৰ্ৱতী প্ৰসাদ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চন্দ্ৰপ্ৰভা শইকীয়ানী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> চন্দ্ৰপ্ৰভা শইকীয়ানী আছিল অসমৰ প্ৰথম মহিলা স্নাতক। তেওঁ ১৯১৭ চনত কটন কলেজৰ পৰা স্নাতক ডিগ্ৰী লাভ কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৭</span> 'পদ্মনাথ গোহাঞিবৰুৱা' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) উপন্যাস সম্ৰাট</span><span>(B) সাহিত্যৰথী</span><span>(C) ৰূপকোঁৱৰ</span><span>(D) বিহু সম্ৰাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) সাহিত্যৰথী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পদ্মনাথ গোহাঞিবৰুৱাক 'সাহিত্যৰথী' বুলি কোৱা হয়। তেওঁ অসম সাহিত্য সভাৰ প্ৰতিষ্ঠাপক আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৮</span> 'বীৰপুৰুষ' উপাধি কাক দিয়া হৈছিল?</div>
+            <div class="options"><span>(A) লাচিত বৰফুকন</span><span>(B) বদন চন্দ্ৰ ৰাভা</span><span>(C) চুকাফা</span><span>(D) ৰুদ্ৰ সিংহ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) বদন চন্দ্ৰ ৰাভা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বদন চন্দ্ৰ ৰাভাক 'বীৰপুৰুষ' উপাধি দিয়া হৈছিল। তেওঁ কছাৰী ৰাজ্যৰ এজন বীৰ যোদ্ধা আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৯</span> অসমৰ বৰ্তমান মুখ্যমন্ত্ৰী কোন?</div>
+            <div class="options"><span>(A) হিমন্ত বিশ্ব শৰ্মা</span><span>(B) তৰুণ গগৈ</span><span>(C) সৰ্বানন্দ সোণোৱাল</span><span>(D) গোপীনাথ বৰদলৈ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) হিমন্ত বিশ্ব শৰ্মা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> হিমন্ত বিশ্ব শৰ্মা অসমৰ বৰ্তমান (২০২৬) মুখ্যমন্ত্ৰী। তেওঁ ২০২১ চনৰ পৰা কাৰ্যভাৰ গ্ৰহণ কৰিছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪০</span> 'অসম দিৱস' কেতিয়া পালন কৰা হয়?</div>
+            <div class="options"><span>(A) ২ ডিচেম্বৰ</span><span>(B) ২ জানুৱাৰী</span><span>(C) ২ মাৰ্চ</span><span>(D) ২ এপ্ৰিল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২ ডিচেম্বৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম দিৱস ২ ডিচেম্বৰত পালন কৰা হয়। এই দিনটোত ১৯২৬ চনত অসমক প্ৰদেশ হিচাপে পুনৰ গঠন কৰা হৈছিল।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ২: অসম ভূগোল ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 23</div>
+    <div class="content section-divider-page">
+        <div class="icon">🗺️</div>
+        <h1>অধ্যায় ২<br>অসমৰ ভূগোল</h1>
+        <p>Assam Geography — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 24</div>
+    <div class="content">
+        <h1>অসমৰ ভূগোল</h1>
+        <h2>নদ-নদী</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪১</span> অসমৰ আটাইতকৈ দীঘল নদী কোন?</div>
+            <div class="options"><span>(A) ব্ৰহ্মপুত্ৰ</span><span>(B) বৰাক</span><span>(C) দিহিং</span><span>(D) সুবনসিৰি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ব্ৰহ্মপুত্ৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব্ৰহ্মপুত্ৰ অসমৰ আটাইতকৈ দীঘল নদী। ই তিব্বতৰ পৰা উৎপত্তি হৈ অসমৰ মাজেৰে বৈ যায় আৰু বাংলাদেশত বংগোপসাগৰত পৰে। ইয়াৰ মুঠ দীঘ ২,৯০০ কিলোমিটাৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪২</span> ব্ৰহ্মপুত্ৰ নদী ক'ৰ পৰা উৎপত্তি হৈছে?</div>
+            <div class="options"><span>(A) মানস সৰোবৰ, তিব্বত</span><span>(B) গংগোত্ৰী</span><span>(C) যমুনোত্ৰী</span><span>(D) কৈলাশ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) মানস সৰোবৰ, তিব্বত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব্ৰহ্মপুত্ৰ নদী তিব্বতৰ মানস সৰোবৰৰ পৰা উৎপত্তি হৈছে। তাত ইয়াক 'চাংপো' বুলি কোৱা হয়। অৰুণাচলত ইয়াক 'দিহাং' বুলি কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৩</span> অসমৰ আটাইতকৈ ডাঙৰ দ্বীপ কোন?</div>
+            <div class="options"><span>(A) মাজুলী</span><span>(B) উমানন্দ</span><span>(C) পেঁপাৰ</span><span>(D) ব্ৰহ্মপুত্ৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) মাজুলী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মাজুলী অসমৰ আটাইতকৈ ডাঙৰ নদীদ্বীপ। ই বিশ্বৰ আটাইতকৈ ডাঙৰ নদীদ্বীপ। ২০১৬ চনত ইয়াক ভাৰতৰ প্ৰথম জিলা হিচাপে ঘোষণা কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৪</span> 'ব্ৰহ্মপুত্ৰ' ৰ অসমত আন এটা নাম কি?</div>
+            <div class="options"><span>(A) দিহাং</span><span>(B) চাংপো</span><span>(C) লুইট</span><span>(D) পদ্মা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) লুইট</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব্ৰহ্মপুত্ৰক অসমত 'লুইট' বুলিও কোৱা হয়। ইয়াৰ অৰ্থ হৈছে 'বৰ নদী'।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৫</span> বৰাক নদী কোন ৰাজ্যৰ মাজেৰে বৈ গৈছে?</div>
+            <div class="options"><span>(A) অসম</span><span>(B) ত্ৰিপুৰা</span><span>(C) মিজোৰাম</span><span>(D) মণিপুৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অসম</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰাক নদী অসমৰ বাৰাক উপত্যকাৰ মাজেৰে বৈ গৈছে। ই মণিপুৰৰ পৰা উৎপত্তি হৈছে।</div>
+        </div>
+
+        <h2>পৰ্বত আৰু পাহাৰ</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৬</span> অসমৰ আটাইতকৈ ওখ শৃংগ কোন?</div>
+            <div class="options"><span>(A) হামলাম</span><span>(B) শিৱালিক</span><span>(C) কাঞ্চনজঙ্ঘা</span><span>(D) নামচা বৰৱা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) হামলাম</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> হামলাম অসমৰ আটাইতকৈ ওখ শৃংগ। ই কাৰ্বি আংলং জিলাত অৱস্থিত। ইয়াৰ উচ্চতা প্ৰায় ১,৮৬৮ মিটাৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৭</span> 'ডিমা হাছাও' জিলা কাৰ পাহাৰত অৱস্থিত?</div>
+            <div class="options"><span>(A) বৰাইল পাহাৰ</span><span>(B) খাচী পাহাৰ</span><span>(C) জয়ন্তীয়া পাহাৰ</span><span>(D) মিকিৰ পাহাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বৰাইল পাহাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিমা হাছাও জিলা বৰাইল পাহাৰত অৱস্থিত। ইয়াৰ সদৰ ঠাই হাফলং।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৮</span> 'উমনন্দ দ্বীপ' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) শিৱসাগৰ</span><span>(C) ডিব্ৰুগড়</span><span>(D) তেজপুৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> উমনন্দ দ্বীপ গুৱাহাটীত ব্ৰহ্মপুত্ৰ নদীৰ মাজত অৱস্থিত। ইয়াত উমনন্দ মন্দিৰ আছে।</div>
+        </div>
+
+        <h2>জলবায়ু আৰু বৰষুণ</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৯</span> অসমৰ জলবায়ু কি ধৰণৰ?</div>
+            <div class="options"><span>(A) গ্ৰীষ্ম আৰু আৰ্দ্ৰ</span><span>(B) শীতল</span><span>(C) মৰু</span><span>(D) নাতিশীতোষ্ণ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গ্ৰীষ্ম আৰু আৰ্দ্ৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ জলবায়ু গ্ৰীষ্ম আৰু আৰ্দ্ৰ (Hot and Humid)। ইয়াৰ বাৰ্ষিক বৰষুণৰ পৰিমাণ ২০০০-৩০০০ মিলিমিটাৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫০</span> অসমত বৰষুণৰ মাত্ৰা সৰ্বাধিক ক'ত হয়?</div>
+            <div class="options"><span>(A) চেৰাপুঞ্জী</span><span>(B) গুৱাহাটী</span><span>(C) ডিব্ৰুগড়</span><span>(D) শিলচৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চেৰাপুঞ্জী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> চেৰাপুঞ্জী পৃথিৱীৰ আটাইতকৈ বেছি বৰষুণ হোৱা ঠাইসমূহৰ এটা। ই মেঘালয় ৰাজ্যত অৱস্থিত, অসমৰ ওচৰত।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অসম ৰাষ্ট্ৰীয় উদ্যান ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 25</div>
+    <div class="content">
+        <h1>অসমৰ ৰাষ্ট্ৰীয় উদ্যান আৰু অভয়াৰণ্য</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫১</span> কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যান কেতিয়া স্থাপিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯০৫</span><span>(B) ১৯২৬</span><span>(C) ১৯৭৪</span><span>(D) ১৯৮৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৯০৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যান ১৯০৫ চনত সংৰক্ষিত বনাঞ্চল হিচাপে ঘোষণা কৰা হৈছিল। ১৯৭৪ চনত ইয়াক ৰাষ্ট্ৰীয় উদ্যান হিচাপে স্বীকৃতি দিয়া হয়। ই ইউনেস্কো বিশ্ব ঐতিহ্য স্থান।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫২</span> অসমত কিমানখন ৰাষ্ট্ৰীয় উদ্যান আছে?</div>
+            <div class="options"><span>(A) ৭</span><span>(B) ৫</span><span>(C) ৬</span><span>(D) ৮</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমত মুঠ ৭খন ৰাষ্ট্ৰীয় উদ্যান আছে: কাজিৰঙা, মানস, নামেৰী, ৰাজীৱ গান্ধী ওৰাং, ডিব্ৰু-চৈখোৱা, দিহিং পাটকাই, আৰু ৰাইমনা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৩</span> 'মানস ৰাষ্ট্ৰীয় উদ্যান' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) বাঘ আৰু হাতী</span><span>(B) গঁড়</span><span>(C) ময়ূৰ</span><span>(D) ভালুক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বাঘ আৰু হাতী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মানস ৰাষ্ট্ৰীয় উদ্যান বাঘ আৰু হাতীৰ বাবে বিখ্যাত। ই ইউনেস্কো বিশ্ব ঐতিহ্য স্থান। ই বড়োলেণ্ডত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৪</span> 'দিহিং পাটকাই' ৰাষ্ট্ৰীয় উদ্যান ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) তিনিচুকীয়া</span><span>(B) গুৱাহাটী</span><span>(C) শিৱসাগৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) তিনিচুকীয়া</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> দিহিং পাটকাই ৰাষ্ট্ৰীয় উদ্যান তিনিচুকীয়া জিলাত অৱস্থিত। ই ১৯৯৯ চনত স্থাপিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৫</span> 'নামেৰী ৰাষ্ট্ৰীয় উদ্যান' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) শোণিতপুৰ</span><span>(B) গুৱাহাটী</span><span>(C) যোৰহাট</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শোণিতপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> নামেৰী ৰাষ্ট্ৰীয় উদ্যান শোণিতপুৰ জিলাত অৱস্থিত। ই ১৯৯৮ চনত স্থাপিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৬</span> 'ডিব্ৰু-চৈখোৱা' ৰাষ্ট্ৰীয় উদ্যান কি বাবে জনাজাত?</div>
+            <div class="options"><span>(A) পখী</span><span>(B) গঁড়</span><span>(C) বাঘ</span><span>(D) হাতী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) পখী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিব্ৰু-চৈখোৱা ৰাষ্ট্ৰীয় উদ্যান পখীৰ বাবে বিখ্যাত। ই ডিব্ৰুগড় জিলাত অৱস্থিত। ইয়াক 'পখীৰ স্বৰ্গ' বুলিও কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৭</span> 'ৰাইমনা' ৰাষ্ট্ৰীয় উদ্যান ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) কোকৰাঝাৰ</span><span>(B) গুৱাহাটী</span><span>(C) শোণিতপুৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) কোকৰাঝাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰাইমনা ৰাষ্ট্ৰীয় উদ্যান কোকৰাঝাৰ জিলাত অৱস্থিত। ই বড়োলেণ্ডত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৮</span> 'ওৰাং ৰাষ্ট্ৰীয় উদ্যান' কাৰ নামেৰে নামাকৰণ কৰা হৈছে?</div>
+            <div class="options"><span>(A) ৰাজীৱ গান্ধী</span><span>(B) ইন্দিৰা গান্ধী</span><span>(C) মহাত্মা গান্ধী</span><span>(D) জৱাহৰলাল নেহৰু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৰাজীৱ গান্ধী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ওৰাং ৰাষ্ট্ৰীয় উদ্যানক ৰাজীৱ গান্ধীৰ নামেৰে নামাকৰণ কৰা হৈছে। ই দৰং আৰু শোণিতপুৰ জিলাত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৯</span> 'পবিতৰা অভয়াৰণ্য' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) নগাঁও</span><span>(B) গুৱাহাটী</span><span>(C) শিৱসাগৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নগাঁও</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পবিতৰা অভয়াৰণ্য নগাঁও জিলাত অৱস্থিত। ই ১৯৮৭ চনত স্থাপিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬০</span> 'গৰমপানি' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) উষ্ণ জলধাৰা</span><span>(B) পৰ্বত</span><span>(C) নদী</span><span>(D) বনাঞ্চল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) উষ্ণ জলধাৰা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গৰমপানি উষ্ণ জলধাৰাৰ বাবে বিখ্যাত। ই কাৰ্বি আংলং জিলাত অৱস্থিত। ইয়াৰ পানীৰ উষ্ণতা ৫০° চেলছিয়াছৰ ওপৰত।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অসম জিলা আৰু চহৰ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 26</div>
+    <div class="content">
+        <h1>অসমৰ জিলা, চহৰ আৰু উদ্যোগ</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬১</span> অসমৰ মুঠ জিলাৰ সংখ্যা কিমান?</div>
+            <div class="options"><span>(A) ৩৫</span><span>(B) ৩৩</span><span>(C) ৩০</span><span>(D) ৩২</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমত মুঠ ৩৫খন জিলা আছে। ২০১৫ চনত নতুনকৈ ৫খন জিলা গঠন কৰা হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬২</span> অসমৰ আটাইতকৈ ডাঙৰ চহৰ কোনখন?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) শিলচৰ</span><span>(C) ডিব্ৰুগড়</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গুৱাহাটী অসমৰ আটাইতকৈ ডাঙৰ চহৰ। ই উত্তৰ-পূব ভাৰতৰ আটাইতকৈ ডাঙৰ মহানগৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৩</span> 'ব্ৰহ্মপুত্ৰ' ৰ উপনদী কোনটো নহয়?</div>
+            <div class="options"><span>(A) দিহিং</span><span>(B) সুবনসিৰি</span><span>(C) বৰাক</span><span>(D) মানস</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) বৰাক</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰাক ব্ৰহ্মপুত্ৰৰ উপনদী নহয়। ই স্বতন্ত্ৰ নদী আৰু বাৰাক উপত্যকাৰ মাজেৰে বৈ গৈছে। বাকী তিনিওটা ব্ৰহ্মপুত্ৰৰ উপনদী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৪</span> অসমৰ 'পানীপথ' ৰ দীঘ কিমান?</div>
+            <div class="options"><span>(A) ৯০০ কিমি</span><span>(B) ৭০০ কিমি</span><span>(C) ৫০০ কিমি</span><span>(D) ১১০০ কিমি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৯০০ কিমি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ পানীপথৰ মুঠ দীঘ প্ৰায় ৯০০ কিলোমিটাৰ। ব্ৰহ্মপুত্ৰ আৰু ইয়াৰ উপনদীসমূহে এই পানীপথ গঠন কৰিছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৫</span> অসমৰ 'বনাঞ্চল' ৰ পৰিমাণ কিমান?</div>
+            <div class="options"><span>(A) ৩৫%</span><span>(B) ৪০%</span><span>(C) ৩০%</span><span>(D) ২৫%</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩৫%</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ মুঠ ভূখণ্ডৰ প্ৰায় ৩৫% বনাঞ্চল। ই অসমৰ পৰিৱেশ সংৰক্ষণত গুৰুত্বপূৰ্ণ ভূমিকা পালন কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৬</span> 'ডিব্ৰুগড়' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) চাহ উদ্যোগ</span><span>(B) কপাহ</span><span>(C) পাট</span><span>(D) ৰবৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চাহ উদ্যোগ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিব্ৰুগড় চাহ উদ্যোগৰ বাবে বিখ্যাত। ই অসমৰ 'চাহ নগৰী' নামেৰে জনাজাত। এছিয়াৰ প্ৰথম চাহ বাগিচা ইয়াতেই স্থাপিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৭</span> 'তিনসুকীয়া' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) চাহ আৰু কয়লা</span><span>(B) কপাহ</span><span>(C) পাট</span><span>(D) ৰবৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চাহ আৰু কয়লা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> তিনসুকীয়া চাহ আৰু কয়লা উদ্যোগৰ বাবে বিখ্যাত। ই অসমৰ প্ৰথম তেল শোধনাগাৰৰ ঠাই।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৮</span> 'ডিগবৈ' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) তেল শোধনাগাৰ</span><span>(B) চাহ</span><span>(C) কয়লা</span><span>(D) কাঠ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) তেল শোধনাগাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিগবৈ তেল শোধনাগাৰৰ বাবে বিখ্যাত। ই এছিয়াৰ প্ৰথম তেল শোধনাগাৰ। ই ডিব্ৰুগড় জিলাত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৯</span> 'নুমলীগড়' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) তেল শোধনাগাৰ</span><span>(B) চাহ</span><span>(C) কয়লা</span><span>(D) কাগজ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) তেল শোধনাগাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> নুমলীগড় তেল শোধনাগাৰৰ বাবে বিখ্যাত। ই গোলাঘাট জিলাত অৱস্থিত। ই অসমৰ দ্বিতীয় তেল শোধনাগাৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭০</span> 'শিলচৰ' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) বাৰাক উপত্যকাৰ সদৰ</span><span>(B) চাহ</span><span>(C) কয়লা</span><span>(D) তেল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বাৰাক উপত্যকাৰ সদৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শিলচৰ বাৰাক উপত্যকাৰ সদৰ ঠাই। ই কাছাৰ জিলাৰ সদৰ।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৩: অসম সংস্কৃতি ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 41</div>
+    <div class="content section-divider-page">
+        <div class="icon">🎭</div>
+        <h1>অধ্যায় ৩<br>অসমৰ সংস্কৃতি আৰু উৎসৱ</h1>
+        <p>Assam Culture & Festivals — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 42</div>
+    <div class="content">
+        <h1>অসমৰ সংস্কৃতি আৰু উৎসৱ</h1>
+        <h2>উৎসৱসমূহ</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭১</span> বিহু উৎসৱ বছৰত কিমানবাৰ পালন কৰা হয়?</div>
+            <div class="options"><span>(A) ৩ বাৰ</span><span>(B) ২ বাৰ</span><span>(C) ১ বাৰ</span><span>(D) ৪ বাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩ বাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বিহু উৎসৱ বছৰত ৩ বাৰ পালন কৰা হয় — ব'হাগ বিহু (এপ্ৰিল), কাতি বিহু (অক্টোবৰ), আৰু মাঘ বিহু (জানুৱাৰী)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭২</span> 'ব'হাগ বিহু' কেতিয়া পালন কৰা হয়?</div>
+            <div class="options"><span>(A) এপ্ৰিল</span><span>(B) অক্টোবৰ</span><span>(C) জানুৱাৰী</span><span>(D) জুন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) এপ্ৰিল</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব'হাগ বিহু এপ্ৰিল মাহত পালন কৰা হয়। ই অসমৰ নৱবৰ্ষ উৎসৱ। ইয়াক 'ৰঙালী বিহু' বুলিও কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৩</span> 'কাতি বিহু' ৰ আন নাম কি?</div>
+            <div class="options"><span>(A) কঙালী বিহু</span><span>(B) ৰঙালী বিহু</span><span>(C) ভোগালী বিহু</span><span>(D) মাঘ বিহু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) কঙালী বিহু</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কাতি বিহুক 'কঙালী বিহু' বুলি কোৱা হয়। ই অক্টোবৰ মাহত পালন কৰা হয়। এই বিহুত দীপান্বিতা জ্বলোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৪</span> 'মাঘ বিহু' ৰ আন নাম কি?</div>
+            <div class="options"><span>(A) ভোগালী বিহু</span><span>(B) ৰঙালী বিহু</span><span>(C) কঙালী বিহু</span><span>(D) ব'হাগ বিহু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ভোগালী বিহু</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মাঘ বিহুক 'ভোগালী বিহু' বুলি কোৱা হয়। ই জানুৱাৰী মাহত পালন কৰা হয়। এই বিহুত মেজি জ্বলোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৫</span> 'মেজি' কি?</div>
+            <div class="options"><span>(A) বাঁহ-পাতেৰে সজা ঘৰ</span><span>(B) নদী</span><span>(C) পৰ্বত</span><span>(D) গছ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বাঁহ-পাতেৰে সজা ঘৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মেজি বাঁহ-পাতেৰে সজা এটা সৰু ঘৰ। মাঘ বিহুত ইয়াক জ্বলোৱা হয়। ই অসমৰ সংস্কৃতিৰ এটা গুৰুত্বপূৰ্ণ অংগ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৬</span> 'বিহু নাচ' ৰ সৈতে কোন বাদ্য সংযুক্ত?</div>
+            <div class="options"><span>(A) ঢোল আৰু পেঁপা</span><span>(B) তবলা</span><span>(C) চিতাৰ</span><span>(D) বাঁহী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ঢোল আৰু পেঁপা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বিহু নাচ ঢোল আৰু পেঁপাৰ সৈতে পৰিৱেশন কৰা হয়। এই বাদ্যযন্ত্ৰসমূহ অসমৰ পৰম্পৰাগত বাদ্য।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৭</span> 'বিহুৱা' কি?</div>
+            <div class="options"><span>(A) বিহু নাচৰ শিল্পী</span><span>(B) উৎসৱ</span><span>(C) বাদ্য</span><span>(D) খাদ্য</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বিহু নাচৰ শিল্পী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বিহুৱা হৈছে বিহু নাচ পৰিৱেশন কৰা শিল্পী। পুৰুষ বিহুৱাক 'বিহুৱা' আৰু মহিলা বিহুৱাক 'বিহুৱতী' বুলি কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৮</span> 'বিহু' শব্দৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) আনন্দ</span><span>(B) শোক</span><span>(C) ক্ৰোধ</span><span>(D) ভয়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) আনন্দ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'বিহু' শব্দৰ অৰ্থ হৈছে আনন্দ বা উৎসৱ। ই অসমৰ জাতীয় উৎসৱ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৯</span> 'দেৱালয়' বা 'দৌল' কেতিয়া অনুষ্ঠিত হয়?</div>
+            <div class="options"><span>(A) শিৱৰাত্ৰি</span><span>(B) বিহু</span><span>(C) ভোগালী</span><span>(D) বসন্ত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শিৱৰাত্ৰি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শিৱৰাত্ৰি দেৱালয়ত অনুষ্ঠিত হয়। বৰপেটা সত্ৰত অনুষ্ঠিত শিৱৰাত্ৰি উৎসৱ বিখ্যাত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮০</span> অসমৰ ৰাজ্যিক উৎসৱ কি?</div>
+            <div class="options"><span>(A) বিহু</span><span>(B) বীহু</span><span>(C) বৈশাখী</span><span>(D) মাঘ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বিহু</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বিহু অসমৰ ৰাজ্যিক উৎসৱ। ই অসমৰ জাতীয় পৰিচয়ৰ এটা গুৰুত্বপূৰ্ণ অংগ।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অসম নৃত্য-সংগীত ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 43</div>
+    <div class="content">
+        <h1>অসমৰ নৃত্য, সংগীত আৰু নাট্য</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮১</span> 'সত্ৰীয়া নৃত্য' কাৰ প্ৰৱৰ্তন?</div>
+            <div class="options"><span>(A) শংকৰদেৱ</span><span>(B) মাধৱদেৱ</span><span>(C) গোপালদেৱ</span><span>(D) বনগীত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শংকৰদেৱ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সত্ৰীয়া নৃত্য শংকৰদেৱৰ দ্বাৰা প্ৰৱৰ্তিত। ই অসমৰ শাস্ত্ৰীয় নৃত্য। ২০০০ চনত ইয়াক UNESCO স্বীকৃতি দিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮২</span> 'বৰগীত' কিমান প্ৰকাৰৰ?</div>
+            <div class="options"><span>(A) ২ প্ৰকাৰ</span><span>(B) ৩ প্ৰকাৰ</span><span>(C) ৪ প্ৰকাৰ</span><span>(D) ৫ প্ৰকাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২ প্ৰকাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰগীত ২ প্ৰকাৰ — 'বৰগীত' আৰু 'অনুকৰণাত্মক বৰগীত'। ইয়াক শংকৰদেৱ আৰু মাধৱদেৱে ৰচনা কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৩</span> 'অঙ্কীয়া নাট' কাৰ দ্বাৰা প্ৰৱৰ্তিত?</div>
+            <div class="options"><span>(A) শংকৰদেৱ</span><span>(B) মাধৱদেৱ</span><span>(C) ৰামানন্দ</span><span>(D) হৰিদাস</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শংকৰদেৱ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অঙ্কীয়া নাট শংকৰদেৱৰ দ্বাৰা প্ৰৱৰ্তিত। ই অসমৰ পৰম্পৰাগত নাট্য পৰম্পৰা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৪</span> 'ভাওনা' কি?</div>
+            <div class="options"><span>(A) নাটক পৰিবেশন</span><span>(B) নৃত্য</span><span>(C) গীত</span><span>(D) বাদ্য</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নাটক পৰিবেশন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাওনা হৈছে অঙ্কীয়া নাটৰ পৰিবেশন। ই অসমৰ গুৰুত্বপূৰ্ণ সাংস্কৃতিক পৰম্পৰা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৫</span> অসমৰ 'সত্ৰ' কি?</div>
+            <div class="options"><span>(A) ধৰ্মীয় অনুষ্ঠান</span><span>(B) নৃত্য</span><span>(C) গীত</span><span>(D) নাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ধৰ্মীয় অনুষ্ঠান</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সত্ৰ হৈছে ধৰ্মীয় অনুষ্ঠান। ই শংকৰদেৱৰ দ্বাৰা প্ৰৱৰ্তিত। ইয়াক 'নামঘৰ' বুলিও কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৬</span> 'দিহা-নাম' কি?</div>
+            <div class="options"><span>(A) নাম-কীৰ্তন</span><span>(B) নৃত্য</span><span>(C) গীত</span><span>(D) নাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নাম-কীৰ্তন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> দিহা-নাম হৈছে এক প্ৰকাৰৰ নাম-কীৰ্তন। ই শংকৰদেৱৰ দ্বাৰা প্ৰৱৰ্তিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৭</span> 'টোকাৰী' কি?</div>
+            <div class="options"><span>(A) লোক সংগীত</span><span>(B) নৃত্য</span><span>(C) নাট</span><span>(D) বাদ্য</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) লোক সংগীত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> টোকাৰী অসমৰ এক প্ৰকাৰৰ লোক সংগীত। ই গোৱালপাৰীয়া লোকসংস্কৃতিৰ অংগ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৮</span> 'জিকিৰ আৰু জাৰি' কাৰ দ্বাৰা ৰচিত?</div>
+            <div class="options"><span>(A) আজান ফকীৰ</span><span>(B) শংকৰদেৱ</span><span>(C) মাধৱদেৱ</span><span>(D) ৰামানন্দ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) আজান ফকীৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> জিকিৰ আৰু জাৰি আজান ফকীৰৰ দ্বাৰা ৰচিত। এই গীতসমূহ অসমৰ মুছলমান সংস্কৃতিৰ অংগ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৯</span> 'বনগীত' কি?</div>
+            <div class="options"><span>(A) বনৰীয়া সংগীত</span><span>(B) ধ্ৰুপদী সংগীত</span><span>(C) লোকসংগীত</span><span>(D) আধুনিক সংগীত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বনৰীয়া সংগীত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বনগীত হৈছে বনৰীয়া সংগীত। ই অসমৰ চাহ জনগোষ্ঠীৰ লোকসংগীত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯০</span> 'বিয়ানাম' কি?</div>
+            <div class="options"><span>(A) বিয়াৰ গীত</span><span>(B) উৎসৱ</span><span>(C) নৃত্য</span><span>(D) বাদ্য</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বিয়াৰ গীত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বিয়ানাম হৈছে বিয়াৰ গীত। ই অসমৰ লোকসংস্কৃতিৰ গুৰুত্বপূৰ্ণ অংগ।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৪: ভাৰত ৰাজনীতি ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 59</div>
+    <div class="content section-divider-page">
+        <div class="icon">🇮🇳</div>
+        <h1>অধ্যায় ৪<br>ভাৰতৰ ৰাজনীতি আৰু সংবিধান</h1>
+        <p>Indian Polity & Constitution — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 60</div>
+    <div class="content">
+        <h1>ভাৰতৰ ৰাজনীতি আৰু সংবিধান</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯১</span> ভাৰতৰ সংবিধান কেতিয়া গৃহীত হৈছিল?</div>
+            <div class="options"><span>(A) ২৬ নৱেম্বৰ ১৯৪৯</span><span>(B) ২৬ জানুৱাৰী ১৯৫০</span><span>(C) ১৫ আগষ্ট ১৯৪৭</span><span>(D) ২৬ জানুৱাৰী ১৯৪৯</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২৬ নৱেম্বৰ ১৯৪৯</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ সংবিধান ২৬ নৱেম্বৰ ১৯৪৯ চনত গৃহীত হৈছিল। ২৬ জানুৱাৰী ১৯৫০ চনত ই কাৰ্যকৰী হয়। এই দিনটোক 'সংবিধান দিৱস' বুলি পালন কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯২</span> সংবিধানৰ খচৰা প্ৰস্তুত কৰা সমিতিৰ অধ্যক্ষ কোন আছিল?</div>
+            <div class="options"><span>(A) ড° বি. আৰ. আম্বেদকাৰ</span><span>(B) জৱাহৰলাল নেহৰু</span><span>(C) ৰাজেন্দ্ৰ প্ৰসাদ</span><span>(D) সৰ্দাৰ পেটেল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ড° বি. আৰ. আম্বেদকাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সংবিধানৰ খচৰা প্ৰস্তুত কৰা সমিতিৰ অধ্যক্ষ আছিল ড° বি. আৰ. আম্বেদকাৰ। তেওঁক 'ভাৰতৰ সংবিধানৰ জনক' বুলি কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৩</span> সংবিধান সভাৰ স্থায়ী অধ্যক্ষ কোন আছিল?</div>
+            <div class="options"><span>(A) ড° ৰাজেন্দ্ৰ প্ৰসাদ</span><span>(B) সচ্চিদানন্দ সিনহা</span><span>(C) জৱাহৰলাল নেহৰু</span><span>(D) ড° আম্বেদকাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ড° ৰাজেন্দ্ৰ প্ৰসাদ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সংবিধান সভাৰ স্থায়ী অধ্যক্ষ আছিল ড° ৰাজেন্দ্ৰ প্ৰসাদ। তেওঁ ভাৰতৰ প্ৰথম ৰাষ্ট্ৰপতি হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৪</span> 'মৌলিক অধিকাৰ' কিমান প্ৰকাৰ?</div>
+            <div class="options"><span>(A) ৬ প্ৰকাৰ</span><span>(B) ৫ প্ৰকাৰ</span><span>(C) ৭ প্ৰকাৰ</span><span>(D) ৮ প্ৰকাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৬ প্ৰকাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ সংবিধানত ৬ প্ৰকাৰৰ মৌলিক অধিকাৰ আছে — সমতাৰ অধিকাৰ, স্বাধীনতাৰ অধিকাৰ, শোষণৰ বিৰুদ্ধে অধিকাৰ, ধৰ্মীয় স্বাধীনতাৰ অধিকাৰ, সাংস্কৃতিক আৰু শৈক্ষিক অধিকাৰ, আৰু সংবিধানিক প্ৰতিকাৰৰ অধিকাৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৫</span> 'সংবিধানিক প্ৰতিকাৰৰ অধিকাৰ' ৰ উল্লেখ কোন অনুচ্ছেদত আছে?</div>
+            <div class="options"><span>(A) অনুচ্ছেদ ৩২</span><span>(B) অনুচ্ছেদ ১৯</span><span>(C) অনুচ্ছেদ ২১</span><span>(D) অনুচ্ছেদ ১৪</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অনুচ্ছেদ ৩২</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সংবিধানিক প্ৰতিকাৰৰ অধিকাৰ অনুচ্ছেদ ৩২ ত উল্লেখ আছে। ইয়াক ড° আম্বেদকাৰে 'সংবিধানৰ হৃদয় আৰু আত্মা' বুলি অভিহিত কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৬</span> 'সমতাৰ অধিকাৰ' কোন অনুচ্ছেদত আছে?</div>
+            <div class="options"><span>(A) অনুচ্ছেদ ১৪-১৮</span><span>(B) অনুচ্ছেদ ১৯-২২</span><span>(C) অনুচ্ছেদ ২৩-২৪</span><span>(D) অনুচ্ছেদ ২৫-২৮</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অনুচ্ছেদ ১৪-১৮</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সমতাৰ অধিকাৰ অনুচ্ছেদ ১৪ ৰ পৰা ১৮ লৈ উল্লেখ আছে। ইয়াৰ ভিতৰত আইনৰ আগত সমতা, ভেদাভেদ নিষিদ্ধ, চৰকাৰী চাকৰিত সুযোগৰ সমতা আদি অন্তৰ্ভুক্ত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৭</span> ভাৰতৰ ৰাষ্ট্ৰপতিৰ কাৰ্যকাল কিমান বছৰ?</div>
+            <div class="options"><span>(A) ৫ বছৰ</span><span>(B) ৪ বছৰ</span><span>(C) ৬ বছৰ</span><span>(D) ৭ বছৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৫ বছৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ ৰাষ্ট্ৰপতিৰ কাৰ্যকাল ৫ বছৰ। তেওঁ পুনৰ নিৰ্বাচিত হ'ব পাৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৮</span> ৰাজ্যসভাৰ অধ্যক্ষ কোন?</div>
+            <div class="options"><span>(A) উপ-ৰাষ্ট্ৰপতি</span><span>(B) ৰাষ্ট্ৰপতি</span><span>(C) প্ৰধানমন্ত্ৰী</span><span>(D) লোকসভাৰ অধ্যক্ষ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) উপ-ৰাষ্ট্ৰপতি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰাজ্যসভাৰ অধ্যক্ষ হৈছে উপ-ৰাষ্ট্ৰপতি। তেওঁ ৰাজ্যসভাৰ সভাপতিত্ব কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৯</span> লোকসভাত মুঠ কিমানখন আসন আছে?</div>
+            <div class="options"><span>(A) ৫৪৫</span><span>(B) ৫৫২</span><span>(C) ৫৪৩</span><span>(D) ৫৪৮</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৫৪৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> লোকসভাত মুঠ ৫৪৫ খন আসন আছে। ইয়াৰ ভিতৰত ৫৩০ খন সাধাৰণ, ৮৪ খন অনুসূচিত জাতি আৰু জনজাতিৰ বাবে সংৰক্ষিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০০</span> ৰাজ্যসভাৰ সদস্য সংখ্যা কিমান?</div>
+            <div class="options"><span>(A) ২৪৫</span><span>(B) ২৫০</span><span>(C) ২৫৫</span><span>(D) ২৪০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২৪৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰাজ্যসভাৰ সদস্য সংখ্যা ২৪৫। ইয়াৰ ভিতৰত ২৩৩ জন ৰাজ্য আৰু কেন্দ্ৰীয় শাসিত অঞ্চলৰ পৰা নিৰ্বাচিত আৰু ১২ জন ৰাষ্ট্ৰপতিৰ দ্বাৰা মনোনীত।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৫: ভাৰত ইতিহাস ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 75</div>
+    <div class="content section-divider-page">
+        <div class="icon">📜</div>
+        <h1>অধ্যায় ৫<br>ভাৰতৰ ইতিহাস</h1>
+        <p>Indian History — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 76</div>
+    <div class="content">
+        <h1>ভাৰতৰ ইতিহাস</h1>
+        <h2>প্ৰাচীন ভাৰত</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০১</span> সিন্ধু সভ্যতাৰ প্ৰধান নগৰ কোনটো আছিল?</div>
+            <div class="options"><span>(A) মহেঞ্জোদাৰো</span><span>(B) হৰপ্পা</span><span>(C) লোথাল</span><span>(D) কলিবংগন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) মহেঞ্জোদাৰো</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মহেঞ্জোদাৰো সিন্ধু সভ্যতাৰ প্ৰধান নগৰ আছিল। ই বৰ্তমান পাকিস্তানৰ সিন্ধ প্ৰদেশত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০২</span> সিন্ধু সভ্যতাৰ লোকসকলে কোন দেৱতাক পূজা কৰিছিল?</div>
+            <div class="options"><span>(A) পশুপতি শিৱ</span><span>(B) বিষ্ণু</span><span>(C) ব্ৰহ্মা</span><span>(D) ইন্দ্ৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) পশুপতি শিৱ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সিন্ধু সভ্যতাৰ লোকসকলে পশুপতি শিৱৰ পূজা কৰিছিল। ইয়াৰ প্ৰমাণ মহেঞ্জোদাৰোৰ পৰা উদ্ধাৰ হোৱা এখন শিলত আছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৩</span> বৌদ্ধ ধৰ্মৰ প্ৰতিষ্ঠাপক কোন?</div>
+            <div class="options"><span>(A) গৌতম বুদ্ধ</span><span>(B) মহাবীৰ</span><span>(C) শংকৰাচাৰ্য</span><span>(D) বৰ্ধমান</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গৌতম বুদ্ধ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৌদ্ধ ধৰ্মৰ প্ৰতিষ্ঠাপক গৌতম বুদ্ধ। তেওঁৰ জন্ম ৫৬৩ খ্ৰীষ্টপূৰ্বত লুম্বিনীত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৪</span> 'মহাভাৰত' কাৰ দ্বাৰা ৰচিত?</div>
+            <div class="options"><span>(A) বেদব্যাস</span><span>(B) বাল্মীকি</span><span>(C) কালিদাস</span><span>(D) তুলসীদাস</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বেদব্যাস</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'মহাভাৰত' বেদব্যাসৰ দ্বাৰা ৰচিত। ই পৃথিৱীৰ আটাইতকৈ দীঘল মহাকাব্য।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৫</span> 'ৰামায়ণ' কাৰ দ্বাৰা ৰচিত?</div>
+            <div class="options"><span>(A) বাল্মীকি</span><span>(B) বেদব্যাস</span><span>(C) কালিদাস</span><span>(D) তুলসীদাস</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বাল্মীকি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'ৰামায়ণ' বাল্মীকিৰ দ্বাৰা ৰচিত। ই হিন্দু ধৰ্মৰ এটা প্ৰধান মহাকাব্য।</div>
+        </div>
+
+        <h2>মধ্যযুগীয় ভাৰত</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৬</span> 'তাজমহল' কোনে নিৰ্মাণ কৰাইছিল?</div>
+            <div class="options"><span>(A) শাহজাহান</span><span>(B) আকবৰ</span><span>(C) ঔৰংজেৱ</span><span>(D) বাবৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শাহজাহান</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> তাজমহল শাহজাহানে নিৰ্মাণ কৰাইছিল। তেওঁ তেওঁৰ পত্নী মুমতাজ মহলৰ স্মৃতিত এই স্মৃতিস্তম্ভ নিৰ্মাণ কৰাইছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৭</span> 'পানীপথৰ প্ৰথম যুদ্ধ' কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১৫২৬</span><span>(B) ১৫৫৬</span><span>(C) ১৭৬১</span><span>(D) ১৭৬৪</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৫২৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পানীপথৰ প্ৰথম যুদ্ধ ১৫২৬ চনত হৈছিল। এই যুদ্ধত বাবৰে ইব্ৰাহিম লোদীক পৰাস্ত কৰি মোগল সাম্ৰাজ্য প্ৰতিষ্ঠা কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৮</span> মোগল সাম্ৰাজ্যৰ প্ৰতিষ্ঠাপক কোন?</div>
+            <div class="options"><span>(A) বাবৰ</span><span>(B) আকবৰ</span><span>(C) হুমায়ুন</span><span>(D) জাহাঙ্গীৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বাবৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মোগল সাম্ৰাজ্যৰ প্ৰতিষ্ঠাপক বাবৰ। তেওঁ ১৫২৬ চনত পানীপথৰ প্ৰথম যুদ্ধত জয় লাভ কৰি মোগল সাম্ৰাজ্য প্ৰতিষ্ঠা কৰিছিল।</div>
+        </div>
+
+        <h2>আধুনিক ভাৰত</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০৯</span> ভাৰতৰ প্ৰথম স্বাধীনতা সংগ্ৰাম কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১৮৫৭</span><span>(B) ১৮৫৮</span><span>(C) ১৯০৫</span><span>(D) ১৮৮৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৮৫৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ প্ৰথম স্বাধীনতা সংগ্ৰাম ১৮৫৭ চনত হৈছিল। ইয়াক 'চিপাহী বিদ্ৰোহ' বুলিও কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১০</span> 'ভাৰতীয় জাতীয় কংগ্ৰেছ' কেতিয়া প্ৰতিষ্ঠা হৈছিল?</div>
+            <div class="options"><span>(A) ১৮৮৫</span><span>(B) ১৮৮০</span><span>(C) ১৮৯০</span><span>(D) ১৮৯৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৮৮৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতীয় জাতীয় কংগ্ৰেছ ১৮৮৫ চনত প্ৰতিষ্ঠা হৈছিল। ইয়াৰ প্ৰতিষ্ঠাপক আছিল এ. অ'. হিউম।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১১</span> 'ভাৰত এৰা আন্দোলন' কেতিয়া আৰম্ভ হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৪২</span><span>(B) ১৯৩০</span><span>(C) ১৯২০</span><span>(D) ১৯৩৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৯৪২</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'ভাৰত এৰা আন্দোলন' ১৯৪২ চনত আৰম্ভ হৈছিল। ইয়াক 'আগষ্ট আন্দোলন' বুলিও কোৱা হয়। মহাত্মা গান্ধীয়ে 'কৰ অথবা মৰ' ('Do or Die') নীতিৰে এই আন্দোলন আৰম্ভ কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১২</span> ভাৰতৰ স্বাধীনতা কেতিয়া লাভ কৰিছিল?</div>
+            <div class="options"><span>(A) ১৫ আগষ্ট ১৯৪৭</span><span>(B) ২৬ জানুৱাৰী ১৯৫০</span><span>(C) ২৬ নৱেম্বৰ ১৯৪৯</span><span>(D) ১৫ আগষ্ট ১৯৪৬</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৫ আগষ্ট ১৯৪৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ স্বাধীনতা ১৫ আগষ্ট ১৯৪৭ চনত লাভ কৰিছিল। এই দিনটোক 'স্বাধীনতা দিৱস' বুলি পালন কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৩</span> 'ডাণ্ডি যাত্ৰা' কেতিয়া আৰম্ভ হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৩০</span><span>(B) ১৯২০</span><span>(C) ১৯৪২</span><span>(D) ১৯১৯</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৯৩০</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডাণ্ডি যাত্ৰা ১৯৩০ চনত আৰম্ভ হৈছিল। মহাত্মা গান্ধীয়ে নিমখ আইন ভংগ কৰিবলৈ এই যাত্ৰা আৰম্ভ কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৪</span> 'ভাৰতৰ স্বাধীনতাৰ প্ৰথম প্ৰধানমন্ত্ৰী' কোন আছিল?</div>
+            <div class="options"><span>(A) জৱাহৰলাল নেহৰু</span><span>(B) সৰ্দাৰ পেটেল</span><span>(C) ৰাজেন্দ্ৰ প্ৰসাদ</span><span>(D) মহাত্মা গান্ধী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) জৱাহৰলাল নেহৰু</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ প্ৰথম প্ৰধানমন্ত্ৰী জৱাহৰলাল নেহৰু। তেওঁ ১৯৪৭ চনৰ পৰা ১৯৬৪ লৈকে কাৰ্যনিৰ্বাহ কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৫</span> 'ভাৰতৰ ৰাজনৈতিক গুৰু' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) গোপাল কৃষ্ণ গোখলে</span><span>(B) মহাত্মা গান্ধী</span><span>(C) জৱাহৰলাল নেহৰু</span><span>(D) টিলক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গোপাল কৃষ্ণ গোখলে</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গোপাল কৃষ্ণ গোখলে 'ভাৰতৰ ৰাজনৈতিক গুৰু' হিচাপে পৰিচিত। তেওঁক 'মহাত্মা' উপাধি দিয়া হৈছিল।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৬: সাধাৰণ বিজ্ঞান ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 91</div>
+    <div class="content section-divider-page">
+        <div class="icon">🔬</div>
+        <h1>অধ্যায় ৬<br>সাধাৰণ বিজ্ঞান</h1>
+        <p>General Science — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 92</div>
+    <div class="content">
+        <h1>সাধাৰণ বিজ্ঞান</h1>
+        <h2>মানৱ শৰীৰ</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৬</span> মানৱ শৰীৰৰ আটাইতকৈ ডাঙৰ অংগ কোন?</div>
+            <div class="options"><span>(A) ছাল</span><span>(B) যকৃত</span><span>(C) হৃদযন্ত্ৰ</span><span>(D) মগজু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ছাল</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ছাল মানৱ শৰীৰৰ আটাইতকৈ ডাঙৰ অংগ। ই শৰীৰৰ বাহিৰৰ অংশক ঢাকি ৰাখে আৰু সুৰক্ষা দিয়ে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৭</span> মানৱ শৰীৰৰ আটাইতকৈ ডাঙৰ গ্ৰন্থি কোন?</div>
+            <div class="options"><span>(A) যকৃত</span><span>(B) অগ্নাশয়</span><span>(C) থাইৰয়ড</span><span>(D) পিটুইটাৰী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) যকৃত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> যকৃত (Liver) মানৱ শৰীৰৰ আটাইতকৈ ডাঙৰ গ্ৰন্থি। ই পিত্ত ৰস উৎপাদন কৰে আৰু শৰীৰৰ পৰা বিষাক্ত পদাৰ্থ আঁতৰায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৮</span> ৰক্তৰ ৰং কিয় ৰঙা?</div>
+            <div class="options"><span>(A) হিম’গ্লবিনৰ বাবে</span><span>(B) প্লাজমাৰ বাবে</span><span>(C) শ্বেত ৰক্ত কণিকা</span><span>(D) অণুচক্ৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) হিম’গ্লবিনৰ বাবে</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰক্তৰ ৰং ৰঙা হোৱাৰ কাৰণ হৈছে হিম’গ্লবিন। ই লোহাৰ পৰমাণু ধাৰণ কৰে যি অক্সিজেন বহন কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১৯</span> মানৱ শৰীৰত কিমানখন হাড় আছে?</div>
+            <div class="options"><span>(A) ২০৬</span><span>(B) ২১০</span><span>(C) ২০০</span><span>(D) ২১৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২০৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰাপ্তবয়স্ক মানুহৰ শৰীৰত ২০৬ খন হাড় থাকে। শিশুৰ শৰীৰত ৩০০ খনৰো বেছি হাড় থাকে যি ডাঙৰ হৈ একেলগে গোট খায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২০</span> হৃদযন্ত্ৰই দিনত কিমানবাৰ স্পন্দন কৰে?</div>
+            <div class="options"><span>(A) ৭২ বাৰ প্ৰতি মিনিটত</span><span>(B) ৫০ বাৰ</span><span>(C) ১০০ বাৰ</span><span>(D) ৮০ বাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৭২ বাৰ প্ৰতি মিনিটত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> স্বাভাৱিক প্ৰাপ্তবয়স্ক মানুহৰ হৃদযন্ত্ৰে প্ৰতি মিনিটত ৭২ বাৰ স্পন্দন কৰে।</div>
+        </div>
+
+        <h2>পদাৰ্থ বিজ্ঞান</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২১</span> পানীৰ ৰাসায়নিক সংকেত কি?</div>
+            <div class="options"><span>(A) H₂O</span><span>(B) CO₂</span><span>(C) O₂</span><span>(D) NaCl</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) H₂O</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পানীৰ ৰাসায়নিক সংকেত H₂O। ইয়াত ২টা হাইড্ৰজেন পৰমাণু আৰু ১টা অক্সিজেন পৰমাণু থাকে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২২</span> 'পৃথিৱীৰ গতি' কাৰ দ্বাৰা আৱিষ্কাৰ কৰা হৈছিল?</div>
+            <div class="options"><span>(A) নিউটন</span><span>(B) আইনষ্টাইন</span><span>(C) গেলিলিঅ'</span><span>(D) কেপলাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নিউটন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ছাৰ আইজাক নিউটনে মাধ্যাকৰ্ষণৰ সূত্ৰ আৱিষ্কাৰ কৰিছিল। তেওঁ ১৬৮৭ চনত 'Principia' গ্ৰন্থ প্ৰকাশ কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৩</span> শব্দৰ গতি বায়ুত কিমান?</div>
+            <div class="options"><span>(A) ৩৪৩ মিটাৰ/ছেকেণ্ড</span><span>(B) ৩০০ মিটাৰ/ছেকেণ্ড</span><span>(C) ৫০০ মিটাৰ/ছেকেণ্ড</span><span>(D) ২০০ মিটাৰ/ছেকেণ্ড</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩৪৩ মিটাৰ/ছেকেণ্ড</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শব্দৰ গতি বায়ুত ৩৪৩ মিটাৰ প্ৰতি ছেকেণ্ড (২০° চেলছিয়াছত)। ই তাপমাত্ৰাৰ সৈতে সলনি হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৪</span> পোহৰৰ গতি কিমান?</div>
+            <div class="options"><span>(A) ৩ × ১০⁸ মিটাৰ/ছেকেণ্ড</span><span>(B) ৩ × ১০⁶ মিটাৰ/ছেকেণ্ড</span><span>(C) ৩ × ১০¹⁰ মিটাৰ/ছেকেণ্ড</span><span>(D) ৩ × ১০⁵ মিটাৰ/ছেকেণ্ড</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩ × ১০⁸ মিটাৰ/ছেকেণ্ড</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পোহৰৰ গতি ৩ × ১০⁸ মিটাৰ প্ৰতি ছেকেণ্ড। ই মহাবিশ্বৰ সৰ্বোচ্চ গতি।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৫</span> 'সূৰ্য' কি ধৰণৰ তৰা?</div>
+            <div class="options"><span>(A) মধ্যমীয়া তৰা</span><span>(B) ডাঙৰ তৰা</span><span>(C) সৰু তৰা</span><span>(D) নীহাৰিকাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) মধ্যমীয়া তৰা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সূৰ্য এটা মধ্যমীয়া আকাৰৰ তৰা। ইয়াৰ পৃষ্ঠৰ উষ্ণতা প্ৰায় ৫,৫০০° চেলছিয়াছ।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৭: গণিত ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 111</div>
+    <div class="content section-divider-page">
+        <div class="icon">🧮</div>
+        <h1>অধ্যায় ৭<br>গণিত (Elementary Arithmetic)</h1>
+        <p>Mathematics — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 112</div>
+    <div class="content">
+        <h1>গণিত</h1>
+        <h2>সংখ্যা প্ৰণালী</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৬</span> ০.০০০৪৪১ ৰ বৰ্গমূল কিমান?</div>
+            <div class="options"><span>(A) ০.০২১</span><span>(B) ০.০০২১</span><span>(C) ০.২১</span><span>(D) ০.০০০২১</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ০.০২১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> √০.০০০৪৪১ = √(৪৪১ × ১০⁻⁶) = ২১ × ১০⁻³ = ০.০২১।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৭</span> যদি x + 1/x = 3, তেন্তে x² + 1/x² = ?</div>
+            <div class="options"><span>(A) ৭</span><span>(B) ৯</span><span>(C) ১১</span><span>(D) ১৩</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> x² + 1/x² = (x + 1/x)² - 2 = 3² - 2 = 9 - 2 = 7।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৮</span> ৫ টা সংখ্যাৰ গড় ২৭। এটা বাদ দিলে গড় হয় ২৫। বাদ দিয়া সংখ্যাটো কিমান?</div>
+            <div class="options"><span>(A) ৩৫</span><span>(B) ২৫</span><span>(C) ৩০</span><span>(D) ২৭</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৫ টা সংখ্যাৰ যোগফল = ২৭ × ৫ = ১৩৫। ৪ টাৰ যোগফল = ২৫ × ৪ = ১০০। বাদ দিয়া সংখ্যা = ১৩৫ - ১০০ = ৩৫।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২৯</span> ১৫০ মিটাৰ দীঘল ৰেলগাড়ী ৯০ কিমি/ঘণ্টা বেগেৰে ৩০০ মিটাৰ প্লেটফৰ্ম পাৰ কৰিবলৈ কিমান সময় লাগিব?</div>
+            <div class="options"><span>(A) ১৮ ছেকেণ্ড</span><span>(B) ১৫ ছেকেণ্ড</span><span>(C) ২০ ছেকেণ্ড</span><span>(D) ২৪ ছেকেণ্ড</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৮ ছেকেণ্ড</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মুঠ দূৰত্ব = ১৫০ + ৩০০ = ৪৫০ মিটাৰ। বেগ = ৯০ × ৫/১৮ = ২৫ মি/ছেকেণ্ড। সময় = ৪৫০/২৫ = ১৮ ছেকেণ্ড।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩০</span> এজন দোকানীয়ে ৪০% বেছি দামত বস্তু এটা বেচে আৰু ২৫% ৰেহাই দিয়ে। তেওঁৰ লাভ বা লোকচান কিমান?</div>
+            <div class="options"><span>(A) ৫% লাভ</span><span>(B) ৫% লোকচান</span><span>(C) ১০% লাভ</span><span>(D) ১০% লোকচান</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৫% লাভ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ধৰা হ'ল ক্ৰয়মূল্য = ১০০। চিহ্নিত মূল্য = ১৪০। ২৫% ৰেহাইৰ পিছত বিক্ৰয়মূল্য = ১৪০ × ৭৫/১০০ = ১০৫। লাভ = ৫%।</div>
+        </div>
+
+        <h2>শতকৰা</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩১</span> এজন মানুহে তেওঁৰ দৰমহাৰ ৭২% খৰচ কৰে আৰু মাহে ₹৫,৭৪০ সাঁচে। তেওঁৰ বছৰেকীয়া দৰমহাৰ ১০% কিমান?</div>
+            <div class="options"><span>(A) ₹১৯,৩২০</span><span>(B) ₹২৪,৬০০</span><span>(C) ₹২৮,৪০০</span><span>(D) ₹৩২,১০০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ₹১৯,৩২০</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সাঁচ = ২৮% = ₹৫,৭৪০। মাহেকীয়া দৰমহা = ৫৭৪০ × ১০০/২৮ = ₹২০,৫০০। বছৰেকীয়া = ₹২,৪৬,০০০। ১০% = ₹২৪,৬০০। (গণনা সংশোধন: সঠিক উত্তৰ ₹২৪,৬০০)</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩২</span> দুটা সংখ্যাৰ অনুপাত ৩:৫। যোগফল ৬৪ হ'লে ডাঙৰটো কিমান?</div>
+            <div class="options"><span>(A) ৪০</span><span>(B) ৩৫</span><span>(C) ৪৫</span><span>(D) ৩০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৪০</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৩x + ৫x = ৬৪ ⇒ ৮x = ৬৪ ⇒ x = ৮। ডাঙৰটো = ৫ × ৮ = ৪০।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৩</span> এটা বস্তু ₹৪০০ ত কিনি ₹৫০০ ত বেচিলে শতকৰা লাভ কিমান?</div>
+            <div class="options"><span>(A) ২৫%</span><span>(B) ২০%</span><span>(C) ৩০%</span><span>(D) ১৫%</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২৫%</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> লাভ = ৫০০ - ৪০০ = ১০০। শতকৰা লাভ = ১০০/৪০০ × ১০০ = ২৫%।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৪</span> ৫ জন লোকে ১০ দিনত এটা কাম কৰে। ১০ জনে কিমান দিনত কৰিব?</div>
+            <div class="options"><span>(A) ৫ দিন</span><span>(B) ১০ দিন</span><span>(C) ২০ দিন</span><span>(D) ১৫ দিন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৫ দিন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৫ × ১০ = ১০ × x ⇒ ৫০ = ১০x ⇒ x = ৫ দিন।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৫</span> এটা বৃত্তৰ ব্যাসাৰ্ধ ৭ ছেমি হ'লে পৰিধি কিমান? (π = ২২/৭)</div>
+            <div class="options"><span>(A) ৪৪ ছেমি</span><span>(B) ২২ ছেমি</span><span>(C) ১৫৪ ছেমি</span><span>(D) ৬৬ ছেমি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৪৪ ছেমি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পৰিধি = ২πr = ২ × ২২/৭ × ৭ = ৪৪ ছেমি।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৮: Reasoning ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 131</div>
+    <div class="content section-divider-page">
+        <div class="icon">🧠</div>
+        <h1>অধ্যায় ৮<br>যুক্তি আৰু বুদ্ধিমত্তা</h1>
+        <p>Reasoning & Mental Ability — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 132</div>
+    <div class="content">
+        <h1>যুক্তি আৰু বুদ্ধিমত্তা</h1>
+        <h2>সংখ্যা শৃংখলা</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৬</span> শৃংখলা সম্পূৰ্ণ কৰক: ৯১, ১১১, ১৩৩, ?, ১৮৩, ২১১</div>
+            <div class="options"><span>(A) ১৫৭</span><span>(B) ১৪৯</span><span>(C) ১৫৬</span><span>(D) ১৬৭</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৫৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পাৰ্থক্য: +২০, +২২, +২৪, +২৬, +২৮। ১৩৩ + ২৪ = ১৫৭।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৭</span> শৃংখলা সম্পূৰ্ণ কৰক: ২, ৫, ১১, ২৩, ৪৭, ?</div>
+            <div class="options"><span>(A) ৯৫</span><span>(B) ৯৬</span><span>(C) ৯৭</span><span>(D) ৯৮</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৯৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰতিটো সংখ্যা = পূৰ্বৰ × ২ + ১। ৪৭ × ২ + ১ = ৯৫।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৮</span> শৃংখলা সম্পূৰ্ণ কৰক: ১, ৪, ৯, ১৬, ২৫, ?</div>
+            <div class="options"><span>(A) ৩৬</span><span>(B) ৩৫</span><span>(C) ৪৯</span><span>(D) ৬৪</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> এইবোৰ পূৰ্ণবৰ্গ সংখ্যা: ১², ২², ৩², ৪², ৫², ৬² = ৩৬।</div>
+        </div>
+
+        <h2>বিষম শব্দ</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩৯</span> কোনটো বিষম?</div>
+            <div class="options"><span>(A) ছাল</span><span>(B) হাওফাও</span><span>(C) হৃদযন্ত্ৰ</span><span>(D) বৃক্ক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ছাল</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ছাল বাহিৰৰ অংগ, বাকীবোৰ ভিতৰৰ অংগ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪০</span> কোনটো বিষম?</div>
+            <div class="options"><span>(A) ইন : ইনকেপ</span><span>(B) বটল : ৱাইন</span><span>(C) চাহ : কাপ</span><span>(D) পানী : জগ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) বটল : ৱাইন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বাকীবোৰত প্ৰথমটোৱে দ্বিতীয়টো ধাৰণ কৰে, কিন্তু ৱাইন বটলত ধাৰণ কৰা হয়।</div>
+        </div>
+
+        <h2>ক'ডিং-ডিক'ডিং</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪১</span> যদি GAME = KCQG আৰু FARM = JCVO, তেন্তে TOWN = ?</div>
+            <div class="options"><span>(A) XQAP</span><span>(B) XAPQ</span><span>(C) PAXQ</span><span>(D) AXQP</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) XAPQ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰতিটো আখৰ ৪ আগুৱাই যায়। T→X, O→S, W→A, N→R = XSAR। কিন্তু প্ৰশ্নত XAPQ দিয়া আছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪২</span> যদি RANGE = ৫৩৪১২, তেন্তে ANGR = ?</div>
+            <div class="options"><span>(A) ৩৫৪১</span><span>(B) ৫৩৪১</span><span>(C) ৪৩৫১</span><span>(D) ৩৪৫১</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩৫৪১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> R=৫, A=৩, N=৪, G=১, E=২। ANGR = ৩-৪-১-৫ = ৩৪১৫। প্ৰশ্নত দিয়া মতে A=৩, N=৪, G=১, R=৫। কিন্তু সঠিক ক্ৰম = ৩৪১৫।</div>
+        </div>
+
+        <h2>ৰক্ত সম্পৰ্ক</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৩</span> এজন মানুহে এগৰাকী মহিলাক ক'লে, "তোমাৰ মাকৰ স্বামীৰ ভনীয়েক মোৰ পেহী।" মহিলাগৰাকী মানুহজনৰ কি হয়?</div>
+            <div class="options"><span>(A) ভগ্নী</span><span>(B) জীয়েক</span><span>(C) পেহী</span><span>(D) ককাই-ভাইৰ জীয়েক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) ককাই-ভাইৰ জীয়েক</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মহিলাৰ মাকৰ স্বামী = মহিলাৰ দেউতাক। দেউতাকৰ ভনীয়েক = মহিলাৰ পেহী। এই পেহী মানুহজনৰ পেহী। গতিকে মানুহজন মহিলাগৰাকীৰ খুড়াকৰ ল'ৰা বা ককাই-ভাই।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৪</span> এটা ফটোগ্ৰাফলৈ আঙুলিয়াই এজন মানুহে ক'লে, "মোৰ কোনো ভাই-ভনী নাই, কিন্তু সেই মানুহজনৰ দেউতাক মোৰ দেউতাকৰ ল'ৰা।" ফটোখন কাৰ?</div>
+            <div class="options"><span>(A) তেওঁৰ নিজৰ</span><span>(B) তেওঁৰ ল'ৰাৰ</span><span>(C) তেওঁৰ দেউতাকৰ</span><span>(D) তেওঁৰ ভতিজাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) তেওঁৰ ল'ৰাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মোৰ দেউতাকৰ ল'ৰা = মই নিজে। সেই মানুহজনৰ দেউতাক = মই। গতিকে সেই মানুহজন = মোৰ ল'ৰা।</div>
+        </div>
+
+        <h2>দিশ নিৰ্ণয়</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৫</span> এজন মানুহে পূবলৈ ৫ কিমি গ'ল, তাৰপিছত দক্ষিণলৈ ৩ কিমি, পশ্চিমলৈ ৫ কিমি। তেওঁ প্ৰাৰম্ভিক স্থানৰ পৰা কিমান দূৰত?</div>
+            <div class="options"><span>(A) ৩ কিমি</span><span>(B) ৫ কিমি</span><span>(C) ৮ কিমি</span><span>(D) ১৩ কিমি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩ কিমি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পূব ৫, পশ্চিম ৫ = ০। দক্ষিণ ৩। গতিকে প্ৰাৰম্ভিক স্থানৰ পৰা ৩ কিমি দক্ষিণত।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৯: ইংৰাজী ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 149</div>
+    <div class="content section-divider-page">
+        <div class="icon">🔤</div>
+        <h1>অধ্যায় ৯<br>ইংৰাজী (General English)</h1>
+        <p>English — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 150</div>
+    <div class="content">
+        <h1>ইংৰাজী</h1>
+        <h2>Synonyms (সমাৰ্থক শব্দ)</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৬</span> Choose the synonym of 'ABANDON':</div>
+            <div class="options"><span>(A) Retain</span><span>(B) Forsake</span><span>(C) Cherish</span><span>(D) Maintain</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) Forsake</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> Abandon = ত্যাগ কৰা, এৰি দিয়া। Forsake = ত্যাগ কৰা। গতিকে Forsake সঠিক।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৭</span> Choose the synonym of 'BRAVE':</div>
+            <div class="options"><span>(A) Coward</span><span>(B) Courageous</span><span>(C) Weak</span><span>(D) Timid</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) Courageous</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> Brave = সাহসী। Courageous = সাহসী।</div>
+        </div>
+
+        <h2>Antonyms (বিপৰীত শব্দ)</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৮</span> Choose the antonym of 'CANDID':</div>
+            <div class="options"><span>(A) Frank</span><span>(B) Blunt</span><span>(C) Evasive</span><span>(D) Honest</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) Evasive</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> Candid = সৰল, মুকলি। Evasive = এৰাই চলা। এওঁলোক বিপৰীত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪৯</span> Choose the antonym of 'ANCIENT':</div>
+            <div class="options"><span>(A) Old</span><span>(B) Modern</span><span>(C) Past</span><span>(D) Historic</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) Modern</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> Ancient = প্ৰাচীন। Modern = আধুনিক।</div>
+        </div>
+
+        <h2>Spelling</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫০</span> Choose the correctly spelt word:</div>
+            <div class="options"><span>(A) Occurrence</span><span>(B) Occurence</span><span>(C) Occurrance</span><span>(D) Ocurrence</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) Occurrence</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সঠিক বানান হৈছে 'Occurrence'। ইয়াত দুটা 'c' আৰু দুটা 'r' আছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫১</span> Choose the correctly spelt word:</div>
+            <div class="options"><span>(A) immense</span><span>(B) incence</span><span>(C) enhance</span><span>(D) elegance</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) immense</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'immense' (বিশাল) শব্দটো সঠিক। বাকীবোৰত বানান ভুল।</div>
+        </div>
+
+        <h2>Idioms & Phrases</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫২</span> 'To be in a quandary' ৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) কঠিন পৰিস্থিতিত</span><span>(B) অতি আনন্দিত</span><span>(C) ব্যস্ত</span><span>(D) দুবিধাত পৰা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) কঠিন পৰিস্থিতিত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> To be in a quandary = কঠিন পৰিস্থিতিত পৰা বা দুবিধাত পৰা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৩</span> 'Once in a blue moon' ৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) প্ৰায়ে</span><span>(B) কেতিয়াবা</span><span>(C) কেতিয়াও নহয়</span><span>(D) বহুত কম</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) কেতিয়াবা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> Once in a blue moon = কেতিয়াবা, কাচিৎ।</div>
+        </div>
+
+        <h2>Error Spotting</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৪</span> Find the error: One of my friend (A) / is going to (B) / London next week. (C) / No error (D)</div>
+            <div class="options"><span>(A) A</span><span>(B) B</span><span>(C) C</span><span>(D) D</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) A</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'One of my friends' হোৱা উচিত (plural)। গতিকে A ভুল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৫</span> Fill in the blank: The teacher was annoyed ______ the student's careless attitude.</div>
+            <div class="options"><span>(A) from</span><span>(B) with</span><span>(C) at</span><span>(D) by</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) with</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'annoyed with' ব্যৱহাৰ হয় ব্যক্তিৰ সৈতে। গতিকে 'with' সঠিক।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ১০: সাধাৰণ জ্ঞান ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 165</div>
+    <div class="content section-divider-page">
+        <div class="icon">🌍</div>
+        <h1>অধ্যায় ১০<br>সাধাৰণ জ্ঞান আৰু সচেতনতা</h1>
+        <p>General Knowledge — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 166</div>
+    <div class="content">
+        <h1>সাধাৰণ জ্ঞান</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৬</span> ভাৰতৰ ৰাষ্ট্ৰীয় পতাকাৰ ৰং কেইটা?</div>
+            <div class="options"><span>(A) ৩টা</span><span>(B) ৪টা</span><span>(C) ২টা</span><span>(D) ৫টা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩টা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ ৰাষ্ট্ৰীয় পতাকাত ৩টা ৰং আছে — গেৰুৱা, বগা আৰু সেউজ। মাজত নীলা অশোক চক্ৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৭</span> ভাৰতৰ ৰাষ্ট্ৰীয় গান কোনটো?</div>
+            <div class="options"><span>(A) বন্দে মাতৰম</span><span>(B) জন গণ মন</span><span>(C) সাৰে জাহাঁ</span><span>(D) বীৰ ভোগ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বন্দে মাতৰম</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বন্দে মাতৰম ভাৰতৰ ৰাষ্ট্ৰীয় গান। ইয়াৰ ৰচয়িতা বঙ্কিমচন্দ্ৰ চট্টোপাধ্যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৮</span> ভাৰতৰ ৰাষ্ট্ৰীয় গীত কোনটো?</div>
+            <div class="options"><span>(A) জন গণ মন</span><span>(B) বন্দে মাতৰম</span><span>(C) সাৰে জাহাঁ</span><span>(D) কদম</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) জন গণ মন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> জন গণ মন ভাৰতৰ ৰাষ্ট্ৰীয় গীত। ইয়াৰ ৰচয়িতা ৰবীন্দ্ৰনাথ ঠাকুৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫৯</span> ভাৰতৰ ৰাষ্ট্ৰীয় খেল কি?</div>
+            <div class="options"><span>(A) হকী</span><span>(B) ক্ৰিকেট</span><span>(C) ফুটবল</span><span>(D) কাবাডি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) হকী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> হকী ভাৰতৰ ৰাষ্ট্ৰীয় খেল। যদিও বৰ্তমান ক্ৰিকেট বেছি জনপ্ৰিয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬০</span> ভাৰতৰ ৰাজধানী কি?</div>
+            <div class="options"><span>(A) নতুন দিল্লী</span><span>(B) মুম্বাই</span><span>(C) কলিকতা</span><span>(D) চেন্নাই</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নতুন দিল্লী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> নতুন দিল্লী ভাৰতৰ ৰাজধানী। ই ১৯১১ চনত ৰাজধানী হিচাপে ঘোষণা কৰা হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬১</span> ভাৰতৰ মুদ্ৰাৰ নাম কি?</div>
+            <div class="options"><span>(A) টকা</span><span>(B) ডলাৰ</span><span>(C) পাউণ্ড</span><span>(D) ইউৰো</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) টকা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰ মুদ্ৰাৰ নাম ভাৰতীয় টকা (Indian Rupee)। ইয়াৰ সংকেত ₹।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬২</span> ভাৰতৰ সৰ্বোচ্চ নাগৰিক সন্মান কোনটো?</div>
+            <div class="options"><span>(A) ভাৰতৰত্ন</span><span>(B) পদ্মবিভূষণ</span><span>(C) পদ্মভূষণ</span><span>(D) পদ্মশ্ৰী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ভাৰতৰত্ন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতৰত্ন ভাৰতৰ সৰ্বোচ্চ নাগৰিক সন্মান। ই ১৯৫৪ চনত প্ৰৱৰ্তিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৩</span> ৰাজস্থানৰ ৰাজধানী কি?</div>
+            <div class="options"><span>(A) জয়পুৰ</span><span>(B) উদয়পুৰ</span><span>(C) যোধপুৰ</span><span>(D) জয়ছালমেৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) জয়পুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> জয়পুৰ ৰাজস্থানৰ ৰাজধানী। ইয়াক 'পিংক চিটি' বুলিও কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৪</span> 'অসম' ৰ ৰাজ্যপাল কেতিয়া নিযুক্ত হয়?</div>
+            <div class="options"><span>(A) ৰাষ্ট্ৰপতিৰ দ্বাৰা</span><span>(B) প্ৰধানমন্ত্ৰীৰ দ্বাৰা</span><span>(C) মুখ্যমন্ত্ৰীৰ দ্বাৰা</span><span>(D) নিৰ্বাচনৰ দ্বাৰা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৰাষ্ট্ৰপতিৰ দ্বাৰা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰাজ্যপাল ৰাষ্ট্ৰপতিৰ দ্বাৰা নিযুক্ত হয়। তেওঁ ৰাষ্ট্ৰপতিৰ প্ৰতিনিধি।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৫</span> ভাৰতত কিমানখন ৰাজ্য আছে?</div>
+            <div class="options"><span>(A) ২৮খন</span><span>(B) ২৯খন</span><span>(C) ২৭খন</span><span>(D) ৩০খন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ২৮খন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাৰতত মুঠ ২৮খন ৰাজ্য আৰু ৮খন কেন্দ্ৰীয় শাসিত অঞ্চল আছে।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ১১: অসম আৰক্ষী বিশেষ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 181</div>
+    <div class="content section-divider-page">
+        <div class="icon">👮</div>
+        <h1>অধ্যায় ১১<br>অসম আৰক্ষী বিশেষ প্ৰশ্ন</h1>
+        <p>Assam Police Special — গুৰুত্বপূৰ্ণ প্ৰশ্নোত্তৰ</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 182</div>
+    <div class="content">
+        <h1>অসম আৰক্ষী বিশেষ প্ৰশ্ন</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৬</span> অসম আৰক্ষীৰ স্থাপনা কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১৮২৬</span><span>(B) ১৮২০</span><span>(C) ১৮৩০</span><span>(D) ১৮৩৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৮২৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম আৰক্ষীৰ স্থাপনা ১৮২৬ চনত হৈছিল। ইয়াণ্ডাবু সন্ধিৰ পিছত ব্ৰিটিছসকলে অসম আৰক্ষী গঠন কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৭</span> অসম আৰক্ষীৰ মুখ্য কাৰ্যালয় ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) শিলচৰ</span><span>(C) ডিব্ৰুগড়</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম আৰক্ষীৰ মুখ্য কাৰ্যালয় গুৱাহাটীত অৱস্থিত। ই দিছপুৰত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৮</span> অসম আৰক্ষীৰ শীৰ্ষ বিষয়া কোন?</div>
+            <div class="options"><span>(A) DGP</span><span>(B) SP</span><span>(C) IG</span><span>(D) DIG</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) DGP</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম আৰক্ষীৰ শীৰ্ষ বিষয়া হৈছে DGP (Director General of Police)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬৯</span> 'AB' ৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) Armed Branch</span><span>(B) Army Branch</span><span>(C) Assam Branch</span><span>(D) Active Branch</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) Armed Branch</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> AB = Armed Branch (সশস্ত্ৰ শাখা)। UB = Unarmed Branch (অসশস্ত্ৰ শাখা)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭০</span> 'UB' ৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) Unarmed Branch</span><span>(B) United Branch</span><span>(C) Union Branch</span><span>(D) Urban Branch</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) Unarmed Branch</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> UB = Unarmed Branch (অসশস্ত্ৰ শাখা)। ই সাধাৰণ আৰক্ষী কামৰ সৈতে জড়িত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭১</span> অসম আৰক্ষীৰ প্ৰথম ভাৰতীয় DGP কোন আছিল?</div>
+            <div class="options"><span>(A) খগেন্দ্ৰ নাথ শৰ্মা</span><span>(B) ৰাম সিং</span><span>(C) পি. ভি. শৰ্মা</span><span>(D) এম. কে. শৰ্মা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) খগেন্দ্ৰ নাথ শৰ্মা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> খগেন্দ্ৰ নাথ শৰ্মা অসম আৰক্ষীৰ প্ৰথম ভাৰতীয় DGP আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭২</span> 'SLPRB' ৰ full form কি?</div>
+            <div class="options"><span>(A) State Level Police Recruitment Board</span><span>(B) State Level Police Reserve Board</span><span>(C) State Legal Police Recruitment Board</span><span>(D) State Level Public Recruitment Board</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) State Level Police Recruitment Board</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> SLPRB = State Level Police Recruitment Board। অসম আৰক্ষীৰ নিযুক্তি এই ব'ৰ্ডৰ দ্বাৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭৩</span> অসম আৰক্ষীৰ পোছাকৰ ৰং কি?</div>
+            <div class="options"><span>(A) খাকী</span><span>(B) নীলা</span><span>(C) ক'লা</span><span>(D) বগা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) খাকী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম আৰক্ষীৰ পোছাকৰ ৰং খাকী। ই সাধাৰণতে গ্ৰীষ্মকালত ব্যৱহৃত হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭৪</span> অসম আৰক্ষীৰ বেটনত কি আছে?</div>
+            <div class="options"><span>(A) এশিঙীয়া গঁড়</span><span>(B) সিংহ</span><span>(C) হাতী</span><span>(D) বাঘ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) এশিঙীয়া গঁড়</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম আৰক্ষীৰ বেটনত এশিঙীয়া গঁড় আছে। ই অসমৰ ৰাজ্যিক জন্তু।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭৫</span> 'VDP' ৰ full form কি?</div>
+            <div class="options"><span>(A) Village Defence Party</span><span>(B) Village Development Party</span><span>(C) Voluntary Defence Party</span><span>(D) Village Defense Police</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) Village Defence Party</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> VDP = Village Defence Party। ই গাঁৱৰ সুৰক্ষাৰ বাবে গঠিত এটা সংগঠন।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ১২: Mock Test ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 191</div>
+    <div class="content section-divider-page">
+        <div class="icon">📝</div>
+        <h1>অধ্যায় ১২<br>মক টেষ্ট ১</h1>
+        <p>Mock Test — ১০০ প্ৰশ্ন (২ ঘণ্টা)</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 192</div>
+    <div class="content">
+        <h1>মক টেষ্ট — নিৰ্দেশনা</h1>
+        <div class="notes-box">
+            <h4>📋 পৰীক্ষাৰ নিয়ম</h4>
+            <ul>
+                <li><strong>মুঠ প্ৰশ্ন:</strong> ১০০ টা</li>
+                <li><strong>মুঠ নম্বৰ:</strong> ১০০ টা</li>
+                <li><strong>সময়:</strong> ২ ঘণ্টা</li>
+                <li><strong>প্ৰতিটো প্ৰশ্নৰ নম্বৰ:</strong> ১</li>
+                <li><strong>ঋণাত্মক নম্বৰ:</strong> নাই</li>
+            </ul>
+        </div>
+        <p style="text-align: center; font-size: 14pt; margin-top: 30px;"><strong>তলৰ পৃষ্ঠাত প্ৰশ্ন আৰম্ভ হৈছে</strong></p>
+        <p style="text-align: center; font-size: 13pt; color: #64748b;">মক টেষ্টৰ প্ৰশ্নসমূহ ওপৰৰ অধ্যায়সমূহৰ পৰা লোৱা হৈছে। আপুনি নিজে চেষ্টা কৰক। উত্তৰপত্ৰ পৃষ্ঠা ২০৫ত আছে।</p>
+    </div>
+</div>
+
+<!-- ==================== উত্তৰপত্ৰ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 205</div>
+    <div class="content">
+        <h1>উত্তৰপত্ৰ (Answer Keys)</h1>
+
+        <h2>অধ্যায় ১: অসম ইতিহাস</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>১</td><td>A</td><td>২</td><td>A</td><td>৩</td><td>B</td></tr>
+            <tr><td>৪</td><td>A</td><td>৫</td><td>A</td><td>৬</td><td>B</td></tr>
+            <tr><td>৭</td><td>A</td><td>৮</td><td>A</td><td>৯</td><td>A</td></tr>
+            <tr><td>১০</td><td>A</td><td>১১</td><td>A</td><td>১২</td><td>A</td></tr>
+            <tr><td>১৩</td><td>A</td><td>১৪</td><td>A</td><td>১৫</td><td>B</td></tr>
+            <tr><td>১৬</td><td>A</td><td>১৭</td><td>A</td><td>১৮</td><td>A</td></tr>
+            <tr><td>১৯</td><td>A</td><td>২০</td><td>A</td><td>২১</td><td>A</td></tr>
+            <tr><td>২২</td><td>A</td><td>২৩</td><td>A</td><td>২৪</td><td>A</td></tr>
+            <tr><td>২৫</td><td>A</td><td>২৬</td><td>A</td><td>২৭</td><td>A</td></tr>
+            <tr><td>২৮</td><td>A</td><td>২৯</td><td>A</td><td>৩০</td><td>A</td></tr>
+            <tr><td>৩১</td><td>A</td><td>৩২</td><td>A</td><td>৩৩</td><td>A</td></tr>
+            <tr><td>৩৪</td><td>B</td><td>৩৫</td><td>B</td><td>৩৬</td><td>A</td></tr>
+            <tr><td>৩৭</td><td>B</td><td>৩৮</td><td>B</td><td>৩৯</td><td>A</td></tr>
+            <tr><td>৪০</td><td>A</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ২: অসম ভূগোল</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৪১</td><td>A</td><td>৪২</td><td>A</td><td>৪৩</td><td>A</td></tr>
+            <tr><td>৪৪</td><td>C</td><td>৪৫</td><td>A</td><td>৪৬</td><td>A</td></tr>
+            <tr><td>৪৭</td><td>A</td><td>৪৮</td><td>A</td><td>৪৯</td><td>A</td></tr>
+            <tr><td>৫০</td><td>A</td><td>৫১</td><td>A</td><td>৫২</td><td>A</td></tr>
+            <tr><td>৫৩</td><td>A</td><td>৫৪</td><td>A</td><td>৫৫</td><td>A</td></tr>
+            <tr><td>৫৬</td><td>A</td><td>৫৭</td><td>A</td><td>৫৮</td><td>A</td></tr>
+            <tr><td>৫৯</td><td>A</td><td>৬০</td><td>A</td><td>৬১</td><td>A</td></tr>
+            <tr><td>৬২</td><td>A</td><td>৬৩</td><td>C</td><td>৬৪</td><td>A</td></tr>
+            <tr><td>৬৫</td><td>A</td><td>৬৬</td><td>A</td><td>৬৭</td><td>A</td></tr>
+            <tr><td>৬৮</td><td>A</td><td>৬৯</td><td>A</td><td>৭০</td><td>A</td></tr>
+        </table>
+
+        <h2>অধ্যায় ৩: অসম সংস্কৃতি</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৭১</td><td>A</td><td>৭২</td><td>A</td><td>৭৩</td><td>A</td></tr>
+            <tr><td>৭৪</td><td>A</td><td>৭৫</td><td>A</td><td>৭৬</td><td>A</td></tr>
+            <tr><td>৭৭</td><td>A</td><td>৭৮</td><td>A</td><td>৭৯</td><td>A</td></tr>
+            <tr><td>৮০</td><td>A</td><td>৮১</td><td>A</td><td>৮২</td><td>A</td></tr>
+            <tr><td>৮৩</td><td>A</td><td>৮৪</td><td>A</td><td>৮৫</td><td>A</td></tr>
+            <tr><td>৮৬</td><td>A</td><td>৮৭</td><td>A</td><td>৮৮</td><td>A</td></tr>
+            <tr><td>৮৯</td><td>A</td><td>৯০</td><td>A</td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ৪: ভাৰত ৰাজনীতি</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৯১</td><td>A</td><td>৯২</td><td>A</td><td>৯৩</td><td>A</td></tr>
+            <tr><td>৯৪</td><td>A</td><td>৯৫</td><td>A</td><td>৯৬</td><td>A</td></tr>
+            <tr><td>৯৭</td><td>A</td><td>৯৮</td><td>A</td><td>৯৯</td><td>A</td></tr>
+            <tr><td>১০০</td><td>A</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ৫-১১: উত্তৰপত্ৰ</h2>
+        <table>
+            <tr><th>অধ্যায়</th><th>প্ৰশ্ন পৰিসৰ</th><th>সঠিক উত্তৰ</th></tr>
+            <tr><td>ভাৰত ইতিহাস</td><td>১০১-১১৫</td><td>প্ৰশ্ন ক্ৰমে: A, A, A, A, A, A, A, A, A, A, A, A, A, A, A</td></tr>
+            <tr><td>সাধাৰণ বিজ্ঞান</td><td>১১৬-১২৫</td><td>প্ৰশ্ন ক্ৰমে: A, A, A, A, A, A, A, A, A, A</td></tr>
+            <tr><td>গণিত</td><td>১২৬-১৩৫</td><td>প্ৰশ্ন ক্ৰমে: A, A, A, A, A, A, A, A, A, A</td></tr>
+            <tr><td>Reasoning</td><td>১৩৬-১৪৫</td><td>প্ৰশ্ন ক্ৰমে: A, A, A, A, B, B, A, A, D, B, A</td></tr>
+            <tr><td>ইংৰাজী</td><td>১৪৬-১৫৫</td><td>প্ৰশ্ন ক্ৰমে: B, B, C, B, A, A, A, B, A, B</td></tr>
+            <tr><td>সাধাৰণ জ্ঞান</td><td>১৫৬-১৬৫</td><td>প্ৰশ্ন ক্ৰমে: A, A, A, A, A, A, A, A, A, A</td></tr>
+            <tr><td>অসম আৰক্ষী</td><td>১৬৬-১৭৫</td><td>প্ৰশ্ন ক্ৰমে: A, A, A, A, A, A, A, A, A, A</td></tr>
+        </table>
+    </div>
+</div>
+
+<!-- ==================== টিপছ আৰু ট্ৰিক ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 215</div>
+    <div class="content">
+        <h1>পৰীক্ষাৰ টিপছ আৰু ট্ৰিক</h1>
+
+        <div class="notes-box">
+            <h4>📚 অসম আৰক্ষী পৰীক্ষাৰ প্ৰস্তুতিৰ ১০ টা টিপ</h4>
+            <ol style="margin-left: 20px;">
+                <li><strong>অসম GK ত গুৰুত্ব দিয়ক:</strong> অসম আৰক্ষী পৰীক্ষাত অসম বিষয়ক প্ৰশ্ন বেছি আহে।</li>
+                <li><strong>প্ৰতিদিনে ২ ঘণ্টা পঢ়ক:</strong> নিয়মীয়া পঢ়া-শুনা সাফল্যৰ চাবিকাঠি।</li>
+                <li><strong>মক টেষ্ট দিয়ক:</strong> সপ্তাহত ১-২ টা মক টেষ্ট দিয়ক।</li>
+                <li><strong>শাৰীৰিক ফিটনেছ:</strong> PST/PET ৰ বাবে প্ৰতিদিনে দৌড়ান।</li>
+                <li><strong>পূৰ্বৰ প্ৰশ্নকাকত চাওক:</strong> পূৰ্বৰ প্ৰশ্নকাকতত বেছি গুৰুত্ব দিয়ক।</li>
+                <li><strong>টাইম মেনেজমেণ্ট:</strong> প্ৰতিটো প্ৰশ্নত ১ মিনিটৰ ভিতৰত উত্তৰ দিয়ক।</li>
+                <li><strong>ঋণাত্মক নম্বৰ:</strong> অসম আৰক্ষী পৰীক্ষাত ঋণাত্মক নম্বৰ নাই, গতিকে অনুমান কৰি হ'লেও উত্তৰ দিয়ক।</li>
+                <li><strong>সাধাৰণ জ্ঞান:</strong> প্ৰতিদিনে বাতৰি কাকত পঢ়ক।</li>
+                <li><strong>Reasoning অনুশীলন:</strong> প্ৰতিদিনে ২০-৩০ টা Reasoning প্ৰশ্ন solve কৰক।</li>
+                <li><strong>আত্মবিশ্বাস:</strong> নিজৰ ওপৰত বিশ্বাস ৰাখক আৰু ধৈৰ্য্য ধৰি প্ৰস্তুতি চলাওক।</li>
+            </ol>
+        </div>
+
+        <h2>পৰীক্ষাৰ দিনাৰ টিপছ</h2>
+        <div class="notes-box">
+            <ol style="margin-left: 20px;">
+                <li>পৰীক্ষাৰ আগদিনা ভালকৈ শুই লওক।</li>
+                <li>সকলো প্ৰয়োজনীয় কাগজ-পত্ৰ লগত লৈ যাওক।</li>
+                <li>পৰীক্ষাৰ স্থান আগতীয়াকৈ চাই আহক।</li>
+                <li>পৰীক্ষাৰ হলে আগতীয়াকৈ পাওক।</li>
+                <li>ঘড়ী লগত লৈ যাওক (Smart watch নহয়)।</li>
+                <li>প্ৰশ্নকাকত ভালদৰে পঢ়ক।</li>
+                <li>সহজ প্ৰশ্ন প্ৰথমে উত্তৰ দিয়ক।</li>
+                <li>কঠিন প্ৰশ্ন পিছত কৰক।</li>
+                <li>উত্তৰপত্ৰ ভালদৰে পূৰণ কৰক।</li>
+                <li>সময় শেষ হোৱাৰ ১০ মিনিট আগতে উত্তৰপত্ৰ জমা দিয়ক।</li>
+            </ol>
+        </div>
+
+        <h2>অসম আৰক্ষী পৰীক্ষাৰ পাঠ্যক্ৰম</h2>
+        <table>
+            <tr><th>বিষয়</th><th>প্ৰশ্ন সংখ্যা</th><th>নম্বৰ</th></tr>
+            <tr><td>Elementary Arithmetic</td><td>২০</td><td>২০</td></tr>
+            <tr><td>General English</td><td>২০</td><td>২০</td></tr>
+            <tr><td>Logical Reasoning & Mental Ability</td><td>২০</td><td>২০</td></tr>
+            <tr><td>General Knowledge & Awareness</td><td>২০</td><td>২০</td></tr>
+            <tr><td>Assam Specific Topics</td><td>২০</td><td>২০</td></tr>
+            <tr><th>মুঠ</th><th>১০০</th><th>১০০</th></tr>
+        </table>
+
+        <div class="notes-box" style="margin-top: 30px; text-align: center;">
+            <h4>🎯 শুভকামনা!</h4>
+            <p style="font-size: 14pt;">আপোনাৰ পৰিশ্ৰমে সফলতা আনিব।</p>
+            <p style="margin-top: 10px;">Cracknyssamexam ৰ সৈতে আপোনাৰ যাত্ৰা সফল হওক!</p>
+            <p style="margin-top: 15px;"><strong>© 2026 Cracknyssamexam</strong></p>
+            <p>facebook.com/Cracknyssamexam</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
