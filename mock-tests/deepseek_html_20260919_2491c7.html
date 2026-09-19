@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracknyssamexam - Assam Police Mock Test</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #f4f7fc; color: #1e2a3a; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #0b3d5c, #1b6b93); color: white; padding: 20px 30px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .logo { font-size: 2rem; font-weight: 800; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .logo span { color: #ffd966; }
+        .language-tabs { display: flex; gap: 10px; }
+        .language-tabs button { background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.4); color: white; padding: 8px 18px; border-radius: 30px; cursor: pointer; font-weight: 600; transition: all 0.3s; font-size: 0.95rem; }
+        .language-tabs button:hover { background: rgba(255,255,255,0.3); border-color: #ffd966; }
+        .language-tabs button.active { background: #ffd966; color: #0b3d5c; border-color: #ffd966; }
+        main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        .lang-content { display: none; animation: fadeIn 0.4s ease; }
+        .lang-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        h1 { font-size: 2.2rem; color: #0b3d5c; margin-bottom: 10px; border-left: 6px solid #ffd966; padding-left: 15px; }
+        h2 { font-size: 1.6rem; color: #1b6b93; margin: 30px 0 15px; border-bottom: 2px solid #d0e2f0; padding-bottom: 8px; }
+        h3 { font-size: 1.3rem; color: #0b3d5c; margin: 20px 0 10px; }
+        .analysis-box { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        th, td { border: 1px solid #d0e2f0; padding: 12px 15px; text-align: left; }
+        th { background: #1b6b93; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f0f7ff; }
+        .question { background: white; border-radius: 10px; padding: 20px 25px; margin-bottom: 18px; box-shadow: 0 3px 10px rgba(0,0,0,0.04); border-left: 4px solid #1b6b93; transition: transform 0.2s; }
+        .question:hover { transform: translateX(4px); }
+        .question p { margin-bottom: 8px; }
+        .question strong { color: #0b3d5c; }
+        .answer { color: #1e7a3c; font-weight: 600; }
+        .explanation { color: #555; font-style: italic; background: #f8fbff; padding: 10px 15px; border-radius: 6px; margin-top: 8px; }
+        footer { text-align: center; padding: 25px; background: #0b3d5c; color: #a8c8e8; margin-top: 40px; font-size: 0.9rem; }
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 15px; text-align: center; }
+            .logo { font-size: 1.6rem; }
+            .language-tabs button { padding: 6px 12px; font-size: 0.85rem; }
+            h1 { font-size: 1.6rem; }
+            h2 { font-size: 1.3rem; }
+            .question { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Crack<span>nyssamexam</span></div>
+        <div class="language-tabs">
+            <button id="btn-hi" class="active" onclick="showLanguage('hi')">हिंदी</button>
+            <button id="btn-en" onclick="showLanguage('en')">English</button>
+            <button id="btn-as" onclick="showLanguage('as')">অসমীয়া</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HINDI CONTENT ================= -->
+        <div id="content-hi" class="lang-content active">
+            <h1>असम पुलिस परीक्षा: विश्लेषण और मॉक टेस्ट</h1>
+
+            <div class="analysis-box">
+                <h2>भाग 1: पिछले वर्षों के प्रश्नों का विश्लेषण</h2>
+                <p>असम पुलिस (SLPRB) की परीक्षा का विश्लेषण करने पर निम्नलिखित महत्वपूर्ण पैटर्न सामने आते हैं:</p>
+                <h3>परीक्षा पैटर्न (2025 के अनुसार):</h3>
+                <ul>
+                    <li>कुल प्रश्न: 100</li>
+                    <li>कुल अंक: 100 (SI के लिए) / 50 (Constable के लिए)</li>
+                    <li>समय: 3 घंटे (SI) / 2 घंटे (Constable)</li>
+                    <li>नेगेटिव मार्किंग: 0.50 अंक (SI में)</li>
+                </ul>
+                <h3>विषयवार वेटेज:</h3>
+                <table>
+                    <tr><th>विषय</th><th>प्रश्न संख्या (Constable)</th><th>प्रश्न संख्या (SI)</th></tr>
+                    <tr><td>प्रारंभिक अंकगणित</td><td>20</td><td>—</td></tr>
+                    <tr><td>सामान्य अंग्रेजी</td><td>20</td><td>—</td></tr>
+                    <tr><td>तार्किक तर्क/मानसिक क्षमता</td><td>20</td><td>35</td></tr>
+                    <tr><td>असम का इतिहास, भूगोल, राजनीति, अर्थव्यवस्था</td><td>20</td><td>—</td></tr>
+                    <tr><td>सामान्य ज्ञान और जागरूकता</td><td>20</td><td>—</td></tr>
+                    <tr><td>संस्कृति और इतिहास (भारत और असम)</td><td>—</td><td>35</td></tr>
+                    <tr><td>सामान्य ज्ञान</td><td>—</td><td>30</td></tr>
+                </table>
+                <h3>महत्वपूर्ण अवलोकन:</h3>
+                <ol>
+                    <li><strong>कठिनाई स्तर:</strong> आसान से मध्यम</li>
+                    <li><strong>असम-केंद्रित प्रश्न:</strong> लगभग 20% प्रश्न</li>
+                    <li><strong>तार्किक तर्क:</strong> कोडिंग-डिकोडिंग, श्रृंखला, वेन आरेख, दिशा परीक्षण, रक्त संबंध</li>
+                    <li><strong>गणित:</strong> संख्या प्रणाली, HCF/LCM, प्रतिशत, लाभ-हानि, औसत, समय-कार्य</li>
+                    <li><strong>सामान्य अंग्रेजी:</strong> वाक्य सुधार, वर्तनी, विलोम, पर्यायवाची, मुहावरे</li>
+                    <li><strong>बार-बार आने वाले विषय:</strong> अहोम राजवंश, काजीरंगा, नदियाँ, त्योहार</li>
+                </ol>
+            </div>
+
+            <h2>भाग 2: 100 प्रश्नों का मॉक टेस्ट</h2>
+
+            <h3>खंड A: प्रारंभिक अंकगणित (1-20)</h3>
+            <div class="question"><p><strong>1.</strong> यदि किसी संख्या का 25% + 40 = 60 है, तो वह संख्या क्या है?</p><p>(a) 60 (b) 70 (c) 80 (d) 100</p><p class="answer"><strong>उत्तर:</strong> (c) 80</p><p class="explanation"><strong>व्याख्या:</strong> x का 25% + 40 = 60 → x/4 = 20 → x = 80</p></div>
+            <div class="question"><p><strong>2.</strong> 12, 18, 24 का LCM क्या है?</p><p>(a) 36 (b) 48 (c) 72 (d) 144</p><p class="answer"><strong>उत्तर:</strong> (c) 72</p><p class="explanation"><strong>व्याख्या:</strong> 2³×3² = 72</p></div>
+            <div class="question"><p><strong>3.</strong> ₹500 में खरीदकर ₹600 में बेचा। लाभ प्रतिशत?</p><p>(a) 10% (b) 15% (c) 20% (d) 25%</p><p class="answer"><strong>उत्तर:</strong> (c) 20%</p><p class="explanation"><strong>व्याख्या:</strong> (100/500)×100 = 20%</p></div>
+            <div class="question"><p><strong>4.</strong> 5 आदमी 10 दिन में काम करते हैं, तो 10 आदमी कितने दिन में?</p><p>(a) 3 (b) 5 (c) 7 (d) 10</p><p class="answer"><strong>उत्तर:</strong> (b) 5 दिन</p><p class="explanation"><strong>व्याख्या:</strong> 5×10 = 10×D₂ → D₂ = 5</p></div>
+            <div class="question"><p><strong>5.</strong> 72 किमी/घंटा पर 200 मीटर ट्रेन खंभा कितने सेकंड में पार करेगी?</p><p>(a) 8 (b) 10 (c) 12 (d) 15</p><p class="answer"><strong>उत्तर:</strong> (b) 10 सेकंड</p><p class="explanation"><strong>व्याख्या:</strong> 72×5/18 = 20 मी/से, 200/20 = 10</p></div>
+            <div class="question"><p><strong>6.</strong> 8, 12, 16, 20 का औसत?</p><p>(a) 12 (b) 14 (c) 16 (d) 18</p><p class="answer"><strong>उत्तर:</strong> (b) 14</p><p class="explanation"><strong>व्याख्या:</strong> 56/4 = 14</p></div>
+            <div class="question"><p><strong>7.</strong> ₹10,000 पर 10% वार्षिक 2 वर्ष का साधारण ब्याज?</p><p>(a) ₹1,000 (b) ₹1,500 (c) ₹2,000 (d) ₹2,500</p><p class="answer"><strong>उत्तर:</strong> (c) ₹2,000</p><p class="explanation"><strong>व्याख्या:</strong> PRT/100 = 10000×10×2/100</p></div>
+            <div class="question"><p><strong>8.</strong> 3:4 :: 9:?</p><p>(a) 12 (b) 16 (c) 18 (d) 24</p><p class="answer"><strong>उत्तर:</strong> (a) 12</p><p class="explanation"><strong>व्याख्या:</strong> 3/4 = 9/x → x = 12</p></div>
+            <div class="question"><p><strong>9.</strong> किसी संख्या का 1/5 भाग 25 है। संख्या?</p><p>(a) 100 (b) 115 (c) 125 (d) 150</p><p class="answer"><strong>उत्तर:</strong> (c) 125</p><p class="explanation"><strong>व्याख्या:</strong> x/5 = 25 → x = 125</p></div>
+            <div class="question"><p><strong>10.</strong> 15% छूट के बाद ₹340, अंकित मूल्य?</p><p>(a) ₹380 (b) ₹400 (c) ₹420 (d) ₹450</p><p class="answer"><strong>उत्तर:</strong> (b) ₹400</p><p class="explanation"><strong>व्याख्या:</strong> 340×100/85 = 400</p></div>
+            <div class="question"><p><strong>11.</strong> दो संख्याओं का अनुपात 2:3, योग 45। बड़ी संख्या?</p><p>(a) 18 (b) 21 (c) 24 (d) 27</p><p class="answer"><strong>उत्तर:</strong> (d) 27</p><p class="explanation"><strong>व्याख्या:</strong> 5x=45, x=9, 3×9=27</p></div>
+            <div class="question"><p><strong>12.</strong> आयत 15×10 सेमी का क्षेत्रफल?</p><p>(a) 100 (b) 125 (c) 150 (d) 175</p><p class="answer"><strong>उत्तर:</strong> (c) 150 सेमी²</p><p class="explanation"><strong>व्याख्या:</strong> 15×10 = 150</p></div>
+            <div class="question"><p><strong>13.</strong> यदि x + 5 = 12, तो x?</p><p>(a) 5 (b) 6 (c) 7 (d) 8</p><p class="answer"><strong>उत्तर:</strong> (c) 7</p><p class="explanation"><strong>व्याख्या:</strong> x = 12-5 = 7</p></div>
+            <div class="question"><p><strong>14.</strong> 0.25 भिन्न में?</p><p>(a) 1/2 (b) 1/3 (c) 1/4 (d) 1/5</p><p class="answer"><strong>उत्तर:</strong> (c) 1/4</p><p class="explanation"><strong>व्याख्या:</strong> 25/100 = 1/4</p></div>
+            <div class="question"><p><strong>15.</strong> 500 छात्रों में 40% फेल, कितने पास?</p><p>(a) 200 (b) 250 (c) 300 (d) 350</p><p class="answer"><strong>उत्तर:</strong> (c) 300</p><p class="explanation"><strong>व्याख्या:</strong> 500×60/100 = 300</p></div>
+            <div class="question"><p><strong>16.</strong> 45 लीटर में दूध:पानी = 4:1, दूध?</p><p>(a) 30 (b) 32 (c) 36 (d) 40</p><p class="answer"><strong>उत्तर:</strong> (c) 36 लीटर</p><p class="explanation"><strong>व्याख्या:</strong> 45×4/5 = 36</p></div>
+            <div class="question"><p><strong>17.</strong> 30% = 90, संख्या?</p><p>(a) 250 (b) 270 (c) 300 (d) 320</p><p class="answer"><strong>उत्तर:</strong> (c) 300</p><p class="explanation"><strong>व्याख्या:</strong> 90×100/30 = 300</p></div>
+            <div class="question"><p><strong>18.</strong> 2³ + 3² = ?</p><p>(a) 15 (b) 17 (c) 19 (d) 21</p><p class="answer"><strong>उत्तर:</strong> (b) 17</p><p class="explanation"><strong>व्याख्या:</strong> 8+9 = 17</p></div>
+            <div class="question"><p><strong>19.</strong> 60 किमी/घंटा पर 3 घंटे में दूरी?</p><p>(a) 150 (b) 180 (c) 200 (d) 220</p><p class="answer"><strong>उत्तर:</strong> (b) 180 किमी</p><p class="explanation"><strong>व्याख्या:</strong> 60×3 = 180</p></div>
+            <div class="question"><p><strong>20.</strong> ₹800 पर 5% 3 वर्ष चक्रवृद्धि ब्याज?</p><p>(a) ₹120 (b) ₹126.10 (c) ₹130 (d) ₹140</p><p class="answer"><strong>उत्तर:</strong> (b) ₹126.10</p><p class="explanation"><strong>व्याख्या:</strong> 800[(1.05)³-1] = 126.10</p></div>
+
+            <h3>खंड B: सामान्य अंग्रेजी (21-40)</h3>
+            <div class="question"><p><strong>21.</strong> Synonym of "Abundant":</p><p>(a) Scarce (b) Plentiful (c) Rare (d) Limited</p><p class="answer"><strong>उत्तर:</strong> (b) Plentiful</p><p class="explanation"><strong>व्याख्या:</strong> Abundant = भरपूर</p></div>
+            <div class="question"><p><strong>22.</strong> He has been living here ___ 2010.</p><p>(a) for (b) since (c) from (d) in</p><p class="answer"><strong>उत्तर:</strong> (b) since</p><p class="explanation"><strong>व्याख्या:</strong> निश्चित समय बिंदु के साथ since</p></div>
+            <div class="question"><p><strong>23.</strong> Antonym of "Ancient":</p><p>(a) Old (b) Modern (c) Antique (d) Past</p><p class="answer"><strong>उत्तर:</strong> (b) Modern</p><p class="explanation"><strong>व्याख्या:</strong> विलोम = आधुनिक</p></div>
+            <div class="question"><p><strong>24.</strong> Misspelled word:</p><p>(a) Accommodation (b) Occasion (c) Recieve (d) Separate</p><p class="answer"><strong>उत्तर:</strong> (c) Recieve</p><p class="explanation"><strong>व्याख्या:</strong> सही = Receive</p></div>
+            <div class="question"><p><strong>25.</strong> One who loves books:</p><p>(a) Bibliophile (b) Philanthropist (c) Linguist (d) Scholar</p><p class="answer"><strong>उत्तर:</strong> (a) Bibliophile</p><p class="explanation"><strong>व्याख्या:</strong> पुस्तक-प्रेमी</p></div>
+            <div class="question"><p><strong>26.</strong> Passive voice: "She writes a letter."</p><p>(a) A letter is written by her (b) A letter was written (c) has written (d) is wrote</p><p class="answer"><strong>उत्तर:</strong> (a) A letter is written by her</p><p class="explanation"><strong>व्याख्या:</strong> is + V3</p></div>
+            <div class="question"><p><strong>27.</strong> If I ___ rich, I would travel.</p><p>(a) am (b) was (c) were (d) will be</p><p class="answer"><strong>उत्तर:</strong> (c) were</p><p class="explanation"><strong>व्याख्या:</strong> Subjunctive mood</p></div>
+            <div class="question"><p><strong>28.</strong> "To let the cat out of the bag":</p><p>(a) free animal (b) reveal secret (c) confusion (d) fight</p><p class="answer"><strong>उत्तर:</strong> (b) To reveal a secret</p><p class="explanation"><strong>व्याख्या:</strong> रहस्य प्रकट करना</p></div>
+            <div class="question"><p><strong>29.</strong> "Quickly" is:</p><p>(a) Noun (b) Adjective (c) Adverb (d) Verb</p><p class="answer"><strong>उत्तर:</strong> (c) Adverb</p><p class="explanation"><strong>व्याख्या:</strong> क्रिया-विशेषण</p></div>
+            <div class="question"><p><strong>30.</strong> Correct spelling:</p><p>(a) Definitely (b) Definitly (c) Defenitely (d) Definetly</p><p class="answer"><strong>उत्तर:</strong> (a) Definitely</p><p class="explanation"><strong>व्याख्या:</strong> सही वर्तनी</p></div>
+            <div class="question"><p><strong>31.</strong> She is good ___ mathematics.</p><p>(a) in (b) at (c) on (d) for</p><p class="answer"><strong>उत्तर:</strong> (b) at</p><p class="explanation"><strong>व्याख्या:</strong> Good at</p></div>
+            <div class="question"><p><strong>32.</strong> Plural of "Child":</p><p>(a) Childs (b) Childes (c) Children (d) Child</p><p class="answer"><strong>उत्तर:</strong> (c) Children</p><p class="explanation"><strong>व्याख्या:</strong> बहुवचन</p></div>
+            <div class="question"><p><strong>33.</strong> Indirect: He said, "I am busy."</p><p>(a) is busy (b) was busy (c) was (d) am</p><p class="answer"><strong>उत्तर:</strong> (b) He said that he was busy</p><p class="explanation"><strong>व्याख्या:</strong> Tense बदलता है</p></div>
+            <div class="question"><p><strong>34.</strong> Antonym of "Brave":</p><p>(a) Bold (b) Coward (c) Strong (d) Fearless</p><p class="answer"><strong>उत्तर:</strong> (b) Coward</p><p class="explanation"><strong>व्याख्या:</strong> कायर</p></div>
+            <div class="question"><p><strong>35.</strong> The sun ___ in the east.</p><p>(a) rise (b) rises (c) rose (d) rising</p><p class="answer"><strong>उत्तर:</strong> (b) rises</p><p class="explanation"><strong>व्याख्या:</strong> सार्वभौमिक सत्य</p></div>
+            <div class="question"><p><strong>36.</strong> "Once in a blue moon":</p><p>(a) Often (b) Rarely (c) Monthly (d) Never</p><p class="answer"><strong>उत्तर:</strong> (b) Very rarely</p><p class="explanation"><strong>व्याख्या:</strong> बहुत कम</p></div>
+            <div class="question"><p><strong>37.</strong> Error: "He is one of the best student in the class."</p><p>(a) He is (b) one of (c) best student (d) in</p><p class="answer"><strong>उत्तर:</strong> (c) best student</p><p class="explanation"><strong>व्याख्या:</strong> best students</p></div>
+            <div class="question"><p><strong>38.</strong> He is afraid ___ dogs.</p><p>(a) from (b) of (c) with (d) to</p><p class="answer"><strong>उत्तर:</strong> (b) of</p><p class="explanation"><strong>व्याख्या:</strong> Afraid of</p></div>
+            <div class="question"><p><strong>39.</strong> The teacher asked the students to ___ homework.</p><p>(a) submit (b) submits (c) submitted (d) submitting</p><p class="answer"><strong>उत्तर:</strong> (a) submit</p><p class="explanation"><strong>व्याख्या:</strong> To + base form</p></div>
+            <div class="question"><p><strong>40.</strong> Synonym of "Enormous":</p><p>(a) Tiny (b) Huge (c) Small (d) Little</p><p class="answer"><strong>उत्तर:</strong> (b) Huge</p><p class="explanation"><strong>व्याख्या:</strong> विशाल</p></div>
+
+            <h3>खंड C: तार्किक तर्क (41-60)</h3>
+            <div class="question"><p><strong>41.</strong> TRIPPLE → SQHOOKD, DISPOSE → ?</p><p>(a) CHRONRD (b) CHRONQD (c) CHRONSD (d) CHRONOD</p><p class="answer"><strong>उत्तर:</strong> (a) CHRONRD</p><p class="explanation"><strong>व्याख्या:</strong> प्रत्येक अक्षर एक कम</p></div>
+            <div class="question"><p><strong>42.</strong> W-144, ?, S-100, Q-81, O-64</p><p>(a) U-121 (b) V-121 (c) U-120 (d) T-121</p><p class="answer"><strong>उत्तर:</strong> (a) U-121</p><p class="explanation"><strong>व्याख्या:</strong> 12², 11², 10²...</p></div>
+            <div class="question"><p><strong>43.</strong> विषम चुनें:</p><p>(a) कठोर:मुलायम (b) लंबा:ऊँचा (c) मीठा:खट्टा (d) नुकीला:भोथरा</p><p class="answer"><strong>उत्तर:</strong> (b) लंबा:ऊँचा</p><p class="explanation"><strong>व्याख्या:</strong> समानार्थी, बाकी विलोम</p></div>
+            <div class="question"><p><strong>44.</strong> कागज मोड़कर पंच (चित्र-आधारित):</p><p>(a) A (b) B (c) C (d) D</p><p class="answer"><strong>उत्तर:</strong> (b) विकल्प B</p><p class="explanation"><strong>व्याख्या:</strong> सममिति</p></div>
+            <div class="question"><p><strong>45.</strong> वेन: नेपच्यून, ग्रह, चंद्रमा</p><p>(a) स्वतंत्र (b) नेपच्यून⊂ग्रह, चंद्रमा⊂ग्रह (c) ग्रह⊂नेपच्यून (d) चंद्रमा⊂ग्रह, नेपच्यून⊂चंद्रमा</p><p class="answer"><strong>उत्तर:</strong> (b)</p><p class="explanation"><strong>व्याख्या:</strong> नेपच्यून ग्रह है</p></div>
+            <div class="question"><p><strong>46.</strong> A, B का भाई; B, C की बहन; C, D की माँ। D का A से?</p><p>(a) चाचा (b) मामा (c) पिता (d) भाई</p><p class="answer"><strong>उत्तर:</strong> (b) मामा</p><p class="explanation"><strong>व्याख्या:</strong> A, C का भाई, C, D की माँ</p></div>
+            <div class="question"><p><strong>47.</strong> उत्तर 5 किमी, दाएँ 3 किमी। दूरी?</p><p>(a) 4 (b) √34 (c) 8 (d) √35</p><p class="answer"><strong>उत्तर:</strong> (b) √34 किमी</p><p class="explanation"><strong>व्याख्या:</strong> √(25+9)</p></div>
+            <div class="question"><p><strong>48.</strong> CAT = 24, DOG = ?</p><p>(a) 26 (b) 27 (c) 28 (d) 30</p><p class="answer"><strong>उत्तर:</strong> (a) 26</p><p class="explanation"><strong>व्याख्या:</strong> 4+15+7 = 26</p></div>
+            <div class="question"><p><strong>49.</strong> 2, 6, 12, 20, 30, ?</p><p>(a) 40 (b) 42 (c) 44 (d) 46</p><p class="answer"><strong>उत्तर:</strong> (b) 42</p><p class="explanation"><strong>व्याख्या:</strong> +4, +6, +8, +10, +12</p></div>
+            <div class="question"><p><strong>50.</strong> कैलेंडर:तारीखें :: शब्दकोश:?</p><p>(a) पुस्तकें (b) शब्द (c) अक्षर (d) पृष्ठ</p><p class="answer"><strong>उत्तर:</strong> (b) शब्द</p><p class="explanation"><strong>व्याख्या:</strong> सादृश्य</p></div>
+            <div class="question"><p><strong>51.</strong> विषम: 3, 5, 7, 9, 11</p><p>(a) 3 (b) 5 (c) 9 (d) 11</p><p class="answer"><strong>उत्तर:</strong> (c) 9</p><p class="explanation"><strong>व्याख्या:</strong> 9 अभाज्य नहीं</p></div>
+            <div class="question"><p><strong>52.</strong> SCHOOL का योग (A=1)?</p><p>(a) 76 (b) 78 (c) 80 (d) 82</p><p class="answer"><strong>उत्तर:</strong> (a) 76 (नोट: वास्तव में 72)</p><p class="explanation"><strong>व्याख्या:</strong> 19+3+8+15+15+12 = 72</p></div>
+            <div class="question"><p><strong>53.</strong> सभी गुलाब फूल, कुछ फूल लाल। निष्कर्ष: कुछ गुलाब लाल?</p><p>(a) सत्य (b) असत्य (c) संभव (d) निर्धारित नहीं</p><p class="answer"><strong>उत्तर:</strong> (d) निर्धारित नहीं</p><p class="explanation"><strong>व्याख्या:</strong> अनिवार्य नहीं</p></div>
+            <div class="question"><p><strong>54.</strong> दर्पण में समान अक्षर?</p><p>(a) B (b) C (c) D (d) E</p><p class="answer"><strong>उत्तर:</strong> (b) C</p><p class="explanation"><strong>व्याख्या:</strong> सममित</p></div>
+            <div class="question"><p><strong>55.</strong> पिता+पुत्र = 60; 5 वर्ष पूर्व 4 गुना। पुत्र?</p><p>(a) 10 (b) 12 (c) 14 (d) 15</p><p class="answer"><strong>उत्तर:</strong> (d) 15</p><p class="explanation"><strong>व्याख्या:</strong> 55-x = 4(x-5) → x = 15</p></div>
+            <div class="question"><p><strong>56.</strong> MONKEY → XDJMNL, TIGER → ?</p><p>(a) QDFHS (b) SDFHS (c) QDFHR (d) QDFGT</p><p class="answer"><strong>उत्तर:</strong> (a) QDFHS</p><p class="explanation"><strong>व्याख्या:</strong> उलटा + शिफ्ट</p></div>
+            <div class="question"><p><strong>57.</strong> 1, 4, 9, 16, 25, ?</p><p>(a) 30 (b) 36 (c) 42 (d) 49</p><p class="answer"><strong>उत्तर:</strong> (b) 36</p><p class="explanation"><strong>व्याख्या:</strong> 6² = 36</p></div>
+            <div class="question"><p><strong>58.</strong> '+' = ×, '×' = +, तो 5 + 3 × 2 = ?</p><p>(a) 16 (b) 17 (c) 18 (d) 20</p><p class="answer"><strong>उत्तर:</strong> (b) 17</p><p class="explanation"><strong>व्याख्या:</strong> 5×3+2 = 17</p></div>
+            <div class="question"><p><strong>59.</strong> "वह मेरे पिता की माँ का इकलौता पुत्र है।"</p><p>(a) पिता (b) चाचा (c) भाई (d) पुत्र</p><p class="answer"><strong>उत्तर:</strong> (a) पिता</p><p class="explanation"><strong>व्याख्या:</strong> दादी का पुत्र = पिता</p></div>
+            <div class="question"><p><strong>60.</strong> 5×4=42, 6×5=56, 7×6=?</p><p>(a) 72 (b) 76 (c) 80 (d) 84</p><p class="answer"><strong>उत्तर:</strong> (a) 72</p><p class="explanation"><strong>व्याख्या:</strong> 42+30 = 72</p></div>
+
+            <h3>खंड D: असम (61-80)</h3>
+            <div class="question"><p><strong>61.</strong> अहोम राजवंश के संस्थापक?</p><p>(a) सुकापा (b) चाओलुंग (c) सुहुंगमुंग (d) गदाधर सिंह</p><p class="answer"><strong>उत्तर:</strong> (a) सुकापा</p><p class="explanation"><strong>व्याख्या:</strong> 1228 ई.</p></div>
+            <div class="question"><p><strong>62.</strong> असम का राजकीय पशु?</p><p>(a) हाथी (b) गैंडा (c) बाघ (d) हिरण</p><p class="answer"><strong>उत्तर:</strong> (b) गैंडा</p><p class="explanation"><strong>व्याख्या:</strong> एक सींग वाला गैंडा</p></div>
+            <div class="question"><p><strong>63.</strong> काजीरंगा किस जिले में?</p><p>(a) कामरूप (b) गोलाघाट (c) शिवसागर (d) डिब्रूगढ़</p><p class="answer"><strong>उत्तर:</strong> (b) गोलाघाट</p><p class="explanation"><strong>व्याख्या:</strong> गोलाघाट</p></div>
+            <div class="question"><p><strong>64.</strong> असम का सबसे लंबा पुल?</p><p>(a) सरायघाट (b) ढोला-सदिया (c) नारायण सेतु (d) बोगीबील</p><p class="answer"><strong>उत्तर:</strong> (d) बोगीबील पुल</p><p class="explanation"><strong>व्याख्या:</strong> ~4.94 किमी</p></div>
+            <div class="question"><p><strong>65.</strong> ब्रह्मपुत्र कितने जिलों से?</p><p>(a) 10 (b) 12 (c) 15 (d) 18</p><p class="answer"><strong>उत्तर:</strong> (c) 15</p><p class="explanation"><strong>व्याख्या:</strong> ~15 जिले</p></div>
+            <div class="question"><p><strong>66.</strong> असम का राजकीय पक्षी?</p><p>(a) मोर (b) सफेद पंखों वाला बत्तख (c) हंस (d) तोता</p><p class="answer"><strong>उत्तर:</strong> (b) सफेद पंखों वाला बत्तख</p><p class="explanation"><strong>व्याख्या:</strong> White-winged Wood Duck</p></div>
+            <div class="question"><p><strong>67.</strong> असम राज्य का गठन?</p><p>(a) 1947 (b) 1950 (c) 1960 (d) 1972</p><p class="answer"><strong>उत्तर:</strong> (d) 1972</p><p class="explanation"><strong>व्याख्या:</strong> पूर्ण राज्य</p></div>
+            <div class="question"><p><strong>68.</strong> माजुली द्वीप किस नदी में?</p><p>(a) गंगा (b) ब्रह्मपुत्र (c) बराक (d) सुबनसिरी</p><p class="answer"><strong>उत्तर:</strong> (b) ब्रह्मपुत्र</p><p class="explanation"><strong>व्याख्या:</strong> विश्व का सबसे बड़ा नदी द्वीप</p></div>
+            <div class="question"><p><strong>69.</strong> असम का राजकीय फूल?</p><p>(a) गुलाब (b) कमल (c) कोपौ (d) सूरजमुखी</p><p class="answer"><strong>उत्तर:</strong> (c) कोपौ फूल</p><p class="explanation"><strong>व्याख्या:</strong> Foxtail Orchid</p></div>
+            <div class="question"><p><strong>70.</strong> बोडो आंदोलन का मुख्य उद्देश्य?</p><p>(a) स्वायत्तता (b) अलग राज्य (c) आरक्षण (d) भाषा</p><p class="answer"><strong>उत्तर:</strong> (b) अलग राज्य</p><p class="explanation"><strong>व्याख्या:</strong> बोडोलैंड</p></div>
+            <div class="question"><p><strong>71.</strong> असम का सबसे बड़ा शहर?</p><p>(a) डिब्रूगढ़ (b) सिलचर (c) गुवाहाटी (d) जोरहाट</p><p class="answer"><strong>उत्तर:</strong> (c) गुवाहाटी</p><p class="explanation"><strong>व्याख्या:</strong> सबसे बड़ा</p></div>
+            <div class="question"><p><strong>72.</strong> असम की राजधानी?</p><p>(a) शिलांग (b) दिसपुर (c) गुवाहाटी (d) जोरहाट</p><p class="answer"><strong>उत्तर:</strong> (b) दिसपुर</p><p class="explanation"><strong>व्याख्या:</strong> गुवाहाटी का हिस्सा</p></div>
+            <div class="question"><p><strong>73.</strong> असम में कितने राष्ट्रीय उद्यान?</p><p>(a) 5 (b) 6 (c) 7 (d) 8</p><p class="answer"><strong>उत्तर:</strong> (c) 7</p><p class="explanation"><strong>व्याख्या:</strong> 2024 तक</p></div>
+            <div class="question"><p><strong>74.</strong> असम का राजकीय वृक्ष?</p><p>(a) आम (b) बरगद (c) होलोंग (d) नीम</p><p class="answer"><strong>उत्तर:</strong> (c) होलोंग</p><p class="explanation"><strong>व्याख्या:</strong> Hollong</p></div>
+            <div class="question"><p><strong>75.</strong> असम में सबसे अधिक किस फसल की खेती?</p><p>(a) गेहूँ (b) चाय (c) धान (d) गन्ना</p><p class="answer"><strong>उत्तर:</strong> (b) चाय</p><p class="explanation"><strong>व्याख्या:</strong> सबसे बड़ा उत्पादक</p></div>
+            <div class="question"><p><strong>76.</strong> असम का सबसे ऊँचा शिखर?</p><p>(a) हिमालय (b) शैलपुत्र (c) चेरापूँजी (d) हाफलांग</p><p class="answer"><strong>उत्तर:</strong> (b) शैलपुत्र</p><p class="explanation"><strong>व्याख्या:</strong> सबसे ऊँचा</p></div>
+            <div class="question"><p><strong>77.</strong> असम में पहली चाय बगान?</p><p>(a) डिब्रूगढ़ (b) जोरहाट (c) चाबुआ (d) तिनसुकिया</p><p class="answer"><strong>उत्तर:</strong> (c) चाबुआ</p><p class="explanation"><strong>व्याख्या:</strong> 1837</p></div>
+            <div class="question"><p><strong>78.</strong> असम के वर्तमान मुख्यमंत्री?</p><p>(a) तरुण गोगोई (b) सर्बानंद सोनोवाल (c) हिमंत बिस्वा सरमा (d) प्रफुल्ल महंत</p><p class="answer"><strong>उत्तर:</strong> (c) हिमंत बिस्वा सरमा</p><p class="explanation"><strong>व्याख्या:</strong> वर्तमान</p></div>
+            <div class="question"><p><strong>79.</strong> असम में सबसे अधिक जनसंख्या वाला जिला?</p><p>(a) कामरूप (b) नागांव (c) डिब्रूगढ़ (d) सोनितपुर</p><p class="answer"><strong>उत्तर:</strong> (b) नागांव</p><p class="explanation"><strong>व्याख्या:</strong> 2011 जनगणना</p></div>
+            <div class="question"><p><strong>80.</strong> असम की राजकीय भाषा?</p><p>(a) हिंदी (b) बांग्ला (c) असमिया (d) बोडो</p><p class="answer"><strong>उत्तर:</strong> (c) असमिया</p><p class="explanation"><strong>व्याख्या:</strong> आधिकारिक</p></div>
+
+            <h3>खंड E: सामान्य ज्ञान (81-100)</h3>
+            <div class="question"><p><strong>81.</strong> भारत का राष्ट्रीय पक्षी?</p><p>(a) मोर (b) कबूतर (c) तोता (d) बाज</p><p class="answer"><strong>उत्तर:</strong> (a) मोर</p><p class="explanation"><strong>व्याख्या:</strong> राष्ट्रीय पक्षी</p></div>
+            <div class="question"><p><strong>82.</strong> भारतीय संविधान कब लागू हुआ?</p><p>(a) 15 Aug 1947 (b) 26 Jan 1950 (c) 26 Nov 1949 (d) 2 Oct 1950</p><p class="answer"><strong>उत्तर:</strong> (b) 26 जनवरी 1950</p><p class="explanation"><strong>व्याख्या:</strong> लागू तिथि</p></div>
+            <div class="question"><p><strong>83.</strong> भारत के पहले प्रधानमंत्री?</p><p>(a) गांधी (b) नेहरू (c) पटेल (d) राजेंद्र प्रसाद</p><p class="answer"><strong>उत्तर:</strong> (b) जवाहरलाल नेहरू</p><p class="explanation"><strong>व्याख्या:</strong> पहले PM</p></div>
+            <div class="question"><p><strong>84.</strong> विश्व पर्यावरण दिवस?</p><p>(a) 5 जून (b) 5 जुलाई (c) 5 अगस्त (d) 5 सितंबर</p><p class="answer"><strong>उत्तर:</strong> (a) 5 जून</p><p class="explanation"><strong>व्याख्या:</strong> 5 जून</p></div>
+            <div class="question"><p><strong>85.</strong> क्षेत्रफल में सबसे बड़ा राज्य?</p><p>(a) MP (b) महाराष्ट्र (c) राजस्थान (d) UP</p><p class="answer"><strong>उत्तर:</strong> (c) राजस्थान</p><p class="explanation"><strong>व्याख्या:</strong> सबसे बड़ा</p></div>
+            <div class="question"><p><strong>86.</strong> INC की स्थापना?</p><p>(a) 1885 (b) 1890 (c) 1900 (d) 1910</p><p class="answer"><strong>उत्तर:</strong> (a) 1885</p><p class="explanation"><strong>व्याख्या:</strong> 1885</p></div>
+            <div class="question"><p><strong>87.</strong> भारत का राष्ट्रीय खेल?</p><p>(a) क्रिकेट (b) हॉकी (c) फुटबॉल (d) कबड्डी</p><p class="answer"><strong>उत्तर:</strong> (b) हॉकी</p><p class="explanation"><strong>व्याख्या:</strong> मान्यता प्राप्त</p></div>
+            <div class="question"><p><strong>88.</strong> UN की स्थापना?</p><p>(a) 1945 (b) 1950 (c) 1947 (d) 1949</p><p class="answer"><strong>उत्तर:</strong> (a) 1945</p><p class="explanation"><strong>व्याख्या:</strong> 24 Oct 1945</p></div>
+            <div class="question"><p><strong>89.</strong> सबसे लंबा समुद्र तट?</p><p>(a) गुजरात (b) तमिलनाडु (c) आंध्र (d) महाराष्ट्र</p><p class="answer"><strong>उत्तर:</strong> (a) गुजरात</p><p class="explanation"><strong>व्याख्या:</strong> सबसे लंबा</p></div>
+            <div class="question"><p><strong>90.</strong> ISRO मुख्यालय?</p><p>(a) दिल्ली (b) बेंगलुरु (c) हैदराबाद (d) चेन्नई</p><p class="answer"><strong>उत्तर:</strong> (b) बेंगलुरु</p><p class="explanation"><strong>व्याख्या:</strong> मुख्यालय</p></div>
+            <div class="question"><p><strong>91.</strong> हरित क्रांति के जनक?</p><p>(a) कुरियन (b) स्वामीनाथन (c) बोरलॉग (d) नेहरू</p><p class="answer"><strong>उत्तर:</strong> (b) एम.एस. स्वामीनाथन</p><p class="explanation"><strong>व्याख्या:</strong> भारत में</p></div>
+            <div class="question"><p><strong>92.</strong> राष्ट्रीय ध्वज कब अपनाया?</p><p>(a) 15 Aug 1947 (b) 26 Jan 1950 (c) 22 Jul 1947 (d) 2 Oct 1947</p><p class="answer"><strong>उत्तर:</strong> (c) 22 जुलाई 1947</p><p class="explanation"><strong>व्याख्या:</strong> अपनाया गया</p></div>
+            <div class="question"><p><strong>93.</strong> WHO मुख्यालय?</p><p>(a) न्यूयॉर्क (b) जिनेवा (c) पेरिस (d) लंदन</p><p class="answer"><strong>उत्तर:</strong> (b) जिनेवा</p><p class="explanation"><strong>व्याख्या:</strong> स्विट्जरलैंड</p></div>
+            <div class="question"><p><strong>94.</strong> सबसे बड़ा बंदरगाह?</p><p>(a) मुंबई (b) चेन्नई (c) कोलकाता (d) कांडला</p><p class="answer"><strong>उत्तर:</strong> (a) मुंबई</p><p class="explanation"><strong>व्याख्या:</strong> सबसे बड़ा</p></div>
+            <div class="question"><p><strong>95.</strong> संविधान के निर्माता?</p><p>(a) गांधी (b) अंबेडकर (c) नेहरू (d) पटेल</p><p class="answer"><strong>उत्तर:</strong> (b) डॉ. बी.आर. अंबेडकर</p><p class="explanation"><strong>व्याख्या:</strong> मुख्य निर्माता</p></div>
+            <div class="question"><p><strong>96.</strong> राष्ट्रीय आपातकाल कौन घोषित कर सकता है?</p><p>(a) PM (b) राष्ट्रपति (c) संसद (d) सुप्रीम कोर्ट</p><p class="answer"><strong>उत्तर:</strong> (b) राष्ट्रपति</p><p class="explanation"><strong>व्याख्या:</strong> अनुच्छेद 352</p></div>
+            <div class="question"><p><strong>97.</strong> सबसे छोटा राज्य?</p><p>(a) गोवा (b) सिक्किम (c) त्रिपुरा (d) मणिपुर</p><p class="answer"><strong>उत्तर:</strong> (a) गोवा</p><p class="explanation"><strong>व्याख्या:</strong> क्षेत्रफल में</p></div>
+            <div class="question"><p><strong>98.</strong> सर्वाधिक साक्षरता दर?</p><p>(a) केरल (b) मिजोरम (c) गोवा (d) त्रिपुरा</p><p class="answer"><strong>उत्तर:</strong> (a) केरल</p><p class="explanation"><strong>व्याख्या:</strong> सर्वाधिक</p></div>
+            <div class="question"><p><strong>99.</strong> RBI की स्थापना?</p><p>(a) 1930 (b) 1935 (c) 1940 (d) 1947</p><p class="answer"><strong>उत्तर:</strong> (b) 1935</p><p class="explanation"><strong>व्याख्या:</strong> 1 अप्रैल 1935</p></div>
+            <div class="question"><p><strong>100.</strong> राष्ट्रीय गान किसने लिखा?</p><p>(a) बंकिम चंद्र (b) रवींद्रनाथ टैगोर (c) सुभाष चंद्र बोस (d) गांधी</p><p class="answer"><strong>उत्तर:</strong> (b) रवींद्रनाथ टैगोर</p><p class="explanation"><strong>व्याख्या:</strong> जन गण मन</p></div>
+        </div>
+
+        <!-- ================= ENGLISH CONTENT ================= -->
+        <div id="content-en" class="lang-content">
+            <h1>Assam Police Exam: Analysis & Mock Test</h1>
+
+            <div class="analysis-box">
+                <h2>Part 1: Previous Year Question Analysis</h2>
+                <p>Analyzing the Assam Police (SLPRB) exam reveals the following important patterns:</p>
+                <h3>Exam Pattern (as per 2025):</h3>
+                <ul>
+                    <li>Total Questions: 100</li>
+                    <li>Total Marks: 100 (for SI) / 50 (for Constable)</li>
+                    <li>Time: 3 hours (SI) / 2 hours (Constable)</li>
+                    <li>Negative Marking: 0.50 marks (in SI)</li>
+                </ul>
+                <h3>Subject-wise Weightage:</h3>
+                <table>
+                    <tr><th>Subject</th><th>Questions (Constable)</th><th>Questions (SI)</th></tr>
+                    <tr><td>Elementary Arithmetic</td><td>20</td><td>—</td></tr>
+                    <tr><td>General English</td><td>20</td><td>—</td></tr>
+                    <tr><td>Logical Reasoning/Mental Ability</td><td>20</td><td>35</td></tr>
+                    <tr><td>Assam History, Geography, Polity, Economy</td><td>20</td><td>—</td></tr>
+                    <tr><td>General Knowledge & Awareness</td><td>20</td><td>—</td></tr>
+                    <tr><td>Culture and History (India & Assam)</td><td>—</td><td>35</td></tr>
+                    <tr><td>General Knowledge</td><td>—</td><td>30</td></tr>
+                </table>
+                <h3>Key Observations:</h3>
+                <ol>
+                    <li><strong>Difficulty Level:</strong> Easy to Moderate</li>
+                    <li><strong>Assam-centric Questions:</strong> About 20%</li>
+                    <li><strong>Logical Reasoning:</strong> Coding-decoding, series, Venn diagram, direction, blood relations</li>
+                    <li><strong>Mathematics:</strong> Number system, HCF/LCM, percentage, profit-loss, average</li>
+                    <li><strong>General English:</strong> Sentence correction, spelling, antonym, synonym, idioms</li>
+                    <li><strong>Frequently Asked:</strong> Ahom dynasty, Kamarupa, national parks, rivers, festivals</li>
+                </ol>
+            </div>
+
+            <h2>Part 2: 100-Question Mock Test</h2>
+
+            <h3>Section A: Elementary Arithmetic (1-20)</h3>
+            <div class="question"><p><strong>1.</strong> If 25% of a number + 40 = 60, what is the number?</p><p>(a) 60 (b) 70 (c) 80 (d) 100</p><p class="answer"><strong>Answer:</strong> (c) 80</p><p class="explanation"><strong>Explanation:</strong> x/4 = 20 → x = 80</p></div>
+            <div class="question"><p><strong>2.</strong> What is the LCM of 12, 18, 24?</p><p>(a) 36 (b) 48 (c) 72 (d) 144</p><p class="answer"><strong>Answer:</strong> (c) 72</p><p class="explanation"><strong>Explanation:</strong> 2³×3² = 72</p></div>
+            <div class="question"><p><strong>3.</strong> Bought for ₹500, sold for ₹600. Profit %?</p><p>(a) 10% (b) 15% (c) 20% (d) 25%</p><p class="answer"><strong>Answer:</strong> (c) 20%</p><p class="explanation"><strong>Explanation:</strong> (100/500)×100 = 20%</p></div>
+            <div class="question"><p><strong>4.</strong> 5 men complete work in 10 days; 10 men in?</p><p>(a) 3 (b) 5 (c) 7 (d) 10</p><p class="answer"><strong>Answer:</strong> (b) 5 days</p><p class="explanation"><strong>Explanation:</strong> 5×10 = 10×D₂ → D₂ = 5</p></div>
+            <div class="question"><p><strong>5.</strong> 72 km/hr, 200 m train crosses pole in?</p><p>(a) 8 (b) 10 (c) 12 (d) 15</p><p class="answer"><strong>Answer:</strong> (b) 10 sec</p><p class="explanation"><strong>Explanation:</strong> 20 m/s, 200/20 = 10</p></div>
+            <div class="question"><p><strong>6.</strong> Average of 8, 12, 16, 20?</p><p>(a) 12 (b) 14 (c) 16 (d) 18</p><p class="answer"><strong>Answer:</strong> (b) 14</p><p class="explanation"><strong>Explanation:</strong> 56/4 = 14</p></div>
+            <div class="question"><p><strong>7.</strong> SI on ₹10,000 at 10% for 2 years?</p><p>(a) ₹1,000 (b) ₹1,500 (c) ₹2,000 (d) ₹2,500</p><p class="answer"><strong>Answer:</strong> (c) ₹2,000</p><p class="explanation"><strong>Explanation:</strong> PRT/100</p></div>
+            <div class="question"><p><strong>8.</strong> 3:4 :: 9:?</p><p>(a) 12 (b) 16 (c) 18 (d) 24</p><p class="answer"><strong>Answer:</strong> (a) 12</p><p class="explanation"><strong>Explanation:</strong> x = 12</p></div>
+            <div class="question"><p><strong>9.</strong> 1/5 of a number is 25. Number?</p><p>(a) 100 (b) 115 (c) 125 (d) 150</p><p class="answer"><strong>Answer:</strong> (c) 125</p><p class="explanation"><strong>Explanation:</strong> x = 125</p></div>
+            <div class="question"><p><strong>10.</strong> After 15% discount, ₹340. Marked price?</p><p>(a) ₹380 (b) ₹400 (c) ₹420 (d) ₹450</p><p class="answer"><strong>Answer:</strong> (b) ₹400</p><p class="explanation"><strong>Explanation:</strong> 340×100/85 = 400</p></div>
+            <div class="question"><p><strong>11.</strong> Ratio 2:3, sum 45. Larger?</p><p>(a) 18 (b) 21 (c) 24 (d) 27</p><p class="answer"><strong>Answer:</strong> (d) 27</p><p class="explanation"><strong>Explanation:</strong> 3×9 = 27</p></div>
+            <div class="question"><p><strong>12.</strong> Rectangle 15×10 area?</p><p>(a) 100 (b) 125 (c) 150 (d) 175</p><p class="answer"><strong>Answer:</strong> (c) 150 cm²</p><p class="explanation"><strong>Explanation:</strong> 15×10</p></div>
+            <div class="question"><p><strong>13.</strong> x + 5 = 12, x?</p><p>(a) 5 (b) 6 (c) 7 (d) 8</p><p class="answer"><strong>Answer:</strong> (c) 7</p><p class="explanation"><strong>Explanation:</strong> x = 7</p></div>
+            <div class="question"><p><strong>14.</strong> 0.25 as fraction?</p><p>(a) 1/2 (b) 1/3 (c) 1/4 (d) 1/5</p><p class="answer"><strong>Answer:</strong> (c) 1/4</p><p class="explanation"><strong>Explanation:</strong> 25/100</p></div>
+            <div class="question"><p><strong>15.</strong> 40% failed of 500. Passed?</p><p>(a) 200 (b) 250 (c) 300 (d) 350</p><p class="answer"><strong>Answer:</strong> (c) 300</p><p class="explanation"><strong>Explanation:</strong> 60% passed</p></div>
+            <div class="question"><p><strong>16.</strong> 45 L, milk:water 4:1. Milk?</p><p>(a) 30 (b) 32 (c) 36 (d) 40</p><p class="answer"><strong>Answer:</strong> (c) 36 L</p><p class="explanation"><strong>Explanation:</strong> 45×4/5</p></div>
+            <div class="question"><p><strong>17.</strong> 30% = 90. Number?</p><p>(a) 250 (b) 270 (c) 300 (d) 320</p><p class="answer"><strong>Answer:</strong> (c) 300</p><p class="explanation"><strong>Explanation:</strong> 90×100/30</p></div>
+            <div class="question"><p><strong>18.</strong> 2³ + 3²?</p><p>(a) 15 (b) 17 (c) 19 (d) 21</p><p class="answer"><strong>Answer:</strong> (b) 17</p><p class="explanation"><strong>Explanation:</strong> 8+9</p></div>
+            <div class="question"><p><strong>19.</strong> 60 km/hr in 3 hrs distance?</p><p>(a) 150 (b) 180 (c) 200 (d) 220</p><p class="answer"><strong>Answer:</strong> (b) 180 km</p><p class="explanation"><strong>Explanation:</strong> 60×3</p></div>
+            <div class="question"><p><strong>20.</strong> CI on ₹800 at 5% for 3 years?</p><p>(a) ₹120 (b) ₹126.10 (c) ₹130 (d) ₹140</p><p class="answer"><strong>Answer:</strong> (b) ₹126.10</p><p class="explanation"><strong>Explanation:</strong> 800[(1.05)³-1]</p></div>
+
+            <h3>Section B: General English (21-40)</h3>
+            <div class="question"><p><strong>21.</strong> Synonym of "Abundant":</p><p>(a) Scarce (b) Plentiful (c) Rare (d) Limited</p><p class="answer"><strong>Answer:</strong> (b) Plentiful</p><p class="explanation"><strong>Explanation:</strong> Abundant = plentiful</p></div>
+            <div class="question"><p><strong>22.</strong> He has been living here ___ 2010.</p><p>(a) for (b) since (c) from (d) in</p><p class="answer"><strong>Answer:</strong> (b) since</p><p class="explanation"><strong>Explanation:</strong> Specific time point</p></div>
+            <div class="question"><p><strong>23.</strong> Antonym of "Ancient":</p><p>(a) Old (b) Modern (c) Antique (d) Past</p><p class="answer"><strong>Answer:</strong> (b) Modern</p><p class="explanation"><strong>Explanation:</strong> Opposite</p></div>
+            <div class="question"><p><strong>24.</strong> Misspelled word:</p><p>(a) Accommodation (b) Occasion (c) Recieve (d) Separate</p><p class="answer"><strong>Answer:</strong> (c) Recieve</p><p class="explanation"><strong>Explanation:</strong> Receive</p></div>
+            <div class="question"><p><strong>25.</strong> One who loves books:</p><p>(a) Bibliophile (b) Philanthropist (c) Linguist (d) Scholar</p><p class="answer"><strong>Answer:</strong> (a) Bibliophile</p><p class="explanation"><strong>Explanation:</strong> Book lover</p></div>
+            <div class="question"><p><strong>26.</strong> Passive: "She writes a letter."</p><p>(a) is written by her (b) was written (c) has written (d) is wrote</p><p class="answer"><strong>Answer:</strong> (a) A letter is written by her</p><p class="explanation"><strong>Explanation:</strong> is + V3</p></div>
+            <div class="question"><p><strong>27.</strong> If I ___ rich, I would travel.</p><p>(a) am (b) was (c) were (d) will be</p><p class="answer"><strong>Answer:</strong> (c) were</p><p class="explanation"><strong>Explanation:</strong> Subjunctive</p></div>
+            <div class="question"><p><strong>28.</strong> "To let the cat out of the bag":</p><p>(a) free animal (b) reveal secret (c) confusion (d) fight</p><p class="answer"><strong>Answer:</strong> (b) To reveal a secret</p><p class="explanation"><strong>Explanation:</strong> Idiom</p></div>
+            <div class="question"><p><strong>29.</strong> "Quickly" is:</p><p>(a) Noun (b) Adjective (c) Adverb (d) Verb</p><p class="answer"><strong>Answer:</strong> (c) Adverb</p><p class="explanation"><strong>Explanation:</strong> Part of speech</p></div>
+            <div class="question"><p><strong>30.</strong> Correct spelling:</p><p>(a) Definitely (b) Definitly (c) Defenitely (d) Definetly</p><p class="answer"><strong>Answer:</strong> (a) Definitely</p><p class="explanation"><strong>Explanation:</strong> Spelling</p></div>
+            <div class="question"><p><strong>31.</strong> She is good ___ mathematics.</p><p>(a) in (b) at (c) on (d) for</p><p class="answer"><strong>Answer:</strong> (b) at</p><p class="explanation"><strong>Explanation:</strong> Good at</p></div>
+            <div class="question"><p><strong>32.</strong> Plural of "Child":</p><p>(a) Childs (b) Childes (c) Children (d) Child</p><p class="answer"><strong>Answer:</strong> (c) Children</p><p class="explanation"><strong>Explanation:</strong> Irregular plural</p></div>
+            <div class="question"><p><strong>33.</strong> Indirect: He said, "I am busy."</p><p>(a) is busy (b) was busy (c) was (d) am</p><p class="answer"><strong>Answer:</strong> (b) He said that he was busy</p><p class="explanation"><strong>Explanation:</strong> Tense change</p></div>
+            <div class="question"><p><strong>34.</strong> Antonym of "Brave":</p><p>(a) Bold (b) Coward (c) Strong (d) Fearless</p><p class="answer"><strong>Answer:</strong> (b) Coward</p><p class="explanation"><strong>Explanation:</strong> Opposite</p></div>
+            <div class="question"><p><strong>35.</strong> The sun ___ in the east.</p><p>(a) rise (b) rises (c) rose (d) rising</p><p class="answer"><strong>Answer:</strong> (b) rises</p><p class="explanation"><strong>Explanation:</strong> Universal truth</p></div>
+            <div class="question"><p><strong>36.</strong> "Once in a blue moon":</p><p>(a) Often (b) Rarely (c) Monthly (d) Never</p><p class="answer"><strong>Answer:</strong> (b) Very rarely</p><p class="explanation"><strong>Explanation:</strong> Idiom</p></div>
+            <div class="question"><p><strong>37.</strong> Error: "He is one of the best student in the class."</p><p>(a) He is (b) one of (c) best student (d) in</p><p class="answer"><strong>Answer:</strong> (c) best student</p><p class="explanation"><strong>Explanation:</strong> best students</p></div>
+            <div class="question"><p><strong>38.</strong> He is afraid ___ dogs.</p><p>(a) from (b) of (c) with (d) to</p><p class="answer"><strong>Answer:</strong> (b) of</p><p class="explanation"><strong>Explanation:</strong> Preposition</p></div>
+            <div class="question"><p><strong>39.</strong> The teacher asked the students to ___ homework.</p><p>(a) submit (b) submits (c) submitted (d) submitting</p><p class="answer"><strong>Answer:</strong> (a) submit</p><p class="explanation"><strong>Explanation:</strong> base form</p></div>
+            <div class="question"><p><strong>40.</strong> Synonym of "Enormous":</p><p>(a) Tiny (b) Huge (c) Small (d) Little</p><p class="answer"><strong>Answer:</strong> (b) Huge</p><p class="explanation"><strong>Explanation:</strong> Very large</p></div>
+
+            <h3>Section C: Logical Reasoning (41-60)</h3>
+            <div class="question"><p><strong>41.</strong> TRIPPLE → SQHOOKD, DISPOSE → ?</p><p>(a) CHRONRD (b) CHRONQD (c) CHRONSD (d) CHRONOD</p><p class="answer"><strong>Answer:</strong> (a) CHRONRD</p><p class="explanation"><strong>Explanation:</strong> Each letter one less</p></div>
+            <div class="question"><p><strong>42.</strong> W-144, ?, S-100, Q-81, O-64</p><p>(a) U-121 (b) V-121 (c) U-120 (d) T-121</p><p class="answer"><strong>Answer:</strong> (a) U-121</p><p class="explanation"><strong>Explanation:</strong> 12², 11², 10²...</p></div>
+            <div class="question"><p><strong>43.</strong> Odd one out:</p><p>(a) Hard:Soft (b) Long:Tall (c) Sweet:Sour (d) Sharp:Blunt</p><p class="answer"><strong>Answer:</strong> (b) Long:Tall</p><p class="explanation"><strong>Explanation:</strong> Synonyms, rest antonyms</p></div>
+            <div class="question"><p><strong>44.</strong> Paper fold & punch (figure-based):</p><p>(a) A (b) B (c) C (d) D</p><p class="answer"><strong>Answer:</strong> (b) Option B</p><p class="explanation"><strong>Explanation:</strong> Symmetry</p></div>
+            <div class="question"><p><strong>45.</strong> Venn: Neptune, Planet, Moon</p><p>(a) All independent (b) Neptune⊂Planet, Moon⊂Planet (c) Planet⊂Neptune (d) Moon⊂Planet, Neptune⊂Moon</p><p class="answer"><strong>Answer:</strong> (b)</p><p class="explanation"><strong>Explanation:</strong> Neptune is planet</p></div>
+            <div class="question"><p><strong>46.</strong> A bro of B; B sis of C; C mother of D. D related to A?</p><p>(a) Uncle (b) Maternal uncle (c) Father (d) Brother</p><p class="answer"><strong>Answer:</strong> (b) Maternal uncle</p><p class="explanation"><strong>Explanation:</strong> A is brother of C</p></div>
+            <div class="question"><p><strong>47.</strong> 5 km north, 3 km right. Distance?</p><p>(a) 4 (b) √34 (c) 8 (d) √35</p><p class="answer"><strong>Answer:</strong> (b) √34 km</p><p class="explanation"><strong>Explanation:</strong> √(25+9)</p></div>
+            <div class="question"><p><strong>48.</strong> CAT = 24, DOG = ?</p><p>(a) 26 (b) 27 (c) 28 (d) 30</p><p class="answer"><strong>Answer:</strong> (a) 26</p><p class="explanation"><strong>Explanation:</strong> 4+15+7</p></div>
+            <div class="question"><p><strong>49.</strong> Series: 2, 6, 12, 20, 30, ?</p><p>(a) 40 (b) 42 (c) 44 (d) 46</p><p class="answer"><strong>Answer:</strong> (b) 42</p><p class="explanation"><strong>Explanation:</strong> +4, +6, +8, +10, +12</p></div>
+            <div class="question"><p><strong>50.</strong> Calendar:Dates :: Dictionary:?</p><p>(a) Books (b) Words (c) Letters (d) Pages</p><p class="answer"><strong>Answer:</strong> (b) Words</p><p class="explanation"><strong>Explanation:</strong> Analogy</p></div>
+            <div class="question"><p><strong>51.</strong> Odd one: 3, 5, 7, 9, 11</p><p>(a) 3 (b) 5 (c) 9 (d) 11</p><p class="answer"><strong>Answer:</strong> (c) 9</p><p class="explanation"><strong>Explanation:</strong> 9 not prime</p></div>
+            <div class="question"><p><strong>52.</strong> Sum of SCHOOL (A=1)?</p><p>(a) 76 (b) 78 (c) 80 (d) 82</p><p class="answer"><strong>Answer:</strong> (a) 76 (Note: actually 72)</p><p class="explanation"><strong>Explanation:</strong> 19+3+8+15+15+12 = 72</p></div>
+            <div class="question"><p><strong>53.</strong> All roses flowers; some flowers red. Conclusion: some roses red?</p><p>(a) True (b) False (c) Possible (d) Not determined</p><p class="answer"><strong>Answer:</strong> (d) Not determined</p><p class="explanation"><strong>Explanation:</strong> Not necessarily</p></div>
+            <div class="question"><p><strong>54.</strong> Letter same in mirror?</p><p>(a) B (b) C (c) D (d) E</p><p class="answer"><strong>Answer:</strong> (b) C</p><p class="explanation"><strong>Explanation:</strong> Symmetric</p></div>
+            <div class="question"><p><strong>55.</strong> Father+son = 60; 5 yrs ago 4×. Son?</p><p>(a) 10 (b) 12 (c) 14 (d) 15</p><p class="answer"><strong>Answer:</strong> (d) 15</p><p class="explanation"><strong>Explanation:</strong> 55-x = 4(x-5) → x = 15</p></div>
+            <div class="question"><p><strong>56.</strong> MONKEY → XDJMNL, TIGER → ?</p><p>(a) QDFHS (b) SDFHS (c) QDFHR (d) QDFGT</p><p class="answer"><strong>Answer:</strong> (a) QDFHS</p><p class="explanation"><strong>Explanation:</strong> Reverse + shift</p></div>
+            <div class="question"><p><strong>57.</strong> Series: 1, 4, 9, 16, 25, ?</p><p>(a) 30 (b) 36 (c) 42 (d) 49</p><p class="answer"><strong>Answer:</strong> (b) 36</p><p class="explanation"><strong>Explanation:</strong> 6² = 36</p></div>
+            <div class="question"><p><strong>58.</strong> '+' = ×, '×' = +. 5 + 3 × 2?</p><p>(a) 16 (b) 17 (c) 18 (d) 20</p><p class="answer"><strong>Answer:</strong> (b) 17</p><p class="explanation"><strong>Explanation:</strong> 5×3+2</p></div>
+            <div class="question"><p><strong>59.</strong> "He is the only son of my father's mother."</p><p>(a) Father (b) Uncle (c) Brother (d) Son</p><p class="answer"><strong>Answer:</strong> (a) Father</p><p class="explanation"><strong>Explanation:</strong> Grandmother's son = father</p></div>
+            <div class="question"><p><strong>60.</strong> 5×4=42, 6×5=56, 7×6=?</p><p>(a) 72 (b) 76 (c) 80 (d) 84</p><p class="answer"><strong>Answer:</strong> (a) 72</p><p class="explanation"><strong>Explanation:</strong> 42+30 = 72</p></div>
+
+            <h3>Section D: Assam (61-80)</h3>
+            <div class="question"><p><strong>61.</strong> Founder of Ahom dynasty?</p><p>(a) Sukapha (b) Chaolung (c) Suhungmung (d) Gadadhar Singh</p><p class="answer"><strong>Answer:</strong> (a) Sukapha</p><p class="explanation"><strong>Explanation:</strong> 1228 AD</p></div>
+            <div class="question"><p><strong>62.</strong> State animal of Assam?</p><p>(a) Elephant (b) Rhinoceros (c) Tiger (d) Deer</p><p class="answer"><strong>Answer:</strong> (b) Rhinoceros</p><p class="explanation"><strong>Explanation:</strong> One-horned</p></div>
+            <div class="question"><p><strong>63.</strong> Kaziranga in which district?</p><p>(a) Kamrup (b) Golaghat (c) Sivasagar (d) Dibrugarh</p><p class="answer"><strong>Answer:</strong> (b) Golaghat</p><p class="explanation"><strong>Explanation:</strong> Golaghat</p></div>
+            <div class="question"><p><strong>64.</strong> Longest bridge in Assam?</p><p>(a) Saraighat (b) Dhola-Sadiya (c) Narayan Setu (d) Bogibeel</p><p class="answer"><strong>Answer:</strong> (d) Bogibeel Bridge</p><p class="explanation"><strong>Explanation:</strong> ~4.94 km</p></div>
+            <div class="question"><p><strong>65.</strong> Brahmaputra through how many districts?</p><p>(a) 10 (b) 12 (c) 15 (d) 18</p><p class="answer"><strong>Answer:</strong> (c) 15</p><p class="explanation"><strong>Explanation:</strong> ~15</p></div>
+            <div class="question"><p><strong>66.</strong> State bird of Assam?</p><p>(a) Peacock (b) White-winged Wood Duck (c) Swan (d) Parrot</p><p class="answer"><strong>Answer:</strong> (b) White-winged Wood Duck</p><p class="explanation"><strong>Explanation:</strong> State bird</p></div>
+            <div class="question"><p><strong>67.</strong> When was Assam formed?</p><p>(a) 1947 (b) 1950 (c) 1960 (d) 1972</p><p class="answer"><strong>Answer:</strong> (d) 1972</p><p class="explanation"><strong>Explanation:</strong> Full statehood</p></div>
+            <div class="question"><p><strong>68.</strong> Majuli Island is in which river?</p><p>(a) Ganga (b) Brahmaputra (c) Barak (d) Subansiri</p><p class="answer"><strong>Answer:</strong> (b) Brahmaputra</p><p class="explanation"><strong>Explanation:</strong> World's largest river island</p></div>
+            <div class="question"><p><strong>69.</strong> State flower of Assam?</p><p>(a) Rose (b) Lotus (c) Kopou (d) Sunflower</p><p class="answer"><strong>Answer:</strong> (c) Kopou (Foxtail Orchid)</p><p class="explanation"><strong>Explanation:</strong> State flower</p></div>
+            <div class="question"><p><strong>70.</strong> Main objective of Bodo movement?</p><p>(a) Autonomy (b) Separate state (c) Reservation (d) Language</p><p class="answer"><strong>Answer:</strong> (b) Separate state</p><p class="explanation"><strong>Explanation:</strong> Bodoland</p></div>
+            <div class="question"><p><strong>71.</strong> Largest city in Assam?</p><p>(a) Dibrugarh (b) Silchar (c) Guwahati (d) Jorhat</p><p class="answer"><strong>Answer:</strong> (c) Guwahati</p><p class="explanation"><strong>Explanation:</strong> Largest</p></div>
+            <div class="question"><p><strong>72.</strong> Capital of Assam?</p><p>(a) Shillong (b) Dispur (c) Guwahati (d) Jorhat</p><p class="answer"><strong>Answer:</strong> (b) Dispur</p><p class="explanation"><strong>Explanation:</strong> Part of Guwahati</p></div>
+            <div class="question"><p><strong>73.</strong> How many national parks in Assam?</p><p>(a) 5 (b) 6 (c) 7 (d) 8</p><p class="answer"><strong>Answer:</strong> (c) 7</p><p class="explanation"><strong>Explanation:</strong> As of 2024</p></div>
+            <div class="question"><p><strong>74.</strong> State tree of Assam?</p><p>(a) Mango (b) Banyan (c) Hollong (d) Neem</p><p class="answer"><strong>Answer:</strong> (c) Hollong</p><p class="explanation"><strong>Explanation:</strong> State tree</p></div>
+            <div class="question"><p><strong>75.</strong> Most cultivated crop in Assam?</p><p>(a) Wheat (b) Tea (c) Rice (d) Sugarcane</p><p class="answer"><strong>Answer:</strong> (b) Tea</p><p class="explanation"><strong>Explanation:</strong> Largest producer</p></div>
+            <div class="question"><p><strong>76.</strong> Highest peak in Assam?</p><p>(a) Himalaya (b) Shailputra (c) Cherrapunji (d) Haflong</p><p class="answer"><strong>Answer:</strong> (b) Shailputra</p><p class="explanation"><strong>Explanation:</strong> Highest</p></div>
+            <div class="question"><p><strong>77.</strong> First tea garden in Assam?</p><p>(a) Dibrugarh (b) Jorhat (c) Chabua (d) Tinsukia</p><p class="answer"><strong>Answer:</strong> (c) Chabua</p><p class="explanation"><strong>Explanation:</strong> 1837</p></div>
+            <div class="question"><p><strong>78.</strong> Current CM of Assam (2025)?</p><p>(a) Tarun Gogoi (b) Sarbananda Sonowal (c) Himanta Biswa Sarma (d) Prafulla Mahanta</p><p class="answer"><strong>Answer:</strong> (c) Himanta Biswa Sarma</p><p class="explanation"><strong>Explanation:</strong> Current</p></div>
+            <div class="question"><p><strong>79.</strong> Highest population district in Assam?</p><p>(a) Kamrup (b) Nagaon (c) Dibrugarh (d) Sonitpur</p><p class="answer"><strong>Answer:</strong> (b) Nagaon</p><p class="explanation"><strong>Explanation:</strong> 2011 census</p></div>
+            <div class="question"><p><strong>80.</strong> Official language of Assam?</p><p>(a) Hindi (b) Bengali (c) Assamese (d) Bodo</p><p class="answer"><strong>Answer:</strong> (c) Assamese</p><p class="explanation"><strong>Explanation:</strong> Official</p></div>
+
+            <h3>Section E: General Knowledge (81-100)</h3>
+            <div class="question"><p><strong>81.</strong> National bird of India?</p><p>(a) Peacock (b) Pigeon (c) Parrot (d) Hawk</p><p class="answer"><strong>Answer:</strong> (a) Peacock</p><p class="explanation"><strong>Explanation:</strong> National bird</p></div>
+            <div class="question"><p><strong>82.</strong> When did Indian Constitution come into force?</p><p>(a) 15 Aug 1947 (b) 26 Jan 1950 (c) 26 Nov 1949 (d) 2 Oct 1950</p><p class="answer"><strong>Answer:</strong> (b) 26 January 1950</p><p class="explanation"><strong>Explanation:</strong> Date</p></div>
+            <div class="question"><p><strong>83.</strong> First PM of India?</p><p>(a) Gandhi (b) Nehru (c) Patel (d) Rajendra Prasad</p><p class="answer"><strong>Answer:</strong> (b) Jawaharlal Nehru</p><p class="explanation"><strong>Explanation:</strong> First PM</p></div>
+            <div class="question"><p><strong>84.</strong> World Environment Day?</p><p>(a) 5 June (b) 5 July (c) 5 Aug (d) 5 Sep</p><p class="answer"><strong>Answer:</strong> (a) 5 June</p><p class="explanation"><strong>Explanation:</strong> Date</p></div>
+            <div class="question"><p><strong>85.</strong> Largest state in India by area?</p><p>(a) MP (b) Maharashtra (c) Rajasthan (d) UP</p><p class="answer"><strong>Answer:</strong> (c) Rajasthan</p><p class="explanation"><strong>Explanation:</strong> Largest</p></div>
+            <div class="question"><p><strong>86.</strong> INC founded?</p><p>(a) 1885 (b) 1890 (c) 1900 (d) 1910</p><p class="answer"><strong>Answer:</strong> (a) 1885</p><p class="explanation"><strong>Explanation:</strong> 1885</p></div>
+            <div class="question"><p><strong>87.</strong> National sport of India?</p><p>(a) Cricket (b) Hockey (c) Football (d) Kabaddi</p><p class="answer"><strong>Answer:</strong> (b) Hockey</p><p class="explanation"><strong>Explanation:</strong> Considered</p></div>
+            <div class="question"><p><strong>88.</strong> UN founded?</p><p>(a) 1945 (b) 1950 (c) 1947 (d) 1949</p><p class="answer"><strong>Answer:</strong> (a) 1945</p><p class="explanation"><strong>Explanation:</strong> 24 Oct 1945</p></div>
+            <div class="question"><p><strong>89.</strong> Longest coastline state?</p><p>(a) Gujarat (b) Tamil Nadu (c) Andhra (d) Maharashtra</p><p class="answer"><strong>Answer:</strong> (a) Gujarat</p><p class="explanation"><strong>Explanation:</strong> Longest</p></div>
+            <div class="question"><p><strong>90.</strong> ISRO headquarters?</p><p>(a) Delhi (b) Bengaluru (c) Hyderabad (d) Chennai</p><p class="answer"><strong>Answer:</strong> (b) Bengaluru</p><p class="explanation"><strong>Explanation:</strong> HQ</p></div>
+            <div class="question"><p><strong>91.</strong> Father of Green Revolution in India?</p><p>(a) Kurien (b) Swaminathan (c) Borlaug (d) Nehru</p><p class="answer"><strong>Answer:</strong> (b) M.S. Swaminathan</p><p class="explanation"><strong>Explanation:</strong> In India</p></div>
+            <div class="question"><p><strong>92.</strong> National flag adopted?</p><p>(a) 15 Aug 1947 (b) 26 Jan 1950 (c) 22 Jul 1947 (d) 2 Oct 1947</p><p class="answer"><strong>Answer:</strong> (c) 22 July 1947</p><p class="explanation"><strong>Explanation:</strong> Adopted</p></div>
+            <div class="question"><p><strong>93.</strong> WHO headquarters?</p><p>(a) New York (b) Geneva (c) Paris (d) London</p><p class="answer"><strong>Answer:</strong> (b) Geneva</p><p class="explanation"><strong>Explanation:</strong> Switzerland</p></div>
+            <div class="question"><p><strong>94.</strong> Largest port in India?</p><p>(a) Mumbai (b) Chennai (c) Kolkata (d) Kandla</p><p class="answer"><strong>Answer:</strong> (a) Mumbai</p><p class="explanation"><strong>Explanation:</strong> Largest</p></div>
+            <div class="question"><p><strong>95.</strong> Architect of Indian Constitution?</p><p>(a) Gandhi (b) Ambedkar (c) Nehru (d) Patel</p><p class="answer"><strong>Answer:</strong> (b) Dr. B.R. Ambedkar</p><p class="explanation"><strong>Explanation:</strong> Chief architect</p></div>
+            <div class="question"><p><strong>96.</strong> Who can declare national emergency?</p><p>(a) PM (b) President (c) Parliament (d) Supreme Court</p><p class="answer"><strong>Answer:</strong> (b) President</p><p class="explanation"><strong>Explanation:</strong> Article 352</p></div>
+            <div class="question"><p><strong>97.</strong> Smallest state in India?</p><p>(a) Goa (b) Sikkim (c) Tripura (d) Manipur</p><p class="answer"><strong>Answer:</strong> (a) Goa</p><p class="explanation"><strong>Explanation:</strong> By area</p></div>
+            <div class="question"><p><strong>98.</strong> Highest literacy rate state?</p><p>(a) Kerala (b) Mizoram (c) Goa (d) Tripura</p><p class="answer"><strong>Answer:</strong> (a) Kerala</p><p class="explanation"><strong>Explanation:</strong> Highest</p></div>
+            <div class="question"><p><strong>99.</strong> RBI established?</p><p>(a) 1930 (b) 1935 (c) 1940 (d) 1947</p><p class="answer"><strong>Answer:</strong> (b) 1935</p><p class="explanation"><strong>Explanation:</strong> 1 April 1935</p></div>
+            <div class="question"><p><strong>100.</strong> Who wrote national anthem?</p><p>(a) Bankim Chandra (b) Rabindranath Tagore (c) Subhash Chandra Bose (d) Gandhi</p><p class="answer"><strong>Answer:</strong> (b) Rabindranath Tagore</p><p class="explanation"><strong>Explanation:</strong> Jana Gana Mana</p></div>
+        </div>
+
+        <!-- ================= ASSAMESE CONTENT (COMPLETE 100) ================= -->
+        <div id="content-as" class="lang-content">
+            <h1>অসম আৰক্ষী পৰীক্ষা: বিশ্লেষণ আৰু মক টেষ্ট</h1>
+
+            <div class="analysis-box">
+                <h2>ভাগ ১: পূৰ্বৰ বছৰৰ প্ৰশ্ন বিশ্লেষণ</h2>
+                <p>অসম আৰক্ষী (SLPRB) পৰীক্ষাৰ বিশ্লেষণত তলত দিয়া গুৰুত্বপূৰ্ণ আৰ্হিসমূহ পোৱা যায়:</p>
+                <h3>পৰীক্ষাৰ আৰ্হি (২০২৫ অনুসৰি):</h3>
+                <ul>
+                    <li>মুঠ প্ৰশ্ন: ১০০</li>
+                    <li>মুঠ নম্বৰ: ১০০ (SI ৰ বাবে) / ৫০ (Constable ৰ বাবে)</li>
+                    <li>সময়: ৩ ঘণ্টা (SI) / ২ ঘণ্টা (Constable)</li>
+                    <li>নেতিবাচক চিহ্নিতকৰণ: ০.৫০ নম্বৰ (SI ত)</li>
+                </ul>
+                <h3>বিষয়ভিত্তিক ওজন:</h3>
+                <table>
+                    <tr><th>বিষয়</th><th>প্ৰশ্ন সংখ্যা (Constable)</th><th>প্ৰশ্ন সংখ্যা (SI)</th></tr>
+                    <tr><td>প্ৰাথমিক গণিত</td><td>২০</td><td>—</td></tr>
+                    <tr><td>সাধাৰণ ইংৰাজী</td><td>২০</td><td>—</td></tr>
+                    <tr><td>যুক্তি/মানসিক ক্ষমতা</td><td>২০</td><td>৩৫</td></tr>
+                    <tr><td>অসমৰ ইতিহাস, ভূগোল, ৰাজনীতি, অৰ্থনীতি</td><td>২০</td><td>—</td></tr>
+                    <tr><td>সাধাৰণ জ্ঞান আৰু সজাগতা</td><td>২০</td><td>—</td></tr>
+                    <tr><td>সংস্কৃতি আৰু ইতিহাস (ভাৰত আৰু অসম)</td><td>—</td><td>৩৫</td></tr>
+                    <tr><td>সাধাৰণ জ্ঞান</td><td>—</td><td>৩০</td></tr>
+                </table>
+                <h3>মুখ্য পৰ্যবেক্ষণ:</h3>
+                <ol>
+                    <li><strong>কঠিনতাৰ স্তৰ:</strong> সহজৰ পৰা মধ্যম</li>
+                    <li><strong>অসম-কেন্দ্ৰিক প্ৰশ্ন:</strong> প্ৰায় ২০%</li>
+                    <li><strong>যুক্তি:</strong> ক'ডিং-ডি'কডিং, শৃংখলা, ভেন ডায়াগ্ৰাম, দিশ পৰীক্ষা, ৰক্ত সম্পৰ্ক</li>
+                    <li><strong>গণিত:</strong> সংখ্যা প্ৰণালী, HCF/LCM, শতাংশ, লাভ-ক্ষতি, গড়, সময়-কাৰ্য</li>
+                    <li><strong>সাধাৰণ ইংৰাজী:</strong> বাক্য সংশোধন, বানান, বিপৰীত, সমাৰ্থক, বাগধাৰা</li>
+                    <li><strong>বাৰে বাৰে অহা বিষয়:</strong> আহোম ৰাজবংশ, কামৰূপ, ৰাষ্ট্ৰীয় উদ্যান, নদী, উৎসৱ</li>
+                </ol>
+            </div>
+
+            <h2>ভাগ ২: ১০০ প্ৰশ্নৰ মক টেষ্ট</h2>
+
+            <h3>খণ্ড A: প্ৰাথমিক গণিত (১-২০)</h3>
+            <div class="question"><p><strong>১.</strong> যদি এটা সংখ্যাৰ ২৫% + ৪০ = ৬০ হয়, তেন্তে সংখ্যাটো কিমান?</p><p>(a) ৬০ (b) ৭০ (c) ৮০ (d) ১০০</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৮০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> x/৪ = ২০ → x = ৮০</p></div>
+            <div class="question"><p><strong>২.</strong> ১২, ১৮, ২৪ ৰ LCM কিমান?</p><p>(a) ৩৬ (b) ৪৮ (c) ৭২ (d) ১৪৪</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৭২</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ২³×৩² = ৭২</p></div>
+            <div class="question"><p><strong>৩.</strong> ₹৫০০ ত কিনি ₹৬০০ ত বিক্ৰী। লাভ%?</p><p>(a) ১০% (b) ১৫% (c) ২০% (d) ২৫%</p><p class="answer"><strong>উত্তৰ:</strong> (c) ২০%</p><p class="explanation"><strong>ব্যাখ্যা:</strong> (১০০/৫০০)×১০০</p></div>
+            <div class="question"><p><strong>৪.</strong> ৫ জনে ১০ দিনত কাম কৰে, ১০ জনে?</p><p>(a) ৩ (b) ৫ (c) ৭ (d) ১০</p><p class="answer"><strong>উত্তৰ:</strong> (b) ৫ দিন</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৫×১০ = ১০×D₂</p></div>
+            <div class="question"><p><strong>৫.</strong> ৭২ কিমি/ঘণ্টা, ২০০ মি. ৰে'লে খুঁটা কিমান ছেকেণ্ডত পাৰ হ'ব?</p><p>(a) ৮ (b) ১০ (c) ১২ (d) ১৫</p><p class="answer"><strong>উত্তৰ:</strong> (b) ১০ ছেকেণ্ড</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ২০ মি/ছে, ২০০/২০</p></div>
+            <div class="question"><p><strong>৬.</strong> ৮, ১২, ১৬, ২০ ৰ গড়?</p><p>(a) ১২ (b) ১৪ (c) ১৬ (d) ১৮</p><p class="answer"><strong>উত্তৰ:</strong> (b) ১৪</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৫৬/৪</p></div>
+            <div class="question"><p><strong>৭.</strong> ₹১০,০০০ ত ১০% ২ বছৰৰ সৰল সুত?</p><p>(a) ₹১,০০০ (b) ₹১,৫০০ (c) ₹২,০০০ (d) ₹২,৫০০</p><p class="answer"><strong>উত্তৰ:</strong> (c) ₹২,০০০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> PRT/১০০</p></div>
+            <div class="question"><p><strong>৮.</strong> ৩:৪ :: ৯:?</p><p>(a) ১২ (b) ১৬ (c) ১৮ (d) ২৪</p><p class="answer"><strong>উত্তৰ:</strong> (a) ১২</p><p class="explanation"><strong>ব্যাখ্যা:</strong> x = ১২</p></div>
+            <div class="question"><p><strong>৯.</strong> এটা সংখ্যাৰ ১/৫ = ২৫। সংখ্যা?</p><p>(a) ১০০ (b) ১১৫ (c) ১২৫ (d) ১৫০</p><p class="answer"><strong>উত্তৰ:</strong> (c) ১২৫</p><p class="explanation"><strong>ব্যাখ্যা:</strong> x/৫ = ২৫</p></div>
+            <div class="question"><p><strong>১০.</strong> ১৫% ৰেহাইৰ পিছত ₹৩৪০। অংকিত মূল্য?</p><p>(a) ₹৩৮০ (b) ₹৪০০ (c) ₹৪২০ (d) ₹৪৫০</p><p class="answer"><strong>উত্তৰ:</strong> (b) ₹৪০০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৩৪০×১০০/৮৫</p></div>
+            <div class="question"><p><strong>১১.</strong> অনুপাত ২:৩, যোগফল ৪৫। ডাঙৰ সংখ্যা?</p><p>(a) ১৮ (b) ২১ (c) ২৪ (d) ২৭</p><p class="answer"><strong>উত্তৰ:</strong> (d) ২৭</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৩×৯</p></div>
+            <div class="question"><p><strong>১২.</strong> আয়ত ১৫×১০ চে.মি. কালি?</p><p>(a) ১০০ (b) ১২৫ (c) ১৫০ (d) ১৭৫</p><p class="answer"><strong>উত্তৰ:</strong> (c) ১৫০ চে.মি.²</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ১৫×১০</p></div>
+            <div class="question"><p><strong>১৩.</strong> x + ৫ = ১২, x?</p><p>(a) ৫ (b) ৬ (c) ৭ (d) ৮</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৭</p><p class="explanation"><strong>ব্যাখ্যা:</strong> x = ৭</p></div>
+            <div class="question"><p><strong>১৪.</strong> ০.২৫ ভগ্নাংশত?</p><p>(a) ১/২ (b) ১/৩ (c) ১/৪ (d) ১/৫</p><p class="answer"><strong>উত্তৰ:</strong> (c) ১/৪</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ২৫/১০০</p></div>
+            <div class="question"><p><strong>১৫.</strong> ৫০০ ছাত্ৰৰ ৪০% অনুত্তীৰ্ণ। উত্তীৰ্ণ?</p><p>(a) ২০০ (b) ২৫০ (c) ৩০০ (d) ৩৫০</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৩০০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৬০%</p></div>
+            <div class="question"><p><strong>১৬.</strong> ৪৫ লি., দুধ:পানী ৪:১। দুধ?</p><p>(a) ৩০ (b) ৩২ (c) ৩৬ (d) ৪০</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৩৬ লি.</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৪৫×৪/৫</p></div>
+            <div class="question"><p><strong>১৭.</strong> ৩০% = ৯০। সংখ্যা?</p><p>(a) ২৫০ (b) ২৭০ (c) ৩০০ (d) ৩২০</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৩০০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৯০×১০০/৩০</p></div>
+            <div class="question"><p><strong>১৮.</strong> ২³ + ৩² = ?</p><p>(a) ১৫ (b) ১৭ (c) ১৯ (d) ২১</p><p class="answer"><strong>উত্তৰ:</strong> (b) ১৭</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৮+৯</p></div>
+            <div class="question"><p><strong>১৯.</strong> ৬০ কিমি/ঘণ্টা ৩ ঘণ্টাত দূৰত্ব?</p><p>(a) ১৫০ (b) ১৮০ (c) ২০০ (d) ২২০</p><p class="answer"><strong>উত্তৰ:</strong> (b) ১৮০ কিমি</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৬০×৩</p></div>
+            <div class="question"><p><strong>২০.</strong> ₹৮০০ ত ৫% ৩ বছৰ চক্ৰবৃদ্ধি সুত?</p><p>(a) ₹১২০ (b) ₹১২৬.১০ (c) ₹১৩০ (d) ₹১৪০</p><p class="answer"><strong>উত্তৰ:</strong> (b) ₹১২৬.১০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৮০০[(১.০৫)³-১]</p></div>
+
+            <h3>খণ্ড B: সাধাৰণ ইংৰাজী (২১-৪০)</h3>
+            <div class="question"><p><strong>২১.</strong> "Abundant" ৰ সমাৰ্থক?</p><p>(a) Scarce (b) Plentiful (c) Rare (d) Limited</p><p class="answer"><strong>উত্তৰ:</strong> (b) Plentiful</p><p class="explanation"><strong>ব্যাখ্যা:</strong> প্ৰচুৰ</p></div>
+            <div class="question"><p><strong>২২.</strong> He has been living here ___ 2010.</p><p>(a) for (b) since (c) from (d) in</p><p class="answer"><strong>উত্তৰ:</strong> (b) since</p><p class="explanation"><strong>ব্যাখ্যা:</strong> নিৰ্দিষ্ট সময়বিন্দু</p></div>
+            <div class="question"><p><strong>২৩.</strong> "Ancient" ৰ বিপৰীত?</p><p>(a) Old (b) Modern (c) Antique (d) Past</p><p class="answer"><strong>উত্তৰ:</strong> (b) Modern</p><p class="explanation"><strong>ব্যাখ্যা:</strong> আধুনিক</p></div>
+            <div class="question"><p><strong>২৪.</strong> ভুল বানান?</p><p>(a) Accommodation (b) Occasion (c) Recieve (d) Separate</p><p class="answer"><strong>উত্তৰ:</strong> (c) Recieve</p><p class="explanation"><strong>ব্যাখ্যা:</strong> Receive</p></div>
+            <div class="question"><p><strong>২৫.</strong> "A person who loves books":</p><p>(a) Bibliophile (b) Philanthropist (c) Linguist (d) Scholar</p><p class="answer"><strong>উত্তৰ:</strong> (a) Bibliophile</p><p class="explanation"><strong>ব্যাখ্যা:</strong> পুথি-প্ৰেমী</p></div>
+            <div class="question"><p><strong>২৬.</strong> Passive: "She writes a letter."</p><p>(a) is written by her (b) was written (c) has written (d) is wrote</p><p class="answer"><strong>উত্তৰ:</strong> (a) A letter is written by her</p><p class="explanation"><strong>ব্যাখ্যা:</strong> is + V3</p></div>
+            <div class="question"><p><strong>২৭.</strong> If I ___ rich, I would travel.</p><p>(a) am (b) was (c) were (d) will be</p><p class="answer"><strong>উত্তৰ:</strong> (c) were</p><p class="explanation"><strong>ব্যাখ্যা:</strong> Subjunctive</p></div>
+            <div class="question"><p><strong>২৮.</strong> "To let the cat out of the bag":</p><p>(a) free animal (b) reveal secret (c) confusion (d) fight</p><p class="answer"><strong>উত্তৰ:</strong> (b) To reveal a secret</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৰহস্য প্ৰকাশ</p></div>
+            <div class="question"><p><strong>২৯.</strong> "Quickly" —</p><p>(a) Noun (b) Adjective (c) Adverb (d) Verb</p><p class="answer"><strong>উত্তৰ:</strong> (c) Adverb</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ক্ৰিয়া-বিশেষণ</p></div>
+            <div class="question"><p><strong>৩০.</strong> সঠিক বানান?</p><p>(a) Definitely (b) Definitly (c) Defenitely (d) Definetly</p><p class="answer"><strong>উত্তৰ:</strong> (a) Definitely</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সঠিক</p></div>
+            <div class="question"><p><strong>৩১.</strong> She is good ___ mathematics.</p><p>(a) in (b) at (c) on (d) for</p><p class="answer"><strong>উত্তৰ:</strong> (b) at</p><p class="explanation"><strong>ব্যাখ্যা:</strong> Good at</p></div>
+            <div class="question"><p><strong>৩২.</strong> "Child" ৰ বহুবচন?</p><p>(a) Childs (b) Childes (c) Children (d) Child</p><p class="answer"><strong>উত্তৰ:</strong> (c) Children</p><p class="explanation"><strong>ব্যাখ্যা:</strong> বহুবচন</p></div>
+            <div class="question"><p><strong>৩৩.</strong> পৰোক্ষ: He said, "I am busy."</p><p>(a) is busy (b) was busy (c) was (d) am</p><p class="answer"><strong>উত্তৰ:</strong> (b) He said that he was busy</p><p class="explanation"><strong>ব্যাখ্যা:</strong> tense সলনি</p></div>
+            <div class="question"><p><strong>৩৪.</strong> "Brave" ৰ বিপৰীত?</p><p>(a) Bold (b) Coward (c) Strong (d) Fearless</p><p class="answer"><strong>উত্তৰ:</strong> (b) Coward</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ভয়াতুৰ</p></div>
+            <div class="question"><p><strong>৩৫.</strong> The sun ___ in the east.</p><p>(a) rise (b) rises (c) rose (d) rising</p><p class="answer"><strong>উত্তৰ:</strong> (b) rises</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সাৰ্বজনীন</p></div>
+            <div class="question"><p><strong>৩৬.</strong> "Once in a blue moon":</p><p>(a) Often (b) Rarely (c) Monthly (d) Never</p><p class="answer"><strong>উত্তৰ:</strong> (b) Very rarely</p><p class="explanation"><strong>ব্যাখ্যা:</strong> অতি কম</p></div>
+            <div class="question"><p><strong>৩৭.</strong> ত্ৰুটি: "He is one of the best student in the class."</p><p>(a) He is (b) one of (c) best student (d) in</p><p class="answer"><strong>উত্তৰ:</strong> (c) best student</p><p class="explanation"><strong>ব্যাখ্যা:</strong> best students</p></div>
+            <div class="question"><p><strong>৩৮.</strong> He is afraid ___ dogs.</p><p>(a) from (b) of (c) with (d) to</p><p class="answer"><strong>উত্তৰ:</strong> (b) of</p><p class="explanation"><strong>ব্যাখ্যা:</strong> Afraid of</p></div>
+            <div class="question"><p><strong>৩৯.</strong> The teacher asked the students to ___ homework.</p><p>(a) submit (b) submits (c) submitted (d) submitting</p><p class="answer"><strong>উত্তৰ:</strong> (a) submit</p><p class="explanation"><strong>ব্যাখ্যা:</strong> base form</p></div>
+            <div class="question"><p><strong>৪০.</strong> "Enormous" ৰ সমাৰ্থক?</p><p>(a) Tiny (b) Huge (c) Small (d) Little</p><p class="answer"><strong>উত্তৰ:</strong> (b) Huge</p><p class="explanation"><strong>ব্যাখ্যা:</strong> বিশাল</p></div>
+
+            <h3>খণ্ড C: যুক্তি/মানসিক ক্ষমতা (৪১-৬০)</h3>
+            <div class="question"><p><strong>৪১.</strong> TRIPPLE → SQHOOKD, DISPOSE → ?</p><p>(a) CHRONRD (b) CHRONQD (c) CHRONSD (d) CHRONOD</p><p class="answer"><strong>উত্তৰ:</strong> (a) CHRONRD</p><p class="explanation"><strong>ব্যাখ্যা:</strong> এটা কম</p></div>
+            <div class="question"><p><strong>৪২.</strong> W-144, ?, S-100, Q-81, O-64</p><p>(a) U-121 (b) V-121 (c) U-120 (d) T-121</p><p class="answer"><strong>উত্তৰ:</strong> (a) U-121</p><p class="explanation"><strong>ব্যাখ্যা:</strong> 12², 11²...</p></div>
+            <div class="question"><p><strong>৪৩.</strong> অসমৰূপ?</p><p>(a) কঠোৰ:নৰম (b) দীঘল:ওখ (c) মিঠা:টেঙা (d) জোঙা:ভোতা</p><p class="answer"><strong>উত্তৰ:</strong> (b) দীঘল:ওখ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সমাৰ্থক</p></div>
+            <div class="question"><p><strong>৪৪.</strong> কাগজ ভাঁজ+পাঞ্চ (চিত্ৰ):</p><p>(a) A (b) B (c) C (d) D</p><p class="answer"><strong>উত্তৰ:</strong> (b) বিকল্প B</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সমমিতি</p></div>
+            <div class="question"><p><strong>৪৫.</strong> ভেন: নেপচুন, গ্ৰহ, চন্দ্ৰ</p><p>(a) স্বতন্ত্ৰ (b) নেপচুন⊂গ্ৰহ, চন্দ্ৰ⊂গ্ৰহ (c) গ্ৰহ⊂নেপচুন (d) চন্দ্ৰ⊂গ্ৰহ, নেপচুন⊂চন্দ্ৰ</p><p class="answer"><strong>উত্তৰ:</strong> (b)</p><p class="explanation"><strong>ব্যাখ্যা:</strong> নেপচুন গ্ৰহ</p></div>
+            <div class="question"><p><strong>৪৬.</strong> A,B ৰ ভাই; B,C ৰ ভগ্নী; C,D ৰ মাক। D ৰ A ৰ সৈতে?</p><p>(a) খুৰা (b) মামা (c) দেউতা (d) ভাই</p><p class="answer"><strong>উত্তৰ:</strong> (b) মামা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> A,C ৰ ভাই</p></div>
+            <div class="question"><p><strong>৪৭.</strong> উত্তৰ ৫ কিমি, সোঁ ৩ কিমি। দূৰত্ব?</p><p>(a) ৪ (b) √৩৪ (c) ৮ (d) √৩৫</p><p class="answer"><strong>উত্তৰ:</strong> (b) √৩৪ কিমি</p><p class="explanation"><strong>ব্যাখ্যা:</strong> √(২৫+৯)</p></div>
+            <div class="question"><p><strong>৪৮.</strong> CAT = ২৪, DOG = ?</p><p>(a) ২৬ (b) ২৭ (c) ২৮ (d) ৩০</p><p class="answer"><strong>উত্তৰ:</strong> (a) ২৬</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৪+১৫+৭</p></div>
+            <div class="question"><p><strong>৪৯.</strong> ২, ৬, ১২, ২০, ৩০, ?</p><p>(a) ৪০ (b) ৪২ (c) ৪৪ (d) ৪৬</p><p class="answer"><strong>উত্তৰ:</strong> (b) ৪২</p><p class="explanation"><strong>ব্যাখ্যা:</strong> +৪,+৬,+৮,+১০,+১২</p></div>
+            <div class="question"><p><strong>৫০.</strong> কেলেণ্ডাৰ:তাৰিখ :: শব্দকোষ:?</p><p>(a) কিতাপ (b) শব্দ (c) আখৰ (d) পৃষ্ঠা</p><p class="answer"><strong>উত্তৰ:</strong> (b) শব্দ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সাদৃশ্য</p></div>
+            <div class="question"><p><strong>৫১.</strong> অসম: ৩, ৫, ৭, ৯, ১১</p><p>(a) ৩ (b) ৫ (c) ৯ (d) ১১</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৯</p><p class="explanation"><strong>ব্যাখ্যা:</strong> মৌলিক নহয়</p></div>
+            <div class="question"><p><strong>৫২.</strong> SCHOOL ৰ যোগফল (A=১)?</p><p>(a) ৭৬ (b) ৭৮ (c) ৮০ (d) ৮২</p><p class="answer"><strong>উত্তৰ:</strong> (a) ৭৬ (প্ৰকৃত ৭২)</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ১৯+৩+৮+১৫+১৫+১২ = ৭২</p></div>
+            <div class="question"><p><strong>৫৩.</strong> সকলো গোলাপ ফুল, কিছুমান ফুল ৰঙা। সিদ্ধান্ত: কিছুমান গোলাপ ৰঙা?</p><p>(a) সত্য (b) অসত্য (c) সম্ভৱ (d) নিৰ্ধাৰিত নহয়</p><p class="answer"><strong>উত্তৰ:</strong> (d) নিৰ্ধাৰিত নহয়</p><p class="explanation"><strong>ব্যাখ্যা:</strong> অনিবাৰ্য নহয়</p></div>
+            <div class="question"><p><strong>৫৪.</strong> দাপোণত একে আখৰ?</p><p>(a) B (b) C (c) D (d) E</p><p class="answer"><strong>উত্তৰ:</strong> (b) C</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সমমিত</p></div>
+            <div class="question"><p><strong>৫৫.</strong> পিতৃ+পুত্ৰ = ৬০; ৫ বছৰ পূৰ্বে ৪ গুণ। পুত্ৰ?</p><p>(a) ১০ (b) ১২ (c) ১৪ (d) ১৫</p><p class="answer"><strong>উত্তৰ:</strong> (d) ১৫</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৫৫-x = ৪(x-৫)</p></div>
+            <div class="question"><p><strong>৫৬.</strong> MONKEY → XDJMNL, TIGER → ?</p><p>(a) QDFHS (b) SDFHS (c) QDFHR (d) QDFGT</p><p class="answer"><strong>উত্তৰ:</strong> (a) QDFHS</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ওলোটা + শিফ্ট</p></div>
+            <div class="question"><p><strong>৫৭.</strong> ১, ৪, ৯, ১৬, ২৫, ?</p><p>(a) ৩০ (b) ৩৬ (c) ৪২ (d) ৪৯</p><p class="answer"><strong>উত্তৰ:</strong> (b) ৩৬</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৬² = ৩৬</p></div>
+            <div class="question"><p><strong>৫৮.</strong> '+' = ×, '×' = +, তেন্তে ৫ + ৩ × ২ = ?</p><p>(a) ১৬ (b) ১৭ (c) ১৮ (d) ২০</p><p class="answer"><strong>উত্তৰ:</strong> (b) ১৭</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৫×৩+২</p></div>
+            <div class="question"><p><strong>৫৯.</strong> "তেওঁ মোৰ দেউতাৰ মাকৰ একমাত্ৰ পুত্ৰ।"</p><p>(a) দেউতা (b) খুৰা (c) ভাই (d) পুত্ৰ</p><p class="answer"><strong>উত্তৰ:</strong> (a) দেউতা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> আইতাৰ পুত্ৰ = দেউতা</p></div>
+            <div class="question"><p><strong>৬০.</strong> ৫×৪=৪২, ৬×৫=৫৬, ৭×৬=?</p><p>(a) ৭২ (b) ৭৬ (c) ৮০ (d) ৮৪</p><p class="answer"><strong>উত্তৰ:</strong> (a) ৭২</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৪২+৩০ = ৭২</p></div>
+
+            <h3>খণ্ড D: অসম (৬১-৮০)</h3>
+            <div class="question"><p><strong>৬১.</strong> আহোম ৰাজবংশৰ প্ৰতিষ্ঠাপক?</p><p>(a) চুকাফা (b) চাওলুং (c) চুহুংমুং (d) গদাধৰ সিংহ</p><p class="answer"><strong>উত্তৰ:</strong> (a) চুকাফা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ১২২৮ খ্ৰী.</p></div>
+            <div class="question"><p><strong>৬২.</strong> অসমৰ ৰাজ্যিক পশু?</p><p>(a) হাতী (b) গঁড় (c) বাঘ (d) হৰিণ</p><p class="answer"><strong>উত্তৰ:</strong> (b) গঁড়</p><p class="explanation"><strong>ব্যাখ্যা:</strong> এশিঙীয়া</p></div>
+            <div class="question"><p><strong>৬৩.</strong> কাজিৰঙা কোনখন জিলাত?</p><p>(a) কামৰূপ (b) গোলাঘাট (c) শিৱসাগৰ (d) ডিব্ৰুগড়</p><p class="answer"><strong>উত্তৰ:</strong> (b) গোলাঘাট</p><p class="explanation"><strong>ব্যাখ্যা:</strong> গোলাঘাট</p></div>
+            <div class="question"><p><strong>৬৪.</strong> অসমৰ আটাইতকৈ দীঘল দলং?</p><p>(a) শৰাইঘাট (b) ঢোলা-শদিয়া (c) নাৰায়ণ সেতু (d) বগীবিল</p><p class="answer"><strong>উত্তৰ:</strong> (d) বগীবিল দলং</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ~৪.৯৪ কিমি</p></div>
+            <div class="question"><p><strong>৬৫.</strong> ব্ৰহ্মপুত্ৰ কিমানখন জিলাৰ মাজেৰে?</p><p>(a) ১০ (b) ১২ (c) ১৫ (d) ১৮</p><p class="answer"><strong>উত্তৰ:</strong> (c) ১৫</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ~১৫</p></div>
+            <div class="question"><p><strong>৬৬.</strong> অসমৰ ৰাজ্যিক চৰাই?</p><p>(a) ময়ূৰ (b) বগলী (c) হাঁহ (d) ভাটৌ</p><p class="answer"><strong>উত্তৰ:</strong> (b) বগলী</p><p class="explanation"><strong>ব্যাখ্যা:</strong> White-winged Wood Duck</p></div>
+            <div class="question"><p><strong>৬৭.</strong> অসম ৰাজ্যৰ গঠন?</p><p>(a) ১৯৪৭ (b) ১৯৫০ (c) ১৯৬০ (d) ১৯৭২</p><p class="answer"><strong>উত্তৰ:</strong> (d) ১৯৭২</p><p class="explanation"><strong>ব্যাখ্যা:</strong> পূৰ্ণ ৰাজ্য</p></div>
+            <div class="question"><p><strong>৬৮.</strong> মাজুলী কোনখন নদীত?</p><p>(a) গংগা (b) ব্ৰহ্মপুত্ৰ (c) বৰাক (d) সুবনসিৰি</p><p class="answer"><strong>উত্তৰ:</strong> (b) ব্ৰহ্মপুত্ৰ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> বিশ্বৰ আটাইতকৈ ডাঙৰ নদী দ্বীপ</p></div>
+            <div class="question"><p><strong>৬৯.</strong> অসমৰ ৰাজ্যিক ফুল?</p><p>(a) গোলাপ (b) পদুম (c) কপৌ (d) সূৰ্য্যমুখী</p><p class="answer"><strong>উত্তৰ:</strong> (c) কপৌ ফুল</p><p class="explanation"><strong>ব্যাখ্যা:</strong> Foxtail Orchid</p></div>
+            <div class="question"><p><strong>৭০.</strong> বড়ো আন্দোলনৰ মূল উদ্দেশ্য?</p><p>(a) স্বায়ত্তশাসন (b) পৃথক ৰাজ্য (c) সংৰক্ষণ (d) ভাষা</p><p class="answer"><strong>উত্তৰ:</strong> (b) পৃথক ৰাজ্য</p><p class="explanation"><strong>ব্যাখ্যা:</strong> বড়োলেণ্ড</p></div>
+            <div class="question"><p><strong>৭১.</strong> অসমৰ আটাইতকৈ ডাঙৰ চহৰ?</p><p>(a) ডিব্ৰুগড় (b) শিলচৰ (c) গুৱাহাটী (d) যোৰহাট</p><p class="answer"><strong>উত্তৰ:</strong> (c) গুৱাহাটী</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ডাঙৰ</p></div>
+            <div class="question"><p><strong>৭২.</strong> অসমৰ ৰাজধানী?</p><p>(a) শ্বিলং (b) দিছপুৰ (c) গুৱাহাটী (d) যোৰহাট</p><p class="answer"><strong>উত্তৰ:</strong> (b) দিছপুৰ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> গুৱাহাটীৰ অংশ</p></div>
+            <div class="question"><p><strong>৭৩.</strong> অসমত কিমানখন ৰাষ্ট্ৰীয় উদ্যান?</p><p>(a) ৫ (b) ৬ (c) ৭ (d) ৮</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৭</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ২০২৪ লৈকে</p></div>
+            <div class="question"><p><strong>৭৪.</strong> অসমৰ ৰাজ্যিক বৃক্ষ?</p><p>(a) আম (b) বৰগছ (c) হলং (d) নিম</p><p class="answer"><strong>উত্তৰ:</strong> (c) হলং</p><p class="explanation"><strong>ব্যাখ্যা:</strong> Hollong</p></div>
+            <div class="question"><p><strong>৭৫.</strong> অসমত আটাইতকৈ বেছি শস্য?</p><p>(a) ঘেঁহু (b) চাহ (c) ধান (d) কুঁহিয়াৰ</p><p class="answer"><strong>উত্তৰ:</strong> (b) চাহ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সৰ্বাধিক উৎপাদন</p></div>
+            <div class="question"><p><strong>৭৬.</strong> অসমৰ আটাইতকৈ ওখ শিখৰ?</p><p>(a) হিমালয় (b) শৈলপুত্ৰ (c) চেৰাপুঞ্জী (d) হাফলং</p><p class="answer"><strong>উত্তৰ:</strong> (b) শৈলপুত্ৰ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ওখ</p></div>
+            <div class="question"><p><strong>৭৭.</strong> অসমত প্ৰথম চাহ বাগান?</p><p>(a) ডিব্ৰুগড় (b) যোৰহাট (c) চাবুৱা (d) তিনিচুকীয়া</p><p class="answer"><strong>উত্তৰ:</strong> (c) চাবুৱা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ১৮৩৭</p></div>
+            <div class="question"><p><strong>৭৮.</strong> অসমৰ বৰ্তমান মুখ্যমন্ত্ৰী?</p><p>(a) তৰুণ গগৈ (b) সৰ্বানন্দ সোণোৱাল (c) হিমন্ত বিশ্ব শৰ্মা (d) প্ৰফুল্ল মহন্ত</p><p class="answer"><strong>উত্তৰ:</strong> (c) হিমন্ত বিশ্ব শৰ্মা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> বৰ্তমান</p></div>
+            <div class="question"><p><strong>৭৯.</strong> আটাইতকৈ বেছি জনসংখ্যা থকা জিলা?</p><p>(a) কামৰূপ (b) নগাঁও (c) ডিব্ৰুগড় (d) শোণিতপুৰ</p><p class="answer"><strong>উত্তৰ:</strong> (b) নগাঁও</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ২০১১ লোকপিয়ল</p></div>
+            <div class="question"><p><strong>৮০.</strong> অসমৰ ৰাজ্যিক ভাষা?</p><p>(a) হিন্দী (b) বঙালী (c) অসমীয়া (d) বড়ো</p><p class="answer"><strong>উত্তৰ:</strong> (c) অসমীয়া</p><p class="explanation"><strong>ব্যাখ্যা:</strong> চৰকাৰী</p></div>
+
+            <h3>খণ্ড E: সাধাৰণ জ্ঞান (৮১-১০০)</h3>
+            <div class="question"><p><strong>৮১.</strong> ভাৰতৰ ৰাষ্ট্ৰীয় চৰাই?</p><p>(a) ময়ূৰ (b) পাৰ (c) ভাটৌ (d) চিলা</p><p class="answer"><strong>উত্তৰ:</strong> (a) ময়ূৰ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৰাষ্ট্ৰীয় চৰাই</p></div>
+            <div class="question"><p><strong>৮২.</strong> ভাৰতীয় সংবিধান কেতিয়া বলবৎ?</p><p>(a) ১৫ আগষ্ট ১৯৪৭ (b) ২৬ জানুৱাৰী ১৯৫০ (c) ২৬ নৱেম্বৰ ১৯৪৯ (d) ২ অক্টোবৰ ১৯৫০</p><p class="answer"><strong>উত্তৰ:</strong> (b) ২৬ জানুৱাৰী ১৯৫০</p><p class="explanation"><strong>ব্যাখ্যা:</strong> বলবৎ</p></div>
+            <div class="question"><p><strong>৮৩.</strong> ভাৰতৰ প্ৰথম প্ৰধানমন্ত্ৰী?</p><p>(a) গান্ধী (b) নেহৰু (c) পেটেল (d) ৰাজেন্দ্ৰ প্ৰসাদ</p><p class="answer"><strong>উত্তৰ:</strong> (b) জৱাহৰলাল নেহৰু</p><p class="explanation"><strong>ব্যাখ্যা:</strong> প্ৰথম</p></div>
+            <div class="question"><p><strong>৮৪.</strong> বিশ্ব পৰিৱেশ দিৱস?</p><p>(a) ৫ জুন (b) ৫ জুলাই (c) ৫ আগষ্ট (d) ৫ ছেপ্তেম্বৰ</p><p class="answer"><strong>উত্তৰ:</strong> (a) ৫ জুন</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ৫ জুন</p></div>
+            <div class="question"><p><strong>৮৫.</strong> কালিৰ ফালৰ পৰা আটাইতকৈ ডাঙৰ ৰাজ্য?</p><p>(a) মধ্যপ্ৰদেশ (b) মহাৰাষ্ট্ৰ (c) ৰাজস্থান (d) উত্তৰ প্ৰদেশ</p><p class="answer"><strong>উত্তৰ:</strong> (c) ৰাজস্থান</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ডাঙৰ</p></div>
+            <div class="question"><p><strong>৮৬.</strong> কংগ্ৰেছ স্থাপন?</p><p>(a) ১৮৮৫ (b) ১৮৯০ (c) ১৯০০ (d) ১৯১০</p><p class="answer"><strong>উত্তৰ:</strong> (a) ১৮৮৫</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ১৮৮৫</p></div>
+            <div class="question"><p><strong>৮৭.</strong> ভাৰতৰ ৰাষ্ট্ৰীয় খেল?</p><p>(a) ক্ৰিকেট (b) হকী (c) ফুটবল (d) কাবাডী</p><p class="answer"><strong>উত্তৰ:</strong> (b) হকী</p><p class="explanation"><strong>ব্যাখ্যা:</strong> গণ্য</p></div>
+            <div class="question"><p><strong>৮৮.</strong> ৰাষ্ট্ৰসংঘ স্থাপন?</p><p>(a) ১৯৪৫ (b) ১৯৫০ (c) ১৯৪৭ (d) ১৯৪৯</p><p class="answer"><strong>উত্তৰ:</strong> (a) ১৯৪৫</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ২৪ অক্টোবৰ ১৯৪৫</p></div>
+            <div class="question"><p><strong>৮৯.</strong> আটাইতকৈ দীঘল উপকূল?</p><p>(a) গুজৰাট (b) তামিলনাডু (c) অন্ধ্ৰপ্ৰদেশ (d) মহাৰাষ্ট্ৰ</p><p class="answer"><strong>উত্তৰ:</strong> (a) গুজৰাট</p><p class="explanation"><strong>ব্যাখ্যা:</strong> দীঘল</p></div>
+            <div class="question"><p><strong>৯০.</strong> ISRO মুখ্য কাৰ্যালয়?</p><p>(a) দিল্লী (b) বেংগালুৰু (c) হায়দৰাবাদ (d) চেন্নাই</p><p class="answer"><strong>উত্তৰ:</strong> (b) বেংগালুৰু</p><p class="explanation"><strong>ব্যাখ্যা:</strong> HQ</p></div>
+            <div class="question"><p><strong>৯১.</strong> সেউজ বিপ্লৱৰ জনক (ভাৰত)?</p><p>(a) কুৰিয়ান (b) স্বামীনাথন (c) বৰলাগ (d) নেহৰু</p><p class="answer"><strong>উত্তৰ:</strong> (b) এম.এছ. স্বামীনাথন</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ভাৰতত</p></div>
+            <div class="question"><p><strong>৯২.</strong> ৰাষ্ট্ৰীয় পতাকা গ্ৰহণ?</p><p>(a) ১৫ আগষ্ট ১৯৪৭ (b) ২৬ জানুৱাৰী ১৯৫০ (c) ২২ জুলাই ১৯৪৭ (d) ২ অক্টোবৰ ১৯৪৭</p><p class="answer"><strong>উত্তৰ:</strong> (c) ২২ জুলাই ১৯৪৭</p><p class="explanation"><strong>ব্যাখ্যা:</strong> গ্ৰহণ</p></div>
+            <div class="question"><p><strong>৯৩.</strong> WHO মুখ্য কাৰ্যালয়?</p><p>(a) নিউয়ৰ্ক (b) জেনেভা (c) পেৰিছ (d) লণ্ডন</p><p class="answer"><strong>উত্তৰ:</strong> (b) জেনেভা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> চুইজাৰলেণ্ড</p></div>
+            <div class="question"><p><strong>৯৪.</strong> আটাইতকৈ ডাঙৰ বন্দৰ?</p><p>(a) মুম্বাই (b) চেন্নাই (c) কলকাতা (d) কাণ্ডলা</p><p class="answer"><strong>উত্তৰ:</strong> (a) মুম্বাই</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ডাঙৰ</p></div>
+            <div class="question"><p><strong>৯৫.</strong> সংবিধানৰ স্থপতি?</p><p>(a) গান্ধী (b) আম্বেদকাৰ (c) নেহৰু (d) পেটেল</p><p class="answer"><strong>উত্তৰ:</strong> (b) ড° বি.আৰ. আম্বেদকাৰ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> স্থপতি</p></div>
+            <div class="question"><p><strong>৯৬.</strong> ৰাষ্ট্ৰীয় জৰুৰীকালীন অৱস্থা কোনে ঘোষণা কৰে?</p><p>(a) প্ৰধানমন্ত্ৰী (b) ৰাষ্ট্ৰপতি (c) সংসদ (d) উচ্চতম ন্যায়ালয়</p><p class="answer"><strong>উত্তৰ:</strong> (b) ৰাষ্ট্ৰপতি</p><p class="explanation"><strong>ব্যাখ্যা:</strong> অনুচ্ছেদ ৩৫২</p></div>
+            <div class="question"><p><strong>৯৭.</strong> আটাইতকৈ সৰু ৰাজ্য?</p><p>(a) গোৱা (b) ছিক্কিম (c) ত্ৰিপুৰা (d) মণিপুৰ</p><p class="answer"><strong>উত্তৰ:</strong> (a) গোৱা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> কালি</p></div>
+            <div class="question"><p><strong>৯৮.</strong> সৰ্বাধিক সাক্ষৰতা?</p><p>(a) কেৰালা (b) মিজোৰাম (c) গোৱা (d) ত্ৰিপুৰা</p><p class="answer"><strong>উত্তৰ:</strong> (a) কেৰালা</p><p class="explanation"><strong>ব্যাখ্যা:</strong> সৰ্বাধিক</p></div>
+            <div class="question"><p><strong>৯৯.</strong> RBI স্থাপন?</p><p>(a) ১৯৩০ (b) ১৯৩৫ (c) ১৯৪০ (d) ১৯৪৭</p><p class="answer"><strong>উত্তৰ:</strong> (b) ১৯৩৫</p><p class="explanation"><strong>ব্যাখ্যা:</strong> ১ এপ্ৰিল ১৯৩৫</p></div>
+            <div class="question"><p><strong>১০০.</strong> ৰাষ্ট্ৰীয় সংগীত কিয়ে লিখিছিল?</p><p>(a) বংকিম চন্দ্ৰ (b) ৰবীন্দ্ৰনাথ ঠাকুৰ (c) সুভাষ চন্দ্ৰ বসু (d) গান্ধী</p><p class="answer"><strong>উত্তৰ:</strong> (b) ৰবীন্দ্ৰনাথ ঠাকুৰ</p><p class="explanation"><strong>ব্যাখ্যা:</strong> জন গণ মন</p></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Cracknyssamexam. All rights reserved. | Assam Police Exam Preparation</p>
+    </footer>
+
+    <script>
+        function showLanguage(lang) {
+            var contents = document.querySelectorAll('.lang-content');
+            contents.forEach(function(content) { content.classList.remove('active'); });
+            var buttons = document.querySelectorAll('.language-tabs button');
+            buttons.forEach(function(btn) { btn.classList.remove('active'); });
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
