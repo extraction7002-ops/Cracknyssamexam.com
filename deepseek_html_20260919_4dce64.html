@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADRE Mock Test</title>
+<style>
+  :root{
+    --blue:#2563eb;
+    --green:#16a34a;
+    --red:#dc2626;
+    --gray:#6b7280;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{
+    margin:0;
+    font-family:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',sans-serif;
+    background:linear-gradient(160deg,#0f172a 0%,#1e3a8a 55%,#312e81 100%);
+    background-attachment:fixed;
+    min-height:100vh;
+    padding:18px 12px 130px;
+    color:#111827;
+  }
+  .container{max-width:840px;margin:0 auto;}
+
+  /* ---------- HEADER ---------- */
+  .top{
+    background:#fff;
+    border-radius:16px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 8px 24px rgba(0,0,0,.22);
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .logo{
+    width:46px;height:46px;flex:0 0 46px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:#fff;font-weight:800;font-size:15px;
+    display:flex;align-items:center;justify-content:center;
+    letter-spacing:.5px;
+  }
+  .top h1{margin:0;font-size:19px;font-weight:800;color:#111827;}
+  .top p{margin:3px 0 0;font-size:13px;color:#6b7280;}
+
+  /* ---------- QUESTION CARD ---------- */
+  .q-card{
+    background:#fff;
+    border-radius:14px;
+    padding:18px 18px 16px;
+    margin-bottom:16px;
+    box-shadow:0 6px 18px rgba(0,0,0,.18);
+    animation:fadeUp .35s ease both;
+  }
+  @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+  .q-head{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;}
+  .q-num{
+    background:var(--blue);color:#fff;
+    font-size:12px;font-weight:700;
+    padding:4px 10px;border-radius:20px;
+    white-space:nowrap;margin-top:1px;
+  }
+  .q-text{font-size:16.5px;font-weight:600;line-height:1.45;}
+
+  .options{display:flex;flex-direction:column;gap:9px;}
+
+  .option{
+    display:flex;align-items:center;gap:11px;
+    padding:12px 14px;
+    border:2px solid #e5e7eb;
+    border-radius:10px;
+    cursor:pointer;
+    background:#fafafa;
+    transition:.18s;
+    user-select:none;
+  }
+  .option:hover{border-color:#93c5fd;background:#eff6ff;}
+  .option input{display:none;}
+
+  .letter{
+    width:27px;height:27px;flex:0 0 27px;
+    border-radius:50%;
+    background:#e5e7eb;color:#374151;
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;font-weight:700;
+    transition:.18s;
+  }
+  .opt-text{flex:1;font-size:15px;line-height:1.35;}
+
+  /* selected */
+  .option.selected{border-color:var(--blue);background:#dbeafe;}
+  .option.selected .letter{background:var(--blue);color:#fff;}
+
+  /* correct */
+  .option.correct{border-color:var(--green);background:#dcfce7;}
+  .option.correct .letter{background:var(--green);color:#fff;}
+
+  /* wrong */
+  .option.wrong{border-color:var(--red);background:#fee2e2;}
+  .option.wrong .letter{background:var(--red);color:#fff;}
+
+  .option.disabled{pointer-events:none;}
+
+  /* ---------- FEEDBACK ---------- */
+  .feedback{
+    margin-top:13px;
+    padding:10px 13px;
+    border-radius:9px;
+    font-size:14px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    animation:fadeUp .25s ease both;
+  }
+  .feedback.ok  {background:#dcfce7;color:#15803d;border-left:5px solid var(--green);}
+  .feedback.bad {background:#fee2e2;color:#b91c1c;border-left:5px solid var(--red);}
+  .feedback.skip{background:#f3f4f6;color:#4b5563;border-left:5px solid var(--gray);}
+  .feedback b{font-weight:800;}
+
+  /* ---------- BOTTOM BAR ---------- */
+  .bottom-bar{
+    position:fixed;left:0;right:0;bottom:0;
+    background:#fff;
+    box-shadow:0 -5px 20px rgba(0,0,0,.25);
+    padding:12px 16px;
+    display:flex;align-items:center;gap:12px;
+    justify-content:space-between;flex-wrap:wrap;
+    z-index:50;
+  }
+  .status{font-size:13.5px;font-weight:700;color:#374151;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .pill{padding:3px 10px;border-radius:20px;font-size:12.5px;font-weight:800;}
+  .pill.ok  {background:#dcfce7;color:#15803d;}
+  .pill.bad {background:#fee2e2;color:#b91c1c;}
+  .pill.skip{background:#f3f4f6;color:#4b5563;}
+
+  .timer{
+    font-variant-numeric:tabular-nums;
+    font-weight:800;font-size:15px;
+    background:#eef2ff;color:#3730a3;
+    padding:6px 14px;border-radius:20px;
+  }
+
+  .btns{display:flex;gap:10px;}
+  button{
+    font-family:inherit;
+    font-size:14.5px;font-weight:700;
+    padding:11px 22px;
+    border:none;border-radius:10px;
+    cursor:pointer;
+    transition:.18s;
+  }
+  #submitBtn{background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff;box-shadow:0 4px 12px rgba(37,99,235,.4);}
+  #submitBtn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 16px rgba(37,99,235,.5);}
+  #submitBtn:disabled{background:#9ca3af;box-shadow:none;cursor:not-allowed;}
+  #resetBtn{background:#f3f4f6;color:#374151;}
+  #resetBtn:hover{background:#e5e7eb;}
+
+  @media(max-width:520px){
+    .bottom-bar{padding:10px 12px;gap:8px;}
+    .btns{width:100%;}
+    .btns button{flex:1;padding:11px 10px;}
+    .status{font-size:12.5px;}
+    .q-text{font-size:15.5px;}
+    .opt-text{font-size:14.5px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="top">
+    <div class="logo">ADRE</div>
+    <div>
+      <h1>ADRE Mock Test</h1>
+      <p>Option tick karo → Submit dabao → RIGHT / WRONG turant dekh lo</p>
+    </div>
+  </div>
+
+  <div id="quiz"></div>
+</div>
+
+<!-- ===== BOTTOM BAR ===== -->
+<div class="bottom-bar">
+  <div class="status" id="status">Answered 0 / 10</div>
+  <div class="timer" id="timer">00:00</div>
+  <div class="btns">
+    <button id="resetBtn">Restart</button>
+    <button id="submitBtn">Submit Test</button>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   QUESTIONS  —  yahan apne questions add/edit kar sakte ho
+   answer = correct option ka index (0 = A, 1 = B, 2 = C, 3 = D)
+   ========================================================= */
+const QUESTIONS = [
+  {
+    question: "What is the capital of India?",
+    options: ["Mumbai", "New Delhi", "Kolkata", "Chennai"],
+    answer: 1
+  },
+  {
+    question: "What is the capital of Assam?",
+    options: ["Guwahati", "Silchar", "Dispur", "Jorhat"],
+    answer: 2
+  },
+  {
+    question: "What is 20% of 15?",
+    options: ["2", "2.5", "3", "3.5"],
+    answer: 2
+  },
+  {
+    question: "If 5x + 3 = 18, then the value of x is:",
+    options: ["2", "3", "4", "5"],
+    answer: 1
+  },
+  {
+    question: "Which one of the following is a prime number?",
+    options: ["15", "21", "17", "27"],
+    answer: 2
+  },
+  {
+    question: "The Brahmaputra river is known as which name in Tibet?",
+    options: ["Tsangpo", "Padma", "Dihang", "Jamuna"],
+    answer: 0
+  },
+  {
+    question: "Find the next number: 2, 6, 12, 20, ?",
+    options: ["28", "30", "32", "36"],
+    answer: 1
+  },
+  {
+    question: "The volume of a cube of side 7 cm is:",
+    options: ["294 cm³", "343 cm³", "49 cm³", "392 cm³"],
+    answer: 1
+  },
+  {
+    question: "In which year was the Constitution of India adopted?",
+    options: ["1947", "1948", "1949", "1950"],
+    answer: 2
+  },
+  {
+    question: "Bihu festival of Assam is mainly associated with:",
+    options: ["Religion", "Agriculture & Harvest", "Wedding", "Boat race"],
+    answer: 1
+  }
+];
+
+/* ================= STATE ================= */
+let userAnswers = [];
+let submitted   = false;
+let seconds     = 0;
+let timerId     = null;
+
+const quizEl    = document.getElementById('quiz');
+const statusEl  = document.getElementById('status');
+const timerEl   = document.getElementById('timer');
+const submitBtn = document.getElementById('submitBtn');
+const resetBtn  = document.getElementById('resetBtn');
+
+/* ================= RENDER ================= */
+function renderCard(q, qi){
+  const letters = ['A','B','C','D','E','F'];
+  return `
+    <div class="q-card">
+      <div class="q-head">
+        <span class="q-num">Q${qi + 1}</span>
+        <span class="q-text">${q.question}</span>
+      </div>
+      <div class="options">
+        ${q.options.map((opt, oi) => `
+          <label class="option" data-q="${qi}" data-o="${oi}">
+            <span class="letter">${letters[oi]}</span>
+            <span class="opt-text">${opt}</span>
+          </label>
+        `).join('')}
+      </div>
+    </div>`;
+}
+
+function init(){
+  userAnswers = new Array(QUESTIONS.length).fill(null);
+  submitted   = false;
+  seconds     = 0;
+
+  quizEl.innerHTML = QUESTIONS.map(renderCard).join('');
+  timerEl.textContent = '00:00';
+  submitBtn.disabled  = false;
+  submitBtn.textContent = 'Submit Test';
+  updateStatus();
+
+  clearInterval(timerId);
+  timerId = setInterval(tick, 1000);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ================= TIMER ================= */
+function tick(){
+  if(submitted) return;
+  seconds++;
+  const m = String(Math.floor(seconds / 60)).padStart(2,'0');
+  const s = String(seconds % 60).padStart(2,'0');
+  timerEl.textContent = `${m}:${s}`;
+}
+
+/* ================= SELECT OPTION ================= */
+quizEl.addEventListener('click', (e) => {
+  if(submitted) return;
+  const label = e.target.closest('.option');
+  if(!label) return;
+
+  const qi = Number(label.dataset.q);
+  const oi = Number(label.dataset.o);
+
+  userAnswers[qi] = oi;
+
+  const card = label.closest('.q-card');
+  card.querySelectorAll('.option').forEach(l => l.classList.remove('selected'));
+  label.classList.add('selected');
+
+  updateStatus();
+});
+
+/* ================= STATUS ================= */
+function updateStatus(){
+  if(submitted) return;
+  const done = userAnswers.filter(a => a !== null).length;
+  statusEl.textContent = `Answered ${done} / ${QUESTIONS.length}`;
+}
+
+/* ================= SUBMIT / CHECK ================= */
+function submitTest(){
+  if(submitted) return;
+
+  const skipped = userAnswers.filter(a => a === null).length;
+  if(skipped > 0){
+    if(!confirm(`${skipped} question(s) not answered.\nSubmit anyway?`)) return;
+  }
+
+  submitted = true;
+  clearInterval(timerId);
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitted';
+
+  let right = 0, wrong = 0, skip = 0;
+
+  QUESTIONS.forEach((q, qi) => {
+    const card   = quizEl.children[qi];
+    const labels = card.querySelectorAll('.option');
+    const ua     = userAnswers[qi];
+
+    labels.forEach((lab, oi) => {
+      lab.classList.add('disabled');
+      lab.classList.remove('selected');
+
+      if(oi === q.answer) lab.classList.add('correct');          // correct option hamesha green
+      if(ua !== null && oi === ua && ua !== q.answer){
+        lab.classList.add('wrong');                              // galat tick -> red
+      }
+    });
+
+    /* ---- FEEDBACK MESSAGE ---- */
+    const fb = document.createElement('div');
+
+    if(ua === null){
+      fb.className = 'feedback skip';
+      fb.innerHTML = `○ Not Attempted &nbsp;|&nbsp; Correct answer: <b>${q.options[q.answer]}</b>`;
+      skip++;
+    } else if(ua === q.answer){
+      fb.className = 'feedback ok';
+      fb.innerHTML = `✓ RIGHT! &nbsp; Sahi jawab.`;
+      right++;
+    } else {
+      fb.className = 'feedback bad';
+      fb.innerHTML = `✗ WRONG! &nbsp; Correct answer: <b>${q.options[q.answer]}</b>`;
+      wrong++;
+    }
+
+    card.appendChild(fb);
+  });
+
+  /* ---- RESULT SUMMARY ---- */
+  const total   = QUESTIONS.length;
+  const percent = Math.round((right / total) * 100);
+
+  statusEl.innerHTML = `
+    <span class="pill ok">✓ ${right} Right</span>
+    <span class="pill bad">✗ ${wrong} Wrong</span>
+    <span class="pill skip">○ ${skip} Skipped</span>
+    <span style="color:#111827">Score: ${right}/${total} (${percent}%)</span>
+  `;
+
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ================= BUTTONS ================= */
+submitBtn.addEventListener('click', submitTest);
+resetBtn.addEventListener('click', () => {
+  if(!submitted && userAnswers.some(a => a !== null)){
+    if(!confirm('Restart the test? Your answers will be cleared.')) return;
+  }
+  init();
+});
+
+/* ================= START ================= */
+init();
+</script>
+</body>
+</html>
