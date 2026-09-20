@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADRE Grade 3 Vol 1 - Cracknyssamexam</title>
+<style>
+    @page { size: A4; margin: 10mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans Bengali', 'Nirmala UI', 'Kalpurush', Arial, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.75; font-size: 11.5pt; }
+    .page { position: relative; width: 100%; min-height: 277mm; padding: 8mm 6mm; page-break-after: always; background: #fff; overflow: hidden; }
+    .watermark { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%) rotate(-40deg); font-size: 55px; color: rgba(0, 0, 0, 0.05); font-weight: 900; white-space: nowrap; pointer-events: none; z-index: 0; font-family: Arial, sans-serif; letter-spacing: 4px; }
+    .watermark-small { position: absolute; bottom: 4mm; right: 6mm; font-size: 9px; color: rgba(0, 0, 0, 0.30); font-weight: 600; font-family: Arial, sans-serif; z-index: 5; }
+    .content { position: relative; z-index: 1; }
+    .cover { text-align: center; padding: 25mm 10mm; background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%); color: #fff; min-height: 277mm; }
+    .cover-logo { font-size: 40px; font-weight: 900; margin-bottom: 8px; }
+    .cover-logo span { color: #fbbf24; }
+    .cover-tagline { font-size: 13px; color: #94a3b8; letter-spacing: 3px; margin-bottom: 45px; text-transform: uppercase; }
+    .vol-badge { display: inline-block; background: #fbbf24; color: #0a1628; padding: 10px 30px; border-radius: 50px; font-weight: 800; font-size: 18px; margin-bottom: 25px; }
+    .cover-title { font-size: 38px; font-weight: 800; line-height: 1.35; margin-bottom: 15px; }
+    .cover-title span { color: #fbbf24; }
+    .cover-subtitle { font-size: 22px; font-weight: 600; color: #cbd5e1; margin-bottom: 25px; }
+    .cover-divider { width: 90px; height: 4px; background: #fbbf24; margin: 15px auto 30px; }
+    .cover-info { font-size: 15px; color: #e2e8f0; line-height: 2.2; margin-bottom: 40px; }
+    .cover-badge { display: inline-block; border: 2px solid #fbbf24; color: #fbbf24; padding: 8px 24px; border-radius: 30px; font-weight: 700; font-size: 14px; margin: 6px; }
+    .cover-footer { margin-top: 55px; font-size: 12px; color: #64748b; border-top: 1px solid #334155; padding-top: 20px; }
+    h1 { font-size: 22px; color: #0a1628; text-align: center; border-bottom: 3px solid #1a3a6b; padding-bottom: 6px; margin: 0 0 15px 0; }
+    h2 { font-size: 16px; color: #1a3a6b; background: #eef2ff; padding: 8px 14px; border-left: 5px solid #1a3a6b; margin: 18px 0 12px 0; border-radius: 0 6px 6px 0; }
+    h3 { font-size: 14px; color: #0a1628; margin: 12px 0 6px 0; padding-left: 8px; border-left: 3px solid #fbbf24; }
+    .mcq { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 11px 15px; margin-bottom: 12px; page-break-inside: avoid; }
+    .q { font-weight: 700; color: #0a1628; margin-bottom: 6px; font-size: 12pt; }
+    .q .qnum { background: #1a3a6b; color: #fff; padding: 2px 9px; border-radius: 4px; margin-right: 6px; font-size: 10.5pt; display: inline-block; }
+    .options { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 15px; margin-bottom: 7px; font-size: 11.5pt; }
+    .options span { padding: 1px 0; }
+    .ans { background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 5px; font-weight: 700; font-size: 10.5pt; display: inline-block; margin-bottom: 5px; }
+    .desc { background: #fef9c3; border-left: 4px solid #fbbf24; padding: 7px 11px; font-size: 10.5pt; color: #78350f; border-radius: 0 5px 5px 0; margin-top: 5px; }
+    .desc strong { color: #92400e; }
+    .toc-item { display: flex; justify-content: space-between; padding: 9px 15px; border-bottom: 1px dashed #cbd5e1; font-size: 13pt; }
+    .toc-item:nth-child(odd) { background: #f8fafc; }
+    .toc-item .num { color: #1a3a6b; font-weight: 700; margin-right: 10px; }
+    .toc-item .page-num { color: #64748b; font-weight: 600; }
+    .section-divider-page { display: flex; align-items: center; justify-content: center; flex-direction: column; min-height: 250mm; text-align: center; }
+    .section-divider-page .icon { font-size: 70px; margin-bottom: 20px; }
+    .section-divider-page h1 { font-size: 30px; border: none; color: #0a1628; }
+    .section-divider-page p { font-size: 15px; color: #64748b; margin-top: 10px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0 15px; font-size: 11pt; }
+    th, td { border: 1px solid #cbd5e1; padding: 6px 11px; text-align: left; }
+    th { background: #1a3a6b; color: #fff; font-weight: 700; }
+    tr:nth-child(even) { background: #f8fafc; }
+    .notes-box { background: #eff6ff; border: 2px dashed #1a3a6b; border-radius: 10px; padding: 15px 20px; margin: 15px 0; font-size: 11.5pt; }
+    .notes-box h4 { color: #1a3a6b; margin-bottom: 8px; font-size: 14pt; }
+    .notes-box ul, .notes-box ol { margin-left: 22px; }
+    .notes-box li { margin-bottom: 5px; }
+    @media print { body { margin: 0; } .mcq { page-break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<!-- ==================== কভাৰ ==================== -->
+<div class="page cover">
+    <div class="watermark" style="color: rgba(255,255,255,0.07);">Cracknyssamexam</div>
+    <div class="content">
+        <div class="cover-logo">Crack<span>nyssamexam</span></div>
+        <div class="cover-tagline">Assam's No.1 Exam Preparation Platform</div>
+        <div class="cover-divider"></div>
+        <div class="vol-badge">VOLUME 1</div>
+        <div class="cover-title">অসমৰ ইতিহাস<br>আৰু <span>ভূগোল</span></div>
+        <div class="cover-subtitle">Assam History & Geography</div>
+        <div class="cover-info">
+            ✅ ADRE • Assam Police • SSC • All Assam Exams<br>
+            ✅ ৯৫ প্ৰশ্ন আৰু বিশদ ব্যাখ্যা<br>
+            ✅ SLRC ৰ শেহতীয়া পাঠ্যক্ৰম অনুসৰি<br>
+            ✅ অসমীয়া ভাষাত প্ৰস্তুত
+        </div>
+        <div>
+            <span class="cover-badge">৯৫ প্ৰশ্ন</span>
+            <span class="cover-badge">বিশদ ব্যাখ্যা</span>
+            <span class="cover-badge">বিষয়ভিত্তিক</span>
+        </div>
+        <div class="cover-footer">© 2026 Cracknyssamexam | facebook.com/Cracknyssamexam</div>
+    </div>
+</div>
+
+<!-- ==================== সুচীপত্ৰ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 2</div>
+    <div class="content">
+        <h1>বিষয়সূচী (Index)</h1>
+        <div class="toc">
+            <div class="toc-item"><span><span class="num">১.</span> প্ৰাচীন অসমৰ ইতিহাস</span><span class="page-num">পৃষ্ঠা ৩-১২</span></div>
+            <div class="toc-item"><span><span class="num">২.</span> আহোম ৰাজবংশ আৰু মধ্যযুগ</span><span class="page-num">পৃষ্ঠা ১৩-২৪</span></div>
+            <div class="toc-item"><span><span class="num">৩.</span> আধুনিক অসমৰ ইতিহাস</span><span class="page-num">পৃষ্ঠা ২৫-৩৬</span></div>
+            <div class="toc-item"><span><span class="num">৪.</span> অসমৰ সংস্কৃতি আৰু সাহিত্য</span><span class="page-num">পৃষ্ঠা ৩৭-৪৬</span></div>
+            <div class="toc-item"><span><span class="num">৫.</span> অসমৰ ভৌগোলিক পৰিচয়</span><span class="page-num">পৃষ্ঠা ৪৭-৫৮</span></div>
+            <div class="toc-item"><span><span class="num">৬.</span> নদ-নদী, পৰ্বত আৰু বনাঞ্চল</span><span class="page-num">পৃষ্ঠা ৫৯-৭০</span></div>
+            <div class="toc-item"><span><span class="num">৭.</span> ৰাষ্ট্ৰীয় উদ্যান আৰু অভয়াৰণ্য</span><span class="page-num">পৃষ্ঠা ৭১-৮০</span></div>
+            <div class="toc-item"><span><span class="num">৮.</span> উত্তৰপত্ৰ আৰু চমু টিপছ</span><span class="page-num">পৃষ্ঠা ৮১-৮৫</span></div>
+        </div>
+
+        <div class="notes-box" style="margin-top: 25px;">
+            <h4>📌 এই কিতাপখন কেনেকৈ ব্যৱহাৰ কৰিব?</h4>
+            <ul>
+                <li>প্ৰতিটো অধ্যায় মনোযোগেৰে পঢ়ক আৰু প্ৰশ্নবোৰ নিজে চেষ্টা কৰক।</li>
+                <li>উত্তৰ নমিলিলে <strong>ব্যাখ্যা</strong> পঢ়ি বুজি লওক।</li>
+                <li>ADRE/অসম আৰক্ষী পৰীক্ষাত <strong>অসম ইতিহাস</strong> আৰু <strong>ভূগোল</strong> ত বিশেষ গুৰুত্ব দিয়ক।</li>
+                <li>প্ৰতিদিনে ২০ টা প্ৰশ্ন solve কৰক।</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ১ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 3</div>
+    <div class="content section-divider-page">
+        <div class="icon">🏛️</div>
+        <h1>অধ্যায় ১<br>প্ৰাচীন অসমৰ ইতিহাস</h1>
+        <p>Ancient Assam History — প্ৰশ্ন ১-১৫</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 4</div>
+    <div class="content">
+        <h1>প্ৰাচীন অসমৰ ইতিহাস</h1>
+        <h2>কামৰূপ ৰাজ্য</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১</span> 'অসম' নামটো সংস্কৃত 'অসম' শব্দৰ পৰা আহিছে বুলি বহুতে ধাৰণা কৰে। এই শব্দৰ অৰ্থ কি?</div>
+            <div class="options"><span>(A) অতুলনীয় / অনুপম</span><span>(B) পূবৰ দেশ</span><span>(C) পাহাৰীয়া ঠাই</span><span>(D) নদীৰ দেশ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অতুলনীয় / অনুপম</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'অসম' নামৰ উৎপত্তিৰ বিষয়ে কেইবাটাও মত আছে। বহুলভাৱে গৃহীত এটা মত অনুসৰি ই সংস্কৃত 'অসম' (অতুলনীয়/অনুপম, অসমতল ভূমি) শব্দৰ পৰা আহিছে। আন এটা মতে আহোমসকলৰ (শ্যাম/'সাম') নামৰ পৰা 'অসম' নামটো আহিছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২</span> কামৰূপ ৰাজ্যৰ প্ৰথম ঐতিহাসিক ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) ভাস্কৰবৰ্মন</span><span>(B) নৰকাসুৰ</span><span>(C) ভগদত্ত</span><span>(D) পুষ্যবৰ্মন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) পুষ্যবৰ্মন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পুষ্যবৰ্মন (প্ৰায় ৩৫০ খ্ৰীষ্টাব্দ) বৰ্মণ বংশৰ প্ৰতিষ্ঠাপক আৰু কামৰূপৰ প্ৰথম ঐতিহাসিক ৰজা। নৰকাসুৰ আৰু ভগদত্ত পৌৰাণিক ৰজা। ৰাজধানী আছিল প্ৰাগজ্যোতিষপুৰ (বৰ্তমান গুৱাহাটী)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩</span> 'প্ৰাগজ্যোতিষপুৰ' ৰ বৰ্তমান নাম কি?</div>
+            <div class="options"><span>(A) তেজপুৰ</span><span>(B) গুৱাহাটী</span><span>(C) শিৱসাগৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰাগজ্যোতিষপুৰ গুৱাহাটীৰ প্ৰাচীন নাম। 'প্ৰাগ' মানে পূব আৰু 'জ্যোতিষ' মানে জ্যোতিৰ্বিজ্ঞান/নক্ষত্ৰ — অৰ্থাৎ 'পূবৰ জ্যোতিষ নগৰী'। ই বৰ্মণ বংশৰ ৰাজধানী আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪</span> কামৰূপ ৰাজ্যৰ আটাইতকৈ বিখ্যাত ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) পুষ্যবৰ্মন</span><span>(B) স্থিতবৰ্মন</span><span>(C) সুস্থিতবৰ্মন</span><span>(D) ভাস্কৰবৰ্মন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) ভাস্কৰবৰ্মন</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ভাস্কৰবৰ্মন (৭ম শতিকা) বৰ্মণ বংশৰ আটাইতকৈ শক্তিশালী আৰু বিখ্যাত ৰজা আছিল। কনৌজৰ ৰজা হৰ্ষবৰ্ধনৰ সৈতে তেওঁৰ মিত্ৰতা আছিল আৰু চীনা পৰিব্ৰাজক হিউৱেন চাং তেওঁৰ ৰাজসভাত আহিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫</span> 'ডাভাকা' কি?</div>
+            <div class="options"><span>(A) কামৰূপৰ এজন ৰজা</span><span>(B) আহোম ৰাজবংশৰ এজন ৰজা</span><span>(C) নগাঁও অঞ্চলত থকা এখন প্ৰাচীন ৰাজ্য</span><span>(D) ব্ৰহ্মপুত্ৰৰ এখন উপনদী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) নগাঁও অঞ্চলত থকা এখন প্ৰাচীন ৰাজ্য</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সমুদ্ৰগুপ্তৰ এলাহাবাদ স্তম্ভলিপিত (৪ৰ্থ শতিকা) কামৰূপৰ লগতে 'ডাভাকা' ৰাজ্যক প্ৰত্যন্ত (সীমান্ত) ৰাজ্য হিচাপে উল্লেখ কৰা হৈছে। ইয়াক বৰ্তমানৰ নগাঁও-কপিলী উপত্যকা অঞ্চলৰ সৈতে চিনাক্ত কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬</span> প্ৰাচীন কামৰূপৰ বৰ্মণ বংশৰ ৰাজধানী কি আছিল?</div>
+            <div class="options"><span>(A) ৰঙপুৰ</span><span>(B) প্ৰাগজ্যোতিষপুৰ</span><span>(C) চৰাইদেউ</span><span>(D) গড়গাঁও</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) প্ৰাগজ্যোতিষপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰ্মণ বংশৰ ৰাজধানী প্ৰাগজ্যোতিষপুৰ (বৰ্তমান গুৱাহাটী) আছিল। পিছৰ কালত শালস্তম্ভ বংশই হৰুপেশ্বৰ (বৰ্তমান তেজপুৰ)ক ৰাজধানী কৰিছিল। ৰঙপুৰ, চৰাইদেউ, গড়গাঁও আহোম ৰাজ্যৰ ৰাজধানী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭</span> 'নৰকাসুৰ' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) আহোম ৰজা</span><span>(B) কছাৰী ৰজা</span><span>(C) চুতীয়া ৰজা</span><span>(D) প্ৰাগজ্যোতিষৰ পৌৰাণিক ৰজা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) প্ৰাগজ্যোতিষৰ পৌৰাণিক ৰজা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> নৰকাসুৰ প্ৰাগজ্যোতিষপুৰৰ পৌৰাণিক ৰজা আছিল। পুৰাণ মতে ভগৱান কৃষ্ণই তেওঁক বধ কৰিছিল। তেওঁৰ পুত্ৰ ভগদত্ত মহাভাৰতৰ যুদ্ধত অংশ লৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮</span> পুৰাণ আৰু মহাভাৰতত উল্লেখ থকা অসমৰ আটাইতকৈ পুৰণি ৰাজ্যৰ নাম কি?</div>
+            <div class="options"><span>(A) প্ৰাগজ্যোতিষ</span><span>(B) আহোম</span><span>(C) কছাৰী</span><span>(D) চুতীয়া</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) প্ৰাগজ্যোতিষ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰাগজ্যোতিষ অসমৰ আটাইতকৈ পুৰণি ৰাজ্য। মহাভাৰত আৰু পুৰাণত ইয়াৰ উল্লেখ আছে। পিছত এই ৰাজ্য 'কামৰূপ' নামেৰে পৰিচিত হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯</span> 'কামৰূপ' নামৰ পৌৰাণিক ব্যাখ্যা কি?</div>
+            <div class="options"><span>(A) যিখিনি ঠাইত নদী-নালা বেছি</span><span>(B) পাহাৰীয়া ৰূপৰ দেশ</span><span>(C) সোণৰ খনি থকা দেশ</span><span>(D) য'ত কামদেৱে (প্ৰেমৰ দেৱতা) নিজৰ ৰূপ পুনৰ পাইছিল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) য'ত কামদেৱে (প্ৰেমৰ দেৱতা) নিজৰ ৰূপ পুনৰ পাইছিল</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পুৰাণ মতে শিৱৰ ক্ৰোধত ভস্ম হোৱা কামদেৱে এই অঞ্চলতে নিজৰ ৰূপ পুনৰ ঘূৰাই পাইছিল। সেয়ে অঞ্চলটোৰ নাম 'কামৰূপ' হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১০</span> প্ৰাচীন কামৰূপত কোনটো ধৰ্মৰ প্ৰভাৱ আটাইতকৈ বেছি আছিল?</div>
+            <div class="options"><span>(A) হিন্দু ধৰ্ম (শৈৱ-শাক্ত)</span><span>(B) বৌদ্ধ ধৰ্ম</span><span>(C) জৈন ধৰ্ম</span><span>(D) খ্ৰীষ্টান ধৰ্ম</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) হিন্দু ধৰ্ম (শৈৱ-শাক্ত)</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰাচীন কামৰূপত শিৱ, শক্তি (কামাখ্যা দেৱী) আৰু বিষ্ণুৰ উপাসনা প্ৰধান আছিল। বৌদ্ধ ধৰ্মৰ সীমিত প্ৰভাৱ আছিল। কামাখ্যা মন্দিৰ তেতিয়াৰ পৰাই এটা পৱিত্ৰ শক্তিপীঠ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১১</span> কামাখ্যা মন্দিৰ ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) শিৱসাগৰ</span><span>(B) ডিব্ৰুগড়</span><span>(C) তেজপুৰ</span><span>(D) নীলাচল পাহাৰ, গুৱাহাটী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) নীলাচল পাহাৰ, গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কামাখ্যা মন্দিৰ গুৱাহাটীৰ নীলাচল পাহাৰত অৱস্থিত। ই হিন্দু ধৰ্মৰ ৫১ শক্তিপীঠৰ অন্যতম আৰু তন্ত্ৰ সাধনাৰ এটা প্ৰধান কেন্দ্ৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১২</span> প্ৰাচীন 'হৰুপেশ্বৰ' নগৰক বৰ্তমান কোনখন চহৰৰ সৈতে চিনাক্ত কৰা হয়?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) শিৱসাগৰ</span><span>(C) তেজপুৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) তেজপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> হৰুপেশ্বৰ শালস্তম্ভ (স্লেচ্ছ) বংশৰ ৰাজধানী আছিল (৯ম শতিকা)। ইয়াক বৰ্তমানৰ তেজপুৰৰ সৈতে চিনাক্ত কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৩</span> প্ৰাচীন কালত অসম অঞ্চলৰ নাম কি আছিল?</div>
+            <div class="options"><span>(A) প্ৰাগজ্যোতিষ আৰু কামৰূপ</span><span>(B) মগধ আৰু কোশল</span><span>(C) অংগ আৰু বংগ</span><span>(D) কলিংগ আৰু উৎকল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) প্ৰাগজ্যোতিষ আৰু কামৰূপ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰাচীন কালত অসম অঞ্চল প্ৰাগজ্যোতিষ আৰু পিছত কামৰূপ নামেৰে পৰিচিত আছিল। মগধ, কোশল, বংগ, কলিংগ আদি অন্য অঞ্চলৰ নাম।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৪</span> কামৰূপ ৰাজ্যৰ পতন কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১০ম শতিকাত</span><span>(B) ১২শ শতিকাত</span><span>(C) ১৪শ শতিকাত</span><span>(D) ৮ম শতিকাত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ১২শ শতিকাত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ১২শ শতিকাত পাল বংশৰ পিছত কামৰূপ ৰাজ্য দুৰ্বল হৈ পৰে। ১২০৬ চনত বখতিয়াৰ খিলজীয়ে তিব্বত অভিযানৰ পথত কামৰূপ আক্ৰমণ কৰি পৰাজিত হৈছিল। ১৩শ শতিকাত পূবত আহোম ৰাজ্য (১২২৮) আৰু পশ্চিমত কামতা ৰাজ্যৰ উত্থান হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৫</span> 'কামতা' ৰাজ্য ক'ত অৱস্থিত আছিল?</div>
+            <div class="options"><span>(A) পূব অসম</span><span>(B) উত্তৰ অসম (অৰুণাচল সীমান্ত)</span><span>(C) পশ্চিম অসম আৰু উত্তৰ বংগ</span><span>(D) বৰাক উপত্যকা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) পশ্চিম অসম আৰু উত্তৰ বংগ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কামতা ৰাজ্যৰ কেন্দ্ৰ পশ্চিম অসম আৰু উত্তৰ বংগৰ কোচবিহাৰ অঞ্চলত আছিল (ৰাজধানী কামতাপুৰ)। সেই সময়ত পূব অসমত আহোমসকলৰ উত্থান ঘটিছিল।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ২ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 13</div>
+    <div class="content section-divider-page">
+        <div class="icon">👑</div>
+        <h1>অধ্যায় ২<br>আহোম ৰাজবংশ আৰু মধ্যযুগ</h1>
+        <p>Ahom Kingdom — প্ৰশ্ন ১৬-৪০</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 14</div>
+    <div class="content">
+        <h1>আহোম ৰাজবংশ</h1>
+        <h2>প্ৰতিষ্ঠা আৰু প্ৰাৰম্ভিক কাল</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৬</span> অসমৰ প্ৰথম আহোম ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) ৰুদ্ৰ সিংহ</span><span>(B) পুৰন্দৰ সিংহ</span><span>(C) শুকাফা</span><span>(D) চুহুংমুং</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) শুকাফা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শুকাফা আহোম ৰাজবংশৰ প্ৰতিষ্ঠাপক আৰু প্ৰথম আহোম ৰজা। তেওঁ ১২২৮ খ্ৰীষ্টাব্দত পাটকাই পাহাৰ পাৰ হৈ অসমত প্ৰৱেশ কৰি আহোম ৰাজ্য স্থাপন কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৭</span> আহোম ৰাজবংশই অসমত কিমান বছৰ ৰাজত্ব কৰিছিল?</div>
+            <div class="options"><span>(A) ৫০০ বছৰ</span><span>(B) প্ৰায় ৬০০ বছৰ</span><span>(C) ৭০০ বছৰ</span><span>(D) ৪০০ বছৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) প্ৰায় ৬০০ বছৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> আহোম ৰাজবংশই ১২২৮ খ্ৰীষ্টাব্দৰ পৰা ১৮২৬ খ্ৰীষ্টাব্দলৈ প্ৰায় ৬০০ বছৰ অসমত ৰাজত্ব কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৮</span> আহোমসকল মূলতঃ ক'ৰ পৰা আহিছিল?</div>
+            <div class="options"><span>(A) তিব্বত</span><span>(B) নেপাল</span><span>(C) ভুটান</span><span>(D) য়ুনান (চীন) ৰ মঙ মাও অঞ্চল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) য়ুনান (চীন) ৰ মঙ মাও অঞ্চল</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> আহোমসকল টাই (শ্বান) জাতিৰ এটা শাখা। তেওঁলোক চীনৰ য়ুনান প্ৰদেশৰ মঙ মাও অঞ্চলৰ পৰা পাটকাই পাহাৰ পাৰ হৈ ১২২৮ চনত অসমলৈ আহিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">১৯</span> আহোমসকলে অসমত প্ৰথম ক'ত ৰাজধানী স্থাপন কৰিছিল?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) তেজপুৰ</span><span>(C) চৰাইদেউ</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) চৰাইদেউ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শুকাফাই চৰাইদেউত প্ৰথম ৰাজধানী স্থাপন কৰে (১২৫৩)। আহোম ৰজাসকলৰ মইদাম ইয়াতেই আছে। বৰ্তমান ই চৰাইদেউ জিলাত (আগতে শিৱসাগৰ জিলাৰ অংশ)। পিছত ৰাজধানী গড়গাঁও, ৰংপুৰ আৰু যোৰহাটলৈ স্থানান্তৰ হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২০</span> 'বুৰঞ্জী' বুলিলে কি বুজায়?</div>
+            <div class="options"><span>(A) হিন্দু ধৰ্মগ্ৰন্থ</span><span>(B) আহোম ৰজাসকলৰ ঐতিহাসিক লিখনি (ইতিহাস গ্ৰন্থ)</span><span>(C) বৌদ্ধ গ্ৰন্থ</span><span>(D) ব্যাকৰণ গ্ৰন্থ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) আহোম ৰজাসকলৰ ঐতিহাসিক লিখনি (ইতিহাস গ্ৰন্থ)</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বুৰঞ্জী হৈছে আহোম ৰাজবংশৰ ঐতিহাসিক লিখনি। প্ৰথমে আহোম ভাষাত আৰু পিছত অসমীয়া ভাষাত লিখা হৈছিল। বুৰঞ্জীবোৰ অসমৰ ইতিহাসৰ এটা গুৰুত্বপূৰ্ণ উৎস।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২১</span> আহোম ৰাজ্যৰ শাসন ব্যৱস্থা কেনে ধৰণৰ আছিল?</div>
+            <div class="options"><span>(A) গণতান্ত্ৰিক</span><span>(B) ৰাজতান্ত্ৰিক</span><span>(C) সাধাৰণতান্ত্ৰিক</span><span>(D) উপনিৱেশিক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ৰাজতান্ত্ৰিক</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> আহোম ৰাজ্য ৰাজতান্ত্ৰিক আছিল। ৰজাক 'স্বৰ্গদেউ' বুলি কোৱা হৈছিল। তেওঁক সহায় কৰিছিল পাত্ৰ মন্ত্ৰীসকলে — বুঢ়াগোহাঁই, বৰগোহাঁই, বৰপাত্ৰগোহাঁই, বৰবৰুৱা আৰু বৰফুকন।</div>
+        </div>
+
+        <h2>মোগলৰ সৈতে সংঘৰ্ষ আৰু আহোম প্ৰশাসন</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২২</span> সৰাইঘাটৰ যুদ্ধ কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১৬২১</span><span>(B) ১৬৮১</span><span>(C) ১৬৭১</span><span>(D) ১৬৬১</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ১৬৭১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সৰাইঘাটৰ যুদ্ধ ১৬৭১ চনত গুৱাহাটীৰ ওচৰৰ ব্ৰহ্মপুত্ৰত হৈছিল। লাচিত বৰফুকনৰ নেতৃত্বত আহোম সৈন্যই ৰাম সিংহৰ নেতৃত্বাধীন মোগল বাহিনীক পৰাস্ত কৰে। ই নৌযুদ্ধৰ বাবে বিখ্যাত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৩</span> 'লাচিত বৰফুকন' ক'ত জন্মগ্ৰহণ কৰিছিল?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) ডিব্ৰুগড়</span><span>(C) যোৰহাট</span><span>(D) চৰাইদেউ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) চৰাইদেউ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> লাচিত বৰফুকনৰ জন্ম ১৬২২ চনৰ ২৪ নৱেম্বৰত চৰাইদেউত হৈছিল। তেওঁৰ পিতৃ মোমাই তামুলী বৰবৰুৱা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৪</span> সৰাইঘাটৰ যুদ্ধত মোগল সেনাপতি কোন আছিল?</div>
+            <div class="options"><span>(A) মিৰ জুমলা</span><span>(B) ঔৰংজেৱ</span><span>(C) শাহজাহান</span><span>(D) ৰাম সিংহ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) ৰাম সিংহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সৰাইঘাটৰ যুদ্ধত মোগল সেনাপতি আছিল ৰাম সিংহ (আম্বেৰৰ কছৱাহা ৰজা মিৰ্জা ৰাজা জয়সিংহৰ পুত্ৰ)। তেওঁক সম্ৰাট ঔৰংজেৱে অসম অভিযানত পঠাইছিল। মিৰ জুমলাই ১৬৬২-৬৩ চনত অসম আক্ৰমণ কৰিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৫</span> লাচিত বৰফুকনৰ পিতৃৰ নাম কি আছিল?</div>
+            <div class="options"><span>(A) শুকাফা</span><span>(B) ৰুদ্ৰ সিংহ</span><span>(C) মোমাই তামুলী বৰবৰুৱা</span><span>(D) চুহুংমুং</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) মোমাই তামুলী বৰবৰুৱা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> লাচিত বৰফুকনৰ পিতৃ আছিল মোমাই তামুলী বৰবৰুৱা। তেওঁ প্ৰতাপ সিংহৰ ৰাজত্বকালত আহোম ৰাজ্যৰ প্ৰথম বৰবৰুৱা আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৬</span> লাচিত বৰফুকনৰ মৃত্যু কেতিয়া হৈছিল?</div>
+            <div class="options"><span>(A) ১৬৭১</span><span>(B) ১৬৭২</span><span>(C) ১৬৭৩</span><span>(D) ১৬৮১</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ১৬৭২</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সৰাইঘাটৰ যুদ্ধৰ প্ৰায় এবছৰ পিছত ১৬৭২ চনত অসুস্থতাত (স্বাভাৱিক মৃত্যু) তেওঁৰ মৃত্যু হয়। যোৰহাটৰ ওচৰৰ হোলোঙাপাৰাত তেওঁৰ মইদাম আছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৭</span> 'লাচিত দিৱস' কেতিয়া পালন কৰা হয়?</div>
+            <div class="options"><span>(A) ২৪ ডিচেম্বৰ</span><span>(B) ২৪ নৱেম্বৰ</span><span>(C) ২৪ জানুৱাৰী</span><span>(D) ২৪ এপ্ৰিল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ২৪ নৱেম্বৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ২৪ নৱেম্বৰ লাচিত বৰফুকনৰ জন্মদিন (১৬২২)। এই দিনটো অসমত লাচিত দিৱস হিচাপে পালন কৰা হয়। NDA ত শ্ৰেষ্ঠ কেডেটক 'লাচিত বৰফুকন সোণৰ পদক' প্ৰদান কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৮</span> আহোম ৰাজ্যৰ তিনিগৰাকী প্ৰধান মন্ত্ৰী (তিনি গোহাঁই) কোন কোন?</div>
+            <div class="options"><span>(A) বৰবৰুৱা, বৰফুকন আৰু ৰাজখোৱা</span><span>(B) বুঢ়াগোহাঁই, বৰগোহাঁই আৰু বৰপাত্ৰগোহাঁই</span><span>(C) বৰা, শইকীয়া আৰু হাজৰিকা</span><span>(D) ফুকন, বৰুৱা আৰু কটকী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) বুঢ়াগোহাঁই, বৰগোহাঁই আৰু বৰপাত্ৰগোহাঁই</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> আহোম ৰাজ্যৰ পাত্ৰ মন্ত্ৰী পাঁচজন: বুঢ়াগোহাঁই, বৰগোহাঁই, বৰপাত্ৰগোহাঁই (এই তিনিগৰাকীক 'তিনি গোহাঁই' বোলে), বৰবৰুৱা আৰু বৰফুকন।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">২৯</span> 'পাইক' ব্যৱস্থা কি আছিল?</div>
+            <div class="options"><span>(A) ধৰ্মীয় ব্যৱস্থা</span><span>(B) শিক্ষা ব্যৱস্থা</span><span>(C) বিচাৰ ব্যৱস্থা</span><span>(D) আহোম ৰাজ্যৰ বাধ্যতামূলক ৰাজহুৱা শ্ৰম আৰু সামৰিক সেৱা ব্যৱস্থা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) আহোম ৰাজ্যৰ বাধ্যতামূলক ৰাজহুৱা শ্ৰম আৰু সামৰিক সেৱা ব্যৱস্থা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰতিজন সক্ষম পুৰুষ (পাইক) এ ৰাজ্যৰ বাবে নিৰ্দিষ্ট সময় সামৰিক বা শ্ৰম সেৱা আগবঢ়াব লাগিছিল; বিনিময়ত ভূমি পাইছিল। কেইজনমান পাইকৰ দলক 'গোট' আৰু বহু গোটৰ সমষ্টিক 'খেল' বোলা হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩০</span> আহোম ৰাজ্যত ২০ জন পাইকৰ ওপৰত থকা বিষয়াক কি বুলি কোৱা হৈছিল?</div>
+            <div class="options"><span>(A) বৰা</span><span>(B) শইকীয়া</span><span>(C) হাজৰিকা</span><span>(D) ৰাজখোৱা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বৰা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পাইকৰ ওপৰত বিষয়া: বৰা (২০ জন), শইকীয়া (১০০ জন), হাজৰিকা (১,০০০ জন), ৰাজখোৱা (৩,০০০ জন) আৰু ফুকন (৬,০০০ জন)।</div>
+        </div>
+
+        <h2>আহোম ৰাজ্যৰ শেষ অধ্যায়</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩১</span> জয়সাগৰ পুখুৰী কোনে খনাইছিল?</div>
+            <div class="options"><span>(A) শিৱ সিংহ</span><span>(B) প্ৰমত্ত সিংহ</span><span>(C) ৰুদ্ৰ সিংহ</span><span>(D) গদাধৰ সিংহ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ৰুদ্ৰ সিংহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰুদ্ৰ সিংহে (১৬৯৬-১৭১৪) মাতৃ জয়মতীৰ স্মৃতিত ১৬৯৭ চনত শিৱসাগৰত জয়সাগৰ পুখুৰী খনাইছিল। তেওঁ আহোম ৰাজ্যৰ আটাইতকৈ শক্তিশালী ৰজাসকলৰ অন্যতম আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩২</span> 'ৰঙঘৰ' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) যোৰহাট</span><span>(B) ডিব্ৰুগড়</span><span>(C) শিৱসাগৰ</span><span>(D) গুৱাহাটী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) শিৱসাগৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰঙঘৰ শিৱসাগৰত অৱস্থিত। ই আহোম ৰজাসকলৰ ক্ৰীড়া আৰু আমোদ-প্ৰমোদ উপভোগ কৰাৰ বাবে নিৰ্মিত পেভিলিয়ন; ইয়াক এছিয়াৰ আটাইতকৈ পুৰণি পেভিলিয়নসমূহৰ অন্যতম বুলি কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৩</span> 'ৰঙঘৰ' কোন আহোম ৰজাই নিৰ্মাণ কৰাইছিল?</div>
+            <div class="options"><span>(A) ৰুদ্ৰ সিংহ</span><span>(B) শিৱ সিংহ</span><span>(C) চুহুংমুং</span><span>(D) প্ৰমত্ত সিংহ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) প্ৰমত্ত সিংহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰঙঘৰ প্ৰমত্ত সিংহৰ (১৭৪৪-১৭৫১) ৰাজত্বকালত নিৰ্মিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৪</span> ১৭৯৪ চনত আহোম ৰাজ্যৰ ৰাজধানী ৰঙপুৰৰ পৰা কোনখন নগৰলৈ স্থানান্তৰ কৰা হৈছিল?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) যোৰহাট</span><span>(C) তেজপুৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) যোৰহাট</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মোৱামৰীয়া বিদ্ৰোহৰ সময়ত গৌৰীনাথ সিংহই ১৭৯৪ চনত ৰাজধানী ৰঙপুৰ (শিৱসাগৰ)ৰ পৰা যোৰহাটলৈ স্থানান্তৰ কৰে। যোৰহাট আহোম ৰাজ্যৰ শেষৰ ৰাজধানী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৫</span> ১৮১৭ চনত বাৰ্মিজ (মান) সৈন্যই অসম আক্ৰমণ কৰাৰ সময়ত আহোম ৰজা কোন আছিল?</div>
+            <div class="options"><span>(A) গৌৰীনাথ সিংহ</span><span>(B) চন্দ্ৰকান্ত সিংহ</span><span>(C) কমলেশ্বৰ সিংহ</span><span>(D) ৰুদ্ৰ সিংহ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) চন্দ্ৰকান্ত সিংহ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> চন্দ্ৰকান্ত সিংহ (১৮১১-১৮১৮ আৰু বাৰ্মিজৰ সহায়ত ১৮১৯-১৮২১) ৰ ৰাজত্বকালত বাৰ্মিজ আক্ৰমণ আৰম্ভ হয়। ১৮২৬ চনত ইয়াণ্ডাবু সন্ধিৰ জৰিয়তে অসম ব্ৰিটিছৰ অধীনলৈ যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৬</span> ইয়াণ্ডাবু সন্ধি কেতিয়া স্বাক্ষৰিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৮২৪</span><span>(B) ১৮২৮</span><span>(C) ১৮২৬</span><span>(D) ১৮৩০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ১৮২৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ইয়াণ্ডাবু সন্ধি ১৮২৬ চনৰ ২৪ ফেব্ৰুৱাৰীত প্ৰথম ইংৰাজ-বাৰ্মিজ যুদ্ধৰ শেষত ব্ৰিটিছ আৰু বাৰ্মিজসকলৰ মাজত স্বাক্ষৰিত হয়। ইয়াৰ ফলত অসমৰ ওপৰত বাৰ্মাৰ দাবী শেষ হৈ অসম ব্ৰিটিছৰ অধীনলৈ যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৭</span> আহোম ৰাজ্যত 'বৰফুকন' কোন আছিল?</div>
+            <div class="options"><span>(A) নামনি অসমৰ (গুৱাহাটী) ৰাজপ্ৰতিনিধি আৰু সেনাধ্যক্ষ</span><span>(B) ৰজাৰ ব্যক্তিগত চিকিৎসক</span><span>(C) ৰাজকীয় কোষাধ্যক্ষ</span><span>(D) ধৰ্মীয় গুৰু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নামনি অসমৰ (গুৱাহাটী) ৰাজপ্ৰতিনিধি আৰু সেনাধ্যক্ষ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> প্ৰতাপ সিংহৰ ৰাজত্বকালত বৰফুকন পদ সৃষ্টি কৰা হৈছিল। বৰফুকনে গুৱাহাটীত থাকি নামনি অসমৰ শাসন আৰু প্ৰতিৰক্ষাৰ দায়িত্ব পালন কৰিছিল। লাচিত বৰফুকন আটাইতকৈ বিখ্যাত বৰফুকন।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৮</span> আহোম ৰজাক কি বুলি কোৱা হৈছিল?</div>
+            <div class="options"><span>(A) মহাৰাজ</span><span>(B) ৰজা</span><span>(C) স্বৰ্গদেউ</span><span>(D) সম্ৰাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) স্বৰ্গদেউ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> আহোম ৰজাক 'স্বৰ্গদেউ' (স্বৰ্গৰ দেৱতা/প্ৰভু) বুলি কোৱা হৈছিল। আহোম ভাষাত ইয়াক 'চাও-ফা' বোলে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৩৯</span> 'শদিয়া' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) তিনিচুকীয়া</span><span>(C) শিৱসাগৰ</span><span>(D) নগাঁও</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) তিনিচুকীয়া</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শদিয়া তিনিচুকীয়া জিলাত অৱস্থিত। ইয়াৰ ওচৰতে দিবাং, লোহিত আৰু সিয়াং (দিহাং) নদীৰ মিলনত ব্ৰহ্মপুত্ৰৰ সৃষ্টি হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪০</span> 'গদাধৰ সিংহ' ৰ ৰাজত্বকাল কিমান আছিল?</div>
+            <div class="options"><span>(A) ১৬৭০-১৬৮০</span><span>(B) ১৬৯০-১৭০০</span><span>(C) ১৬৮১-১৬৯৬</span><span>(D) ১৬৮৫-১৭০০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ১৬৮১-১৬৯৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গদাধৰ সিংহ (সুপাত্ফা) ১৬৮১ চনৰ পৰা ১৬৯৬ চনলৈ ৰাজত্ব কৰিছিল। ৰজা হোৱাৰ আগৰ নাম আছিল গদাপাণি। ১৬৮২ চনৰ ইটাখুলী যুদ্ধত তেওঁ মোগলসকলক পৰাস্ত কৰি গুৱাহাটী পুনৰ দখল কৰে।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৩ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 25</div>
+    <div class="content section-divider-page">
+        <div class="icon">📜</div>
+        <h1>অধ্যায় ৩<br>আধুনিক অসমৰ ইতিহাস</h1>
+        <p>Modern Assam History — প্ৰশ্ন ৪১-৫৫</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 26</div>
+    <div class="content">
+        <h1>আধুনিক অসমৰ ইতিহাস</h1>
+        <h2>ব্ৰিটিছ শাসন, স্বাধীনতা সংগ্ৰাম আৰু স্বাধীনোত্তৰ অসম</h2>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪১</span> স্বাধীনতাৰ পিছত অসমৰ প্ৰথম মুখ্যমন্ত্ৰী কোন আছিল?</div>
+            <div class="options"><span>(A) গোপীনাথ বৰদলৈ</span><span>(B) বিষ্ণুৰাম মেধি</span><span>(C) চৈয়দ মহম্মদ ছাদুল্লা</span><span>(D) বিমলা প্ৰসাদ চলিহা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) গোপীনাথ বৰদলৈ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গোপীনাথ বৰদলৈ (১৯৪৬-১৯৫০) স্বাধীন ভাৰতৰ অসমৰ প্ৰথম মুখ্যমন্ত্ৰী। তেওঁ 'লোকপ্ৰিয়' নামেৰে জনাজাত আৰু অসমক পাকিস্তানৰ অন্তৰ্ভুক্ত হোৱাৰ পৰা ৰক্ষা কৰাত ভূমিকা গ্ৰহণ কৰিছিল। ১৯৯৯ চনত মৰণোত্তৰ ভাৰতৰত্ন প্ৰদান কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪২</span> অসমৰ ৰাজধানী কি?</div>
+            <div class="options"><span>(A) দিছপুৰ</span><span>(B) গুৱাহাটী</span><span>(C) শিলচৰ</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) দিছপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ ৰাজধানী দিছপুৰ, যি গুৱাহাটী মহানগৰৰ ভিতৰত অৱস্থিত। ১৯৭৩ চনত শিলংৰ পৰা ৰাজধানী দিছপুৰলৈ স্থানান্তৰ কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৩</span> গৌহাটী উচ্চ ন্যায়ালয় কেতিয়া স্থাপিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৫০</span><span>(B) ১৯৪৭</span><span>(C) ১৯৪৮</span><span>(D) ১৯৫২</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ১৯৪৮</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ১৯৪৮ চনৰ ৫ এপ্ৰিলত 'অসম উচ্চ ন্যায়ালয়' নামেৰে ইয়াৰ প্ৰতিষ্ঠা হয়। ১৯৭১ চনত ইয়াৰ নাম 'গৌহাটী উচ্চ ন্যায়ালয়' কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৪</span> অসম বিধানসভাত কিমানখন আসন আছে?</div>
+            <div class="options"><span>(A) ১২৬</span><span>(B) ১২৪</span><span>(C) ১৪০</span><span>(D) ১২০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১২৬</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম বিধানসভাত মুঠ ১২৬খন আসন আছে। ইয়াৰ ভিতৰত ৮খন অনুসূচিত জাতিৰ বাবে আৰু ১৬খন অনুসূচিত জনজাতিৰ বাবে সংৰক্ষিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৫</span> অসমৰ ৰাজ্যপালক কোনে নিযুক্তি দিয়ে?</div>
+            <div class="options"><span>(A) মুখ্যমন্ত্ৰীয়ে</span><span>(B) প্ৰধানমন্ত্ৰীয়ে</span><span>(C) ৰাষ্ট্ৰপতিয়ে</span><span>(D) ৰাজ্যৰ মুখ্য ন্যায়াধীশে</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ৰাষ্ট্ৰপতিয়ে</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সংবিধানৰ ১৫৫ নং অনুচ্ছেদ অনুসৰি ৰাজ্যপালক ৰাষ্ট্ৰপতিয়ে নিযুক্তি দিয়ে। সাধাৰণতে তেওঁৰ কাৰ্যকাল ৫ বছৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৬</span> কটন কলেজ (বৰ্তমান কটন বিশ্ববিদ্যালয়) কেতিয়া স্থাপিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯১১</span><span>(B) ১৯৪৮</span><span>(C) ১৯২৬</span><span>(D) ১৯০১</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) ১৯০১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কটন কলেজ ১৯০১ চনত গুৱাহাটীত স্থাপিত হৈছিল আৰু তেতিয়াৰ মুখ্য আয়ুক্ত ছাৰ হেনৰী কটনৰ নামেৰে নামাকৰণ কৰা হয়। ই উত্তৰ-পূব ভাৰতৰ আটাইতকৈ পুৰণি উচ্চ শিক্ষা অনুষ্ঠান। ২০১৭ চনত ইয়াক কটন বিশ্ববিদ্যালয় কৰা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৭</span> মেঘালয় কেতিয়া অসমৰ পৰা পৃথক হৈ পূৰ্ণ ৰাজ্যৰ মৰ্যাদা লাভ কৰিছিল?</div>
+            <div class="options"><span>(A) ১৯৬০</span><span>(B) ১৯৫০</span><span>(C) ১৯৭২</span><span>(D) ১৯৪৭</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ১৯৭২</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ১৯৭২ চনৰ ২১ জানুৱাৰীত মেঘালয়ে পূৰ্ণ ৰাজ্যৰ মৰ্যাদা লাভ কৰে। ইয়াৰ আগতে ১৯৭০ চনত ই অসমৰ ভিতৰত স্বায়ত্তশাসিত ৰাজ্য আছিল। পিছত অসমৰ ৰাজধানী শিলংৰ পৰা দিছপুৰলৈ স্থানান্তৰিত হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৮</span> 'অসম আন্দোলন' কেতিয়া আৰম্ভ হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৮০</span><span>(B) ১৯৭৯</span><span>(C) ১৯৮৩</span><span>(D) ১৯৮৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ১৯৭৯</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম আন্দোলন ১৯৭৯ চনত AASU (সকলো অসম ছাত্ৰ সন্থা)ৰ নেতৃত্বত আৰম্ভ হৈছিল। ইয়াৰ মূল দাবী আছিল অবৈধ বিদেশী অনুপ্ৰৱেশকাৰী চিনাক্ত কৰি বহিষ্কাৰ কৰা। আন্দোলন ১৯৮৫ লৈকে চলিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৪৯</span> 'অসম চুক্তি' কেতিয়া স্বাক্ষৰিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৮০</span><span>(B) ১৯৮৫</span><span>(C) ১৯৯০</span><span>(D) ১৯৭৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ১৯৮৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম চুক্তি ১৯৮৫ চনৰ ১৫ আগষ্টত কেন্দ্ৰীয় চৰকাৰ আৰু AASU-AAGSP ৰ মাজত স্বাক্ষৰিত হয়। ইয়াৰ ফলত অসম আন্দোলনৰ অন্ত পৰে আৰু ১৯৮৫ চনৰ শেষত অসম গণ পৰিষদ চৰকাৰ গঠন হয় (মুখ্যমন্ত্ৰী প্ৰফুল্ল কুমাৰ মহন্ত)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫০</span> স্বাধীন ভাৰতত অসমৰ প্ৰথম ৰাজ্যপাল কোন আছিল?</div>
+            <div class="options"><span>(A) জয়ৰামদাস দৌলতৰাম</span><span>(B) ছাৰ মহম্মদ ছালেহ আকবৰ হাইদৰী</span><span>(C) শ্ৰীপ্ৰকাশ</span><span>(D) ছাৰ এণ্ড্ৰু ক্ল'</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ছাৰ মহম্মদ ছালেহ আকবৰ হাইদৰী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ছাৰ মহম্মদ ছালেহ আকবৰ হাইদৰী স্বাধীন ভাৰতৰ অসমৰ প্ৰথম ৰাজ্যপাল আছিল (১৯৪৭-১৯৪৮)। ছাৰ এণ্ড্ৰু ক্ল' স্বাধীনতাৰ আগৰ ব্ৰিটিছ ৰাজ্যপাল আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫১</span> মহাত্মা গান্ধীয়ে প্ৰথমবাৰৰ বাবে অসম কেতিয়া ভ্ৰমণ কৰিছিল?</div>
+            <div class="options"><span>(A) ১৯২০</span><span>(B) ১৯২১</span><span>(C) ১৯২৬</span><span>(D) ১৯৩০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ১৯২১</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মহাত্মা গান্ধীয়ে ১৯২১ চনত অসহযোগ আন্দোলনৰ প্ৰচাৰৰ বাবে প্ৰথমবাৰ অসম ভ্ৰমণ কৰিছিল। পিছত ১৯৩৪ আৰু ১৯৪৬ চনতো তেওঁ অসমলৈ আহিছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫২</span> ভাৰতীয় জাতীয় কংগ্ৰেছৰ ৪১তম অধিৱেশন কেতিয়া আৰু ক'ত অনুষ্ঠিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯২১, ডিব্ৰুগড়</span><span>(B) ১৯৩০, শিৱসাগৰ</span><span>(C) ১৯২৬, গুৱাহাটী</span><span>(D) ১৯৪২, গুৱাহাটী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ১৯২৬, গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কংগ্ৰেছৰ ৪১তম অধিৱেশন ১৯২৬ চনৰ ডিচেম্বৰত গুৱাহাটীত অনুষ্ঠিত হৈছিল। ইয়াৰ সভাপতি আছিল এছ. শ্ৰীনিৱাস আয়েংগাৰ। ই অসমত অনুষ্ঠিত কংগ্ৰেছৰ প্ৰথম অধিৱেশন।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৩</span> 'অসম কেশৰী' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) অম্বিকাগিৰি ৰায়চৌধুৰী</span><span>(B) গোপীনাথ বৰদলৈ</span><span>(C) বীৰেন্দ্ৰ কুমাৰ ভট্টাচাৰ্য</span><span>(D) তৰুণ ৰাম ফুকন</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) অম্বিকাগিৰি ৰায়চৌধুৰী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অম্বিকাগিৰি ৰায়চৌধুৰীক 'অসম কেশৰী' বুলি কোৱা হয়। তেওঁ কবি, লেখক, উগ্ৰ জাতীয়তাবাদী আৰু স্বাধীনতা সংগ্ৰামী আছিল। ১৯৫০ চনত অসম সাহিত্য সভাৰ সভাপতি আৰু ১৯৬৫ চনত সাহিত্য আকাডেমী বঁটা বিজয়ী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৪</span> ১৯৪২ চনৰ ভাৰত ত্যাগ আন্দোলনত গোহপুৰ থানাত ত্ৰিৰংগা উত্তোলন কৰিবলৈ গৈ পুলিচৰ গুলীত শহীদ হোৱা বীৰাংগনা কোন?</div>
+            <div class="options"><span>(A) ভোগেশ্বৰী ফুকননী</span><span>(B) চন্দ্ৰপ্ৰভা শইকীয়ানী</span><span>(C) ৰাণী গাইদিনলিউ</span><span>(D) কনকলতা বৰুৱা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) কনকলতা বৰুৱা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কনকলতা বৰুৱা ১৯৪২ চনৰ ২০ ছেপ্টেম্বৰত গোহপুৰত (বৰ্তমান বিশ্বনাথ জিলা) ত্ৰিৰংগা লৈ শোভাযাত্ৰাৰ নেতৃত্ব দি পুলিচৰ গুলীত শহীদ হয়। তেতিয়া তেওঁৰ বয়স আছিল মাত্ৰ ১৭ বছৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৫</span> 'অসম দিৱস' কেতিয়া পালন কৰা হয়?</div>
+            <div class="options"><span>(A) ২ জানুৱাৰী</span><span>(B) ২ মাৰ্চ</span><span>(C) ২ এপ্ৰিল</span><span>(D) ২ ডিচেম্বৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) ২ ডিচেম্বৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম দিৱস ২ ডিচেম্বৰত পালন কৰা হয়। ১২২৮ চনৰ এই দিনটোতে শুকাফাই অসমত ভৰি দিছিল বুলি ধৰা হয় আৰু ইয়াৰ পৰাই আহোম ৰাজ্যৰ আৰম্ভণি।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৪ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 37</div>
+    <div class="content section-divider-page">
+        <div class="icon">🎭</div>
+        <h1>অধ্যায় ৪<br>অসমৰ সংস্কৃতি আৰু সাহিত্য</h1>
+        <p>Assam Culture & Literature — প্ৰশ্ন ৫৬-৬৫</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 38</div>
+    <div class="content">
+        <h1>অসমৰ সংস্কৃতি আৰু সাহিত্য</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৬</span> বিহু উৎসৱ বছৰত কিমানবাৰ পালন কৰা হয়?</div>
+            <div class="options"><span>(A) ৩ বাৰ</span><span>(B) ২ বাৰ</span><span>(C) ১ বাৰ</span><span>(D) ৪ বাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৩ বাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বিহু উৎসৱ বছৰত ৩ বাৰ পালন কৰা হয় — ব'হাগ বিহু (এপ্ৰিল), কাতি বিহু (অক্টোবৰ) আৰু মাঘ বিহু (জানুৱাৰী)।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৭</span> 'ব'হাগ বিহু' ৰ আন নাম কি?</div>
+            <div class="options"><span>(A) কঙালী বিহু</span><span>(B) ভোগালী বিহু</span><span>(C) ৰঙালী বিহু</span><span>(D) মাঘ বিহু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ৰঙালী বিহু</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব'হাগ বিহুক 'ৰঙালী বিহু' বুলি কোৱা হয়। ই এপ্ৰিল মাহত (মধ্য এপ্ৰিল) পালন কৰা হয় আৰু অসমীয়া নৱবৰ্ষৰ উৎসৱ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৮</span> 'মাঘ বিহু' ৰ আন নাম কি?</div>
+            <div class="options"><span>(A) ৰঙালী বিহু</span><span>(B) ভোগালী বিহু</span><span>(C) কঙালী বিহু</span><span>(D) ব'হাগ বিহু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ভোগালী বিহু</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মাঘ বিহুক 'ভোগালী বিহু' বুলি কোৱা হয়। ই জানুৱাৰী মাহত পালন কৰা হয়। ইয়াত মেজি জ্বলোৱা হয় আৰু ভোজ-ভাত খোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৫৯</span> 'বৰগীত' কাৰ কাৰ দ্বাৰা ৰচিত?</div>
+            <div class="options"><span>(A) অনন্ত কন্দলী আৰু হেম সৰস্বতী</span><span>(B) শংকৰদেৱ আৰু মাধৱদেৱ</span><span>(C) মাধৱ কন্দলী আৰু ৰাম সৰস্বতী</span><span>(D) ভট্টদেৱ আৰু দামোদৰদেৱ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) শংকৰদেৱ আৰু মাধৱদেৱ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰগীত শ্ৰীমন্ত শংকৰদেৱ আৰু মাধৱদেৱে ৰচনা কৰিছিল। এইবোৰ ৰাগভিত্তিক ভক্তিমূলক গীত, নামঘৰ-সত্ৰত গোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬০</span> 'সত্ৰীয়া নৃত্য' ৰ প্ৰৱৰ্তক কোন?</div>
+            <div class="options"><span>(A) দামোদৰদেৱ</span><span>(B) শংকৰদেৱ</span><span>(C) ভট্টদেৱ</span><span>(D) গোপালদেৱ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) শংকৰদেৱ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সত্ৰীয়া নৃত্য শংকৰদেৱে প্ৰৱৰ্তন কৰিছিল (১৫শ-১৬শ শতিকা)। ২০০০ চনত সংগীত নাটক আকাডেমীয়ে ইয়াক ভাৰতৰ অন্যতম শাস্ত্ৰীয় নৃত্যৰ স্বীকৃতি দিয়ে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬১</span> 'অসম সাহিত্য সভা' ৰ প্ৰথম অধিৱেশন ক'ত আৰু কেতিয়া অনুষ্ঠিত হৈছিল?</div>
+            <div class="options"><span>(A) গুৱাহাটী, ১৯১৭</span><span>(B) শিৱসাগৰ, ১৯১৭</span><span>(C) যোৰহাট, ১৯২০</span><span>(D) ডিব্ৰুগড়, ১৯২৬</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) শিৱসাগৰ, ১৯১৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসম সাহিত্য সভা ১৯১৭ চনত শিৱসাগৰত গঠন হৈছিল। ইয়াৰ প্ৰথম সভাপতি আছিল পদ্মনাথ গোহাঞিবৰুৱা। ইয়াৰ গঠনত লক্ষ্মীনাথ বেজবৰুৱাৰো মুখ্য ভূমিকা আছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬২</span> 'ৰূপকোঁৱৰ' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) জ্যোতিপ্ৰসাদ আগৰৱালা</span><span>(B) বিষ্ণুপ্ৰসাদ ৰাভা</span><span>(C) হেমেন বৰগোহাঞি</span><span>(D) মামণি ৰয়ছম গোস্বামী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) জ্যোতিপ্ৰসাদ আগৰৱালা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> জ্যোতিপ্ৰসাদ আগৰৱালাক 'ৰূপকোঁৱৰ' বুলি কোৱা হয়। তেওঁ অসমীয়া চলচ্চিত্ৰৰ পিতৃ আৰু প্ৰথম অসমীয়া চলচ্চিত্ৰ 'জয়মতী' (১৯৩৫) ৰ নিৰ্মাতা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৩</span> 'সাহিত্যৰথী' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) লক্ষ্মীনাথ বেজবৰুৱা</span><span>(B) পদ্মনাথ গোহাঞিবৰুৱা</span><span>(C) ৰজনীকান্ত বৰদলৈ</span><span>(D) হেমচন্দ্ৰ গোস্বামী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) লক্ষ্মীনাথ বেজবৰুৱা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> লক্ষ্মীনাথ বেজবৰুৱাক 'সাহিত্যৰথী' বুলি কোৱা হয়। তেওঁ 'কৃপাবৰ বৰবৰুৱাৰ কাকতৰ টোপোলা', 'বুঢ়ী আইৰ সাধু' আদিৰ লেখক আৰু অসমৰ ৰাজ্যিক সংগীত 'ও মোৰ আপোনাৰ দেশ' ৰ ৰচয়িতা।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৪</span> 'উপন্যাস সম্ৰাট' কাক কোৱা হয়?</div>
+            <div class="options"><span>(A) ৰজনীকান্ত বৰদলৈ</span><span>(B) লক্ষ্মীনাথ বেজবৰুৱা</span><span>(C) হেমচন্দ্ৰ গোস্বামী</span><span>(D) পদ্মনাথ গোহাঞিবৰুৱা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ৰজনীকান্ত বৰদলৈ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰজনীকান্ত বৰদলৈক 'উপন্যাস সম্ৰাট' বুলি কোৱা হয়। তেওঁৰ বিখ্যাত উপন্যাসসমূহ: 'মনোমতী', 'মিৰি জীয়ৰী', 'ৰহদৈ লিগিৰী' আদি।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৫</span> 'বাঁহী' আলোচনী কাৰ সম্পাদনাত প্ৰকাশ পাইছিল?</div>
+            <div class="options"><span>(A) চন্দ্ৰকুমাৰ আগৰৱালা</span><span>(B) হেমচন্দ্ৰ গোস্বামী</span><span>(C) ৰজনীকান্ত বৰদলৈ</span><span>(D) লক্ষ্মীনাথ বেজবৰুৱা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) লক্ষ্মীনাথ বেজবৰুৱা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> 'বাঁহী' আলোচনী ১৯০৯ চনত লক্ষ্মীনাথ বেজবৰুৱাৰ সম্পাদনাত প্ৰকাশ পাইছিল। 'জোনাকী' (১৮৮৯) আলোচনী চন্দ্ৰকুমাৰ আগৰৱালাৰ সম্পাদনাত প্ৰকাশ পাইছিল।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৫ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 47</div>
+    <div class="content section-divider-page">
+        <div class="icon">🗺️</div>
+        <h1>অধ্যায় ৫<br>অসমৰ ভৌগোলিক পৰিচয়</h1>
+        <p>Assam Geography — প্ৰশ্ন ৬৬-৭৫</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 48</div>
+    <div class="content">
+        <h1>অসমৰ ভৌগোলিক পৰিচয়</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৬</span> অসমৰ মুঠ জিলাৰ সংখ্যা কিমান?</div>
+            <div class="options"><span>(A) ৩৩</span><span>(B) ৩০</span><span>(C) ৩৫</span><span>(D) ৩২</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ৩৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমত বৰ্তমান ৩৫খন জিলা আছে। ২০২৩ চনত হোজাই, বিশ্বনাথ, তামুলপুৰ আৰু বজালী জিলা পুনৰ গঠন কৰাৰ পিছত জিলাৰ সংখ্যা ৩৫ হয়। পৰীক্ষাৰ আগতে শেহতীয়া চৰকাৰী বিজ্ঞপ্তি মিলাই চাব।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৭</span> অসমৰ আটাইতকৈ ডাঙৰ জিলা কোনখন?</div>
+            <div class="options"><span>(A) কাৰ্বি আংলং</span><span>(B) শোণিতপুৰ</span><span>(C) নগাঁও</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) কাৰ্বি আংলং</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কাৰ্বি আংলং অসমৰ আটাইতকৈ ডাঙৰ জিলা (সদৰ ডিফু)। ২০১৬ চনত পশ্চিম কাৰ্বি আংলং পৃথক হোৱাৰ পিছতো ইয়াৰ কালি প্ৰায় ৭,৪০০ বৰ্গ কিলোমিটাৰ।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৮</span> এছিয়াৰ আটাইতকৈ পুৰণি চলি থকা তেল শোধনাগাৰ অসমৰ কোনখন ঠাইত অৱস্থিত?</div>
+            <div class="options"><span>(A) ডিগবৈ</span><span>(B) নুমলীগড়</span><span>(C) বঙাইগাঁও</span><span>(D) গুৱাহাটী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ডিগবৈ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিগবৈ শোধনাগাৰ ১৯০১ চনত স্থাপিত হৈছিল আৰু ইয়াক এছিয়াৰ আটাইতকৈ পুৰণি চলি থকা শোধনাগাৰ বুলি কোৱা হয়। ডিগবৈ তিনিচুকীয়া জিলাত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৬৯</span> কাৰ্বি আংলং জিলাৰ আটাইতকৈ ওখ শৃংগ কোনটো?</div>
+            <div class="options"><span>(A) নামচা বৰৱা</span><span>(B) কাঞ্চনজঙ্ঘা</span><span>(C) শিৱালিক</span><span>(D) সিংহাচন শৃংগ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) সিংহাচন শৃংগ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সিংহাচন (Singhason) কাৰ্বি আংলং জিলাৰ আটাইতকৈ ওখ শৃংগ (প্ৰায় ১,৩৬০ মিটাৰ)। ই ডিফুৰ ওচৰত অৱস্থিত আৰু ট্ৰেকিঙৰ বাবে জনপ্ৰিয়। নামচা বৰৱা তিব্বতত আৰু কাঞ্চনজঙ্ঘা সিকিম-নেপাল সীমান্তত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭০</span> অসমৰ জলবায়ু কেনে ধৰণৰ?</div>
+            <div class="options"><span>(A) উষ্ণ-আৰ্দ্ৰ (ক্ৰান্তীয় মৌসুমী)</span><span>(B) শীতল</span><span>(C) মৰুভূমিয়</span><span>(D) শুষ্ক</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) উষ্ণ-আৰ্দ্ৰ (ক্ৰান্তীয় মৌসুমী)</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ জলবায়ু উষ্ণ-আৰ্দ্ৰ ক্ৰান্তীয় মৌসুমী ধৰণৰ। ইয়াত বছৰি প্ৰায় ১,৫০০ ৰ পৰা ৩,০০০ মিলিমিটাৰ বৰষুণ হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭১</span> অসমৰ মুঠ ভূখণ্ডৰ প্ৰায় কিমান শতাংশ বনাঞ্চল?</div>
+            <div class="options"><span>(A) ৪০%</span><span>(B) ৩০%</span><span>(C) ২৫%</span><span>(D) প্ৰায় ৩৫%</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) প্ৰায় ৩৫%</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমৰ মুঠ ভূখণ্ডৰ প্ৰায় ৩৫% বনাঞ্চল। ই পৰিৱেশ সংৰক্ষণ আৰু বন্যপ্ৰাণী সংৰক্ষণত গুৰুত্বপূৰ্ণ ভূমিকা পালন কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭২</span> অসমৰ আটাইতকৈ ডাঙৰ আৰু প্ৰধান নদী কোনখন?</div>
+            <div class="options"><span>(A) বৰাক</span><span>(B) ব্ৰহ্মপুত্ৰ</span><span>(C) দিহিং</span><span>(D) সুবনসিৰি</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ব্ৰহ্মপুত্ৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব্ৰহ্মপুত্ৰ অসমৰ আটাইতকৈ ডাঙৰ নদী। ই অসমৰ মাজেৰে প্ৰায় ৬৪০ কিলোমিটাৰ বৈ গৈছে। ইয়াক অসমৰ 'জীৱনৰেখা' বুলি কোৱা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৩</span> ডিব্ৰুগড় কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) চাহ উদ্যোগ</span><span>(B) কপাহ</span><span>(C) পাট</span><span>(D) ৰবৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) চাহ উদ্যোগ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিব্ৰুগড় চাহ উদ্যোগৰ বাবে বিখ্যাত আৰু ইয়াক 'ভাৰতৰ চাহ নগৰী' বুলি কোৱা হয়। ডিব্ৰুগড় জিলাৰ চবুৱা চাহ বাগিচা (১৮৩৭) ভাৰতৰ প্ৰথম বাণিজ্যিক চাহ বাগিচা বুলি জনা যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৪</span> 'শিলচৰ' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) বৰাক উপত্যকাৰ প্ৰধান নগৰ</span><span>(B) চাহ</span><span>(C) কয়লা</span><span>(D) তেল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) বৰাক উপত্যকাৰ প্ৰধান নগৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> শিলচৰ বৰাক উপত্যকাৰ প্ৰধান নগৰ আৰু কাছাৰ জিলাৰ সদৰ। ই বৰাক নদীৰ পাৰত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৫</span> অসমৰ আটাইতকৈ ডাঙৰ চহৰ কোনখন?</div>
+            <div class="options"><span>(A) শিলচৰ</span><span>(B) ডিব্ৰুগড়</span><span>(C) গুৱাহাটী</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গুৱাহাটী অসমৰ আটাইতকৈ ডাঙৰ চহৰ আৰু উত্তৰ-পূব ভাৰতৰ আটাইতকৈ ডাঙৰ মহানগৰ।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৬ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 59</div>
+    <div class="content section-divider-page">
+        <div class="icon">🏞️</div>
+        <h1>অধ্যায় ৬<br>নদ-নদী, পৰ্বত আৰু বনাঞ্চল</h1>
+        <p>Rivers, Mountains & Forests — প্ৰশ্ন ৭৬-৮৫</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 60</div>
+    <div class="content">
+        <h1>নদ-নদী, পৰ্বত আৰু বনাঞ্চল</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৬</span> ব্ৰহ্মপুত্ৰ নদী ক'ৰ পৰা উৎপত্তি হৈছে?</div>
+            <div class="options"><span>(A) গংগোত্ৰী</span><span>(B) চেমায়ুংদুং হিমবাহ (মানস সৰোবৰৰ ওচৰ), তিব্বত</span><span>(C) যমুনোত্ৰী</span><span>(D) কৈলাশ পৰ্বতৰ দক্ষিণ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) চেমায়ুংদুং হিমবাহ (মানস সৰোবৰৰ ওচৰ), তিব্বত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ব্ৰহ্মপুত্ৰ নদী তিব্বতৰ মানস সৰোবৰৰ ওচৰৰ চেমায়ুংদুং হিমবাহৰ পৰা উৎপত্তি হৈছে। তিব্বতত ইয়াক 'ইয়াৰলুং চাংপো', অৰুণাচলত 'সিয়াং/দিহাং' আৰু অসমত 'ব্ৰহ্মপুত্ৰ' বোলা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৭</span> 'মাজুলী' কি?</div>
+            <div class="options"><span>(A) নদীদ্বীপ</span><span>(B) পৰ্বত</span><span>(C) নদী</span><span>(D) বনাঞ্চল</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) নদীদ্বীপ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মাজুলী ব্ৰহ্মপুত্ৰ নদীৰ মাজত থকা বিশ্বৰ আটাইতকৈ ডাঙৰ নদীদ্বীপ। ২০১৬ চনত ই ভাৰতৰ প্ৰথম নদীদ্বীপ জিলা হিচাপে ঘোষিত হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৮</span> বৰাক নদী ক'ৰ পৰা উৎপত্তি হৈছে?</div>
+            <div class="options"><span>(A) মিজোৰাম</span><span>(B) ত্ৰিপুৰা</span><span>(C) মেঘালয়</span><span>(D) মণিপুৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) মণিপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বৰাক নদী মণিপুৰৰ পাহাৰৰ পৰা উৎপত্তি হৈছে। ই অসমৰ বৰাক উপত্যকাৰ মাজেৰে বৈ গৈছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৭৯</span> 'ডিমা হাছাও' জিলা কোনটো পাহাৰত অৱস্থিত?</div>
+            <div class="options"><span>(A) খাচী পাহাৰ</span><span>(B) জয়ন্তীয়া পাহাৰ</span><span>(C) বৰাইল পাহাৰ</span><span>(D) মিকিৰ পাহাৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) বৰাইল পাহাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিমা হাছাও জিলা বৰাইল পাহাৰত অৱস্থিত। ইয়াৰ সদৰ ঠাই হাফলং।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮০</span> 'উমানন্দ দ্বীপ' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) শিৱসাগৰ</span><span>(B) ডিব্ৰুগড়</span><span>(C) গুৱাহাটী</span><span>(D) তেজপুৰ</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) গুৱাহাটী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> উমানন্দ দ্বীপ (ময়ূৰ দ্বীপ) গুৱাহাটীত ব্ৰহ্মপুত্ৰ নদীৰ মাজত অৱস্থিত। ইয়াত শিৱৰ উমানন্দ মন্দিৰ আছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮১</span> 'বুঢ়ীদিহিং' নদী ক'ৰ পৰা উৎপত্তি হৈছে?</div>
+            <div class="options"><span>(A) নাগালেণ্ড</span><span>(B) মণিপুৰ</span><span>(C) মিজোৰাম</span><span>(D) অৰুণাচল প্ৰদেশৰ পাটকাই পৰ্বত</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) অৰুণাচল প্ৰদেশৰ পাটকাই পৰ্বত</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> বুঢ়ীদিহিং নদী অৰুণাচল প্ৰদেশৰ পাটকাই পৰ্বতৰ পৰা উৎপত্তি হৈছে। ই ব্ৰহ্মপুত্ৰৰ দক্ষিণ পাৰৰ এখন গুৰুত্বপূৰ্ণ উপনদী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮২</span> কোনখন ৰাষ্ট্ৰীয় উদ্যানক 'মিনি কাজিৰঙা' বোলা হয়?</div>
+            <div class="options"><span>(A) ওৰাং</span><span>(B) নামেৰী</span><span>(C) মানস</span><span>(D) ৰাইমনা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ওৰাং</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ওৰাং ৰাষ্ট্ৰীয় উদ্যানক (দৰং আৰু শোণিতপুৰ জিলা) কাজিৰঙাৰ দৰে গঁড়, বাঘ আদিৰ বাবে 'মিনি কাজিৰঙা' বোলা হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৩</span> 'গৰমপানি' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) পৰ্বত</span><span>(B) নদী</span><span>(C) বনাঞ্চল</span><span>(D) উষ্ণ প্ৰস্ৰৱণ (গৰম পানীৰ জুৰি)</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) উষ্ণ প্ৰস্ৰৱণ (গৰম পানীৰ জুৰি)</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> গৰমপানি উষ্ণ প্ৰস্ৰৱণৰ বাবে বিখ্যাত। ই কাৰ্বি আংলং জিলাত অৱস্থিত আৰু ইয়াত গৰমপানি বন্যপ্ৰাণী অভয়াৰণ্যও আছে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৪</span> তলৰ কোনটো ব্ৰহ্মপুত্ৰৰ উত্তৰ পাৰৰ উপনদী?</div>
+            <div class="options"><span>(A) কপিলী</span><span>(B) বুঢ়ীদিহিং</span><span>(C) সুবনসিৰি</span><span>(D) কলং</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) সুবনসিৰি</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> সুবনসিৰি, জিয়া-ভৰলী, মানাহ, পাগলাডিয়া, পুঠিমাৰী আদি ব্ৰহ্মপুত্ৰৰ উত্তৰ পাৰৰ উপনদী। বুঢ়ীদিহিং, কপিলী, কলং আদি দক্ষিণ পাৰৰ উপনদী।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৫</span> 'দেহিং পাটকাই' ৰাষ্ট্ৰীয় উদ্যান মূলতঃ কোন জিলাত অৱস্থিত?</div>
+            <div class="options"><span>(A) ডিব্ৰুগড় আৰু তিনিচুকীয়া</span><span>(B) গুৱাহাটী</span><span>(C) নগাঁও</span><span>(D) ধুবুৰী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ডিব্ৰুগড় আৰু তিনিচুকীয়া</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> দেহিং পাটকাই মূলতঃ ডিব্ৰুগড় আৰু তিনিচুকীয়া জিলাত অৱস্থিত। ২০০৪ চনত অভয়াৰণ্য হিচাপে ঘোষিত হৈছিল আৰু ২০২০ চনত ৰাষ্ট্ৰীয় উদ্যানৰ মৰ্যাদা পায়। ইয়াক 'পূবৰ আমাজন' বুলি জনা যায়।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== অধ্যায় ৭ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 71</div>
+    <div class="content section-divider-page">
+        <div class="icon">🌳</div>
+        <h1>অধ্যায় ৭<br>ৰাষ্ট্ৰীয় উদ্যান আৰু অভয়াৰণ্য</h1>
+        <p>National Parks & Sanctuaries — প্ৰশ্ন ৮৬-৯৫</p>
+    </div>
+</div>
+
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 72</div>
+    <div class="content">
+        <h1>ৰাষ্ট্ৰীয় উদ্যান আৰু অভয়াৰণ্য</h1>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৬</span> কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যান কেতিয়া ৰাষ্ট্ৰীয় উদ্যান হিচাপে ঘোষিত হৈছিল?</div>
+            <div class="options"><span>(A) ১৯৭৪</span><span>(B) ১৯০৫</span><span>(C) ১৯২৬</span><span>(D) ১৯৮৫</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) ১৯৭৪</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কাজিৰঙা ১৯০৫ চনত সংৰক্ষিত বনাঞ্চল হিচাপে আৰম্ভ হৈছিল আৰু ১৯৭৪ চনত ৰাষ্ট্ৰীয় উদ্যান হিচাপে ঘোষিত হয়। ১৯৮৫ চনত ইউনেস্কোৱে ইয়াক বিশ্ব ঐতিহ্যস্থান ঘোষণা কৰে।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৭</span> অসমত বৰ্তমান কিমানখন ৰাষ্ট্ৰীয় উদ্যান আছে?</div>
+            <div class="options"><span>(A) ৫</span><span>(B) ৬</span><span>(C) ৭</span><span>(D) ৮</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ৭</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> অসমত ৭খন ৰাষ্ট্ৰীয় উদ্যান আছে: কাজিৰঙা, মানস, নামেৰী, ওৰাং, ডিব্ৰু-চৈখোৱা, দেহিং পাটকাই আৰু ৰাইমনা। (২০২১ চনত ওৰাংৰ নামৰ পৰা 'ৰাজীৱ গান্ধী' আঁতৰোৱা হৈছিল।)</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৮</span> 'মানস ৰাষ্ট্ৰীয় উদ্যান' কি বাবে বিখ্যাত?</div>
+            <div class="options"><span>(A) কেৱল গঁড়</span><span>(B) ময়ূৰ</span><span>(C) ভালুক</span><span>(D) বাঘ আৰু হাতী</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) বাঘ আৰু হাতী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> মানস ৰাষ্ট্ৰীয় উদ্যান বাঘ, হাতী আৰু দুৰ্লভ সোণালী হনুমানৰ বাবে বিখ্যাত। ই ইউনেস্কো বিশ্ব ঐতিহ্যস্থান আৰু ব্যাঘ্ৰ প্ৰকল্প। ই বড়োলেণ্ড অঞ্চলত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৮৯</span> 'নামেৰী ৰাষ্ট্ৰীয় উদ্যান' ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) শোণিতপুৰ</span><span>(B) গুৱাহাটী</span><span>(C) যোৰহাট</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (A) শোণিতপুৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> নামেৰী ৰাষ্ট্ৰীয় উদ্যান শোণিতপুৰ জিলাত অৱস্থিত। ই ১৯৯৮ চনত ৰাষ্ট্ৰীয় উদ্যান হিচাপে ঘোষিত হৈছিল।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯০</span> 'ডিব্ৰু-চৈখোৱা' ৰাষ্ট্ৰীয় উদ্যান কি বাবে জনাজাত?</div>
+            <div class="options"><span>(A) গঁড়</span><span>(B) বাঘ</span><span>(C) হাতী</span><span>(D) পখী আৰু বন্য ঘোঁৰা</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) পখী আৰু বন্য ঘোঁৰা</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ডিব্ৰু-চৈখোৱা ডিব্ৰুগড় আৰু তিনিচুকীয়া জিলাত অৱস্থিত। ই প্ৰব্ৰজনকাৰী পখী, বন্য ঘোঁৰা আৰু দুৰ্লভ বনহাঁহৰ বাবে বিখ্যাত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯১</span> 'ৰাইমনা' ৰাষ্ট্ৰীয় উদ্যান ক'ত অৱস্থিত?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) কোকৰাঝাৰ</span><span>(C) শোণিতপুৰ</span><span>(D) ডিব্ৰুগড়</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) কোকৰাঝাৰ</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ৰাইমনা ৰাষ্ট্ৰীয় উদ্যান কোকৰাঝাৰ জিলাত (বড়োলেণ্ড) অৱস্থিত। ২০২১ চনত ইয়াক ৰাষ্ট্ৰীয় উদ্যানৰ মৰ্যাদা দিয়া হয়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯২</span> ওৰাং ৰাষ্ট্ৰীয় উদ্যানক আগতে কাৰ নামেৰে নামাকৰণ কৰা হৈছিল?</div>
+            <div class="options"><span>(A) ইন্দিৰা গান্ধী</span><span>(B) মহাত্মা গান্ধী</span><span>(C) ৰাজীৱ গান্ধী</span><span>(D) জৱাহৰলাল নেহৰু</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (C) ৰাজীৱ গান্ধী</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> ওৰাং ৰাষ্ট্ৰীয় উদ্যান আগতে 'ৰাজীৱ গান্ধী ওৰাং ৰাষ্ট্ৰীয় উদ্যান' নামেৰে জনাজাত আছিল। ২০২১ চনত ইয়াৰ নাম সলনি কৰি 'ওৰাং ৰাষ্ট্ৰীয় উদ্যান' কৰা হয়। ই দৰং আৰু শোণিতপুৰ জিলাত অৱস্থিত।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৩</span> 'পবিতৰা অভয়াৰণ্য' কোনখন জিলাত অৱস্থিত?</div>
+            <div class="options"><span>(A) নগাঁও</span><span>(B) গুৱাহাটী</span><span>(C) শিৱসাগৰ</span><span>(D) মৰিগাঁও</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) মৰিগাঁও</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> পবিতৰা বন্যপ্ৰাণী অভয়াৰণ্য মৰিগাঁও জিলাত অৱস্থিত। ইয়াত এশিংগীয়া গঁড়ৰ ঘনত্ব বহুত বেছি।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৪</span> 'হোলোঙাপাৰ গিবন অভয়াৰণ্য' কোনখন জিলাত অৱস্থিত?</div>
+            <div class="options"><span>(A) গুৱাহাটী</span><span>(B) নগাঁও</span><span>(C) ডিব্ৰুগড়</span><span>(D) যোৰহাট</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (D) যোৰহাট</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> হোলোঙাপাৰ গিবন অভয়াৰণ্য যোৰহাট জিলাত অৱস্থিত। ইয়াত ভাৰতৰ একমাত্ৰ এপ প্ৰজাতি 'হুলক গিবন' পোৱা যায়।</div>
+        </div>
+
+        <div class="mcq">
+            <div class="q"><span class="qnum">৯৫</span> কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যানক ইউনেস্কোৱে কেতিয়া বিশ্ব ঐতিহ্যস্থান ঘোষণা কৰে?</div>
+            <div class="options"><span>(A) ১৯৭৪</span><span>(B) ১৯৮৫</span><span>(C) ১৯০৫</span><span>(D) ২০০০</span></div>
+            <div class="ans">✅ সঠিক উত্তৰ: (B) ১৯৮৫</div>
+            <div class="desc"><strong>ব্যাখ্যা:</strong> কাজিৰঙাক ১৯৮৫ চনত ইউনেস্কোৱে বিশ্ব ঐতিহ্যস্থান ঘোষণা কৰে। ২০০৬ চনত ইয়াক ব্যাঘ্ৰ প্ৰকল্পৰ মৰ্যাদা দিয়া হয়। বিশ্বৰ দুই-তৃতীয়াংশতকৈ অধিক এশিংগীয়া গঁড় ইয়াতে আছে।</div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== উত্তৰপত্ৰ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 81</div>
+    <div class="content">
+        <h1>উত্তৰপত্ৰ (Answer Key)</h1>
+
+        <h2>অধ্যায় ১: প্ৰাচীন অসম</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>১</td><td>A</td><td>২</td><td>D</td><td>৩</td><td>B</td></tr>
+            <tr><td>৪</td><td>D</td><td>৫</td><td>C</td><td>৬</td><td>B</td></tr>
+            <tr><td>৭</td><td>D</td><td>৮</td><td>A</td><td>৯</td><td>D</td></tr>
+            <tr><td>১০</td><td>A</td><td>১১</td><td>D</td><td>১২</td><td>C</td></tr>
+            <tr><td>১৩</td><td>A</td><td>১৪</td><td>B</td><td>১৫</td><td>C</td></tr>
+        </table>
+
+        <h2>অধ্যায় ২: আহোম ৰাজবংশ</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>১৬</td><td>C</td><td>১৭</td><td>B</td><td>১৮</td><td>D</td></tr>
+            <tr><td>১৯</td><td>C</td><td>২০</td><td>B</td><td>২১</td><td>B</td></tr>
+            <tr><td>২২</td><td>C</td><td>২৩</td><td>D</td><td>২৪</td><td>D</td></tr>
+            <tr><td>২৫</td><td>C</td><td>২৬</td><td>B</td><td>২৭</td><td>B</td></tr>
+            <tr><td>২৮</td><td>B</td><td>২৯</td><td>D</td><td>৩০</td><td>A</td></tr>
+            <tr><td>৩১</td><td>C</td><td>৩২</td><td>C</td><td>৩৩</td><td>D</td></tr>
+            <tr><td>৩৪</td><td>B</td><td>৩৫</td><td>B</td><td>৩৬</td><td>C</td></tr>
+            <tr><td>৩৭</td><td>A</td><td>৩৮</td><td>C</td><td>৩৯</td><td>B</td></tr>
+            <tr><td>৪০</td><td>C</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ৩: আধুনিক অসম</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৪১</td><td>A</td><td>৪২</td><td>A</td><td>৪৩</td><td>C</td></tr>
+            <tr><td>৪৪</td><td>A</td><td>৪৫</td><td>C</td><td>৪৬</td><td>D</td></tr>
+            <tr><td>৪৭</td><td>C</td><td>৪৮</td><td>B</td><td>৪৯</td><td>B</td></tr>
+            <tr><td>৫০</td><td>B</td><td>৫১</td><td>B</td><td>৫২</td><td>C</td></tr>
+            <tr><td>৫৩</td><td>A</td><td>৫৪</td><td>D</td><td>৫৫</td><td>D</td></tr>
+        </table>
+
+        <h2>অধ্যায় ৪: সংস্কৃতি আৰু সাহিত্য</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৫৬</td><td>A</td><td>৫৭</td><td>C</td><td>৫৮</td><td>B</td></tr>
+            <tr><td>৫৯</td><td>B</td><td>৬০</td><td>B</td><td>৬১</td><td>B</td></tr>
+            <tr><td>৬২</td><td>A</td><td>৬৩</td><td>A</td><td>৬৪</td><td>A</td></tr>
+            <tr><td>৬৫</td><td>D</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ৫: ভৌগোলিক পৰিচয়</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৬৬</td><td>C</td><td>৬৭</td><td>A</td><td>৬৮</td><td>A</td></tr>
+            <tr><td>৬৯</td><td>D</td><td>৭০</td><td>A</td><td>৭১</td><td>D</td></tr>
+            <tr><td>৭২</td><td>B</td><td>৭৩</td><td>A</td><td>৭৪</td><td>A</td></tr>
+            <tr><td>৭৫</td><td>C</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ৬: নদ-নদী, পৰ্বত</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৭৬</td><td>B</td><td>৭৭</td><td>A</td><td>৭৮</td><td>D</td></tr>
+            <tr><td>৭৯</td><td>C</td><td>৮০</td><td>C</td><td>৮১</td><td>D</td></tr>
+            <tr><td>৮২</td><td>A</td><td>৮৩</td><td>D</td><td>৮৪</td><td>C</td></tr>
+            <tr><td>৮৫</td><td>A</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h2>অধ্যায় ৭: ৰাষ্ট্ৰীয় উদ্যান</h2>
+        <table>
+            <tr><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th><th>প্ৰশ্ন</th><th>উত্তৰ</th></tr>
+            <tr><td>৮৬</td><td>A</td><td>৮৭</td><td>C</td><td>৮৮</td><td>D</td></tr>
+            <tr><td>৮৯</td><td>A</td><td>৯০</td><td>D</td><td>৯১</td><td>B</td></tr>
+            <tr><td>৯২</td><td>C</td><td>৯৩</td><td>D</td><td>৯৪</td><td>D</td></tr>
+            <tr><td>৯৫</td><td>B</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </div>
+</div>
+
+<!-- ==================== শেষ পৃষ্ঠা: টিপছ ==================== -->
+<div class="page">
+    <div class="watermark">Cracknyssamexam</div>
+    <div class="watermark-small">Cracknyssamexam | Page 85</div>
+    <div class="content">
+        <h1>পৰীক্ষাৰ টিপছ আৰু ট্ৰিক</h1>
+
+        <div class="notes-box">
+            <h4>📚 Vol 1 ৰ প্ৰস্তুতিৰ ১০ টা টিপ</h4>
+            <ol style="margin-left: 22px;">
+                <li><strong>Assam History ত গুৰুত্ব দিয়ক:</strong> ADRE আৰু Assam Police পৰীক্ষাত অসম ইতিহাসৰ প্ৰশ্ন বেছি আহে।</li>
+                <li><strong>তাৰিখবোৰ মনত ৰাখক:</strong> ১২২৮, ১৬৭১, ১৮২৬ — এইবোৰ বছৰ মনত ৰখা অতি প্ৰয়োজনীয়।</li>
+                <li><strong>নদ-নদীৰ নাম:</strong> ব্ৰহ্মপুত্ৰ, বৰাক, দিহিং, সুবনসিৰি — এইবোৰৰ বিষয়ে জানক।</li>
+                <li><strong>ৰাষ্ট্ৰীয় উদ্যান:</strong> ৭খন ৰাষ্ট্ৰীয় উদ্যানৰ নাম আৰু অৱস্থান মনত ৰাখক।</li>
+                <li><strong>শুকাফাৰ পৰা চন্দ্ৰকান্তলৈ:</strong> আহোম ৰজাসকলৰ ক্ৰম মনত ৰাখক।</li>
+                <li><strong>লাচিত বৰফুকন:</strong> তেওঁৰ জীৱন আৰু চৰাইদেউ যুদ্ধৰ বিষয়ে সবিশেষ জানক।</li>
+                <li><strong>অসম সাহিত্য সভা:</strong> ১৯১৭ চন, শিৱসাগৰ, প্ৰথম সভাপতি পদ্মনাথ গোহাঞিবৰুৱা — এইবোৰ প্ৰশ্নত আহে।</li>
+                <li><strong>বিহুৰ তিনিটা ৰূপ:</strong> ব'হাগ, কাতি, মাঘ — এইবোৰৰ পাৰ্থক্য জানক।</li>
+                <li><strong>অসমৰ ৰাজ্যিক চিহ্ন:</strong> জন্তু, পক্ষী, ফুল, গছ — এইবোৰ মনত ৰাখক।</li>
+                <li><strong>ভূগোলৰ সংখ্যা:</strong> ৩৫খন জিলা, ৭খন ৰাষ্ট্ৰীয় উদ্যান — এইবোৰ সংখ্যা মনত ৰাখক।</li>
+            </ol>
+        </div>
+
+        <h2>পৰীক্ষাৰ দিনাৰ টিপছ</h2>
+        <div class="notes-box">
+            <ol style="margin-left: 22px;">
+                <li>পৰীক্ষাৰ আগদিনা ভালকৈ শুই লওক।</li>
+                <li>সকলো প্ৰয়োজনীয় কাগজ-পত্ৰ লগত লৈ যাওক।</li>
+                <li>পৰীক্ষাৰ স্থান আগতীয়াকৈ চাই আহক।</li>
+                <li>প্ৰশ্নকাকত ভালদৰে পঢ়ক।</li>
+                <li>সহজ প্ৰশ্ন প্ৰথমে উত্তৰ দিয়ক।</li>
+                <li>সময় শেষ হোৱাৰ ১০ মিনিট আগতে উত্তৰপত্ৰ জমা দিয়ক।</li>
+            </ol>
+        </div>
+
+        <div class="notes-box" style="margin-top: 30px; text-align: center;">
+            <h4>🎯 শুভকামনা!</h4>
+            <p style="font-size: 14pt;">আপোনাৰ পৰিশ্ৰমে সফলতা আনিব।</p>
+            <p style="margin-top: 10px;">Cracknyssamexam ৰ সৈতে আপোনাৰ যাত্ৰা সফল হওক!</p>
+            <p style="margin-top: 15px;"><strong>© 2026 Cracknyssamexam</strong></p>
+            <p>facebook.com/Cracknyssamexam</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
